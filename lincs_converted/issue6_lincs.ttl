@@ -346,6 +346,7 @@ wikidata:Q1404511 frbroo:R10_has_member <FEMINIST_STUDIES_IV_1>,
     <AD_PRICE_I6_AD1_P4>,
     <AD_PRICE_I6_AD1_P5>,
     <AD_PRICE_I6_AD1_P6>,
+#ADDRESS NOT MENTIONED BELOW
     <OFF_OUR_BACKS_CREATORS_ADDRESS> ;
   # created by the organization running the ad
   frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ;
@@ -356,7 +357,6 @@ wikidata:Q1404511 frbroo:R10_has_member <FEMINIST_STUDIES_IV_1>,
   # has a visual representation that can be located at the following iiif address
   crm:P138i_has_representation <https://iiif.archivelab.org/iiif/heresies_06$120/207,1225,777,976/full/0/default.jpg> ;
         rdfs:label "Heresies 6 Off Our Backs advertisement - visual representation" .
-
 
 
 # These are the things being advertised
@@ -449,7 +449,6 @@ wikidata:Q7078947 a frbroo:F18_Serial_Work ;
     wikidata:Q6958747,
     wikidata:Q40357,
     "issues that affect womens lives" .
-
 
 
 
