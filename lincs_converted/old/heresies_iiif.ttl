@@ -1,0 +1,80 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmpc: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix dig: <http://www.ics.forth.gr/isl/CRMdig/> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+@prefix locnames: <https://id.loc.gov/authorities/names/> .
+@prefix locworks: <https://id.loc.gov/resources/works/> .
+@prefix locprovs: <http://id.loc.gov/entities/providers/> .
+@prefix locinsts: <http://id.loc.gov/resources/instances/> .
+@prefix worldcat: <http://worldcat.org/entity/work/id/> .
+@prefix viaf: <http://viaf.org/viaf/> .
+
+#----------------------------------------------------------------------------------------------------------------------------
+
+# Issue 12
+
+<https://iiif.archivelab.org/iiif/heresies_12$96/218,119,1088,1328/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_12$96/1318,123,1111,1163/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_12$96/201,1511,1100,1639/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_12$96/1381,1385,990,1702/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_12$97/157,127,1111,1560/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_12$97/1288,136,1099,1551/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_12$97/152,1691,2203,398/full/0/default.jpg> a crm:E36_Visual_Item .
+
+
+# Issue 11
+
+<https://iiif.archivelab.org/iiif/heresies_11$94/1249,190,1217,929/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_11$94/164,173,1085,1347/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_11$94/138,1516,1217,1748/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_11$94/1358,1122,1096,2146/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_11$95/129,174,795,1199/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_11$95/923,361,304,545/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_11$95/145,1426,1077,851/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_11$95/1228,1487,1220,706/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_11$95/1538,161,905,1291/full/0/default.jpg> a crm:E36_Visual_Item .
+
+
+# Issue 6
+
+<https://iiif.archivelab.org/iiif/heresies_06$119/214,1865,2090,1204/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_06$120/207,1225,777,976/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_06$120/230,2209,1148,871/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_06$122/215,1403,694,777/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_06$121/962,1138,1256,1959/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_06$122/183,2191,1216,978/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_06$123/1597,1880,744,1191/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_06$124/179,1696,2250,1356/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_06$125/894,2319,696,784/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_06$125/1623,1381,674,1718/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_06$126/319,1704,1008,1400/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_06$126/1392,1652,1044,1451/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_06$127/865,2114,1634,1114/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_06$128/179,1572,1107,1554/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_06$128/1341,1953,1107,1154/full/0/default.jpg> a crm:E36_Visual_Item .
+
+
+# Issue 4
+
+<https://iiif.archivelab.org/iiif/heresies_04$127/178,50,1044,859/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_04$127/185,930,1015,1079/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_04$127/141,2018,1067,1109/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_04$127/1341,57,934,1415/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_04$127/1308,1791,1067,1362/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_04$128/137,86,791,636/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_04$128/190,719,732,1276/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_04$128/934,87,731,1516/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_04$128/1730,95,706,1498/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_04$128/209,1991,722,1193/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_04$128/959,1839,737,1326/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_04$128/1719,1778,822,1360/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_04$129/1480,87,926,751/full/0/default.jpg> a crm:E36_Visual_Item .
+<https://iiif.archivelab.org/iiif/heresies_04$129/1460,884,941,1420/full/0/default.jpg> a crm:E36_Visual_Item .
+

@@ -1,0 +1,948 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmpc: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix dig: <http://www.ics.forth.gr/isl/CRMdig/> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+@prefix locnames: <https://id.loc.gov/authorities/names/> .
+@prefix locworks: <https://id.loc.gov/resources/works/> .
+@prefix locprovs: <http://id.loc.gov/entities/providers/> .
+@prefix locinsts: <http://id.loc.gov/resources/instances/> .
+@prefix worldcat: <http://worldcat.org/entity/work/id/> .
+@prefix viaf: <http://viaf.org/viaf/> .
+
+#----------------------------------------------------------------------------------------------------------------------------
+
+# SECTION 1 - DECLARATION OF PREPARATORY INFORMATION 
+
+# DECLARE THE EXISTANCE OF HERESIES
+# If you wish to state further details about Heresies as a publication you may want to break out the Creation event
+
+# Heresies is a serial publication with volumes/issues ("members"), created by the Heresies Collective
+wikidata:Q17022558 a frbroo:F18_Serial_Work ; 
+  rdfs:label "Heresies" ; 
+  crm:P2_has_type wikidata:Q1002697 ;
+  crm:P102_has_title "Heresies: A Feminist Publication on Art and Politics" ; 
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+    crm:P14_carried_out_by wikidata:Q20857976 ] ;
+  frbroo:R10_has_member worldcat:57511158 .
+
+
+# DECLARE THE EXISTENCE OF THE ISSUE UNDER CONSIDERATION IN THIS DATASET
+# If you wish to state further details about Heresies as a publication you may want to break out the Creation event
+
+# This is the "Sex Issue" Heresies issue
+worldcat:57511158 a frbroo:F3_Manifestation ; 
+  rdfs:label "Heresies: A Feminist Publication on Art and Politics - Issue 12: Sex Issue" ;
+  crm:P102_has_title "Sex Issue" ;
+  frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ; 
+    crm:P14_carried_out_by wikidata:Q20857976 ] ; 
+  crm:P148_has_component <MANIFESTATION_HERESIES_I12_AD0>, 
+    <MANIFESTATION_HERESIES_I12_AD1>,
+    <MANIFESTATION_HERESIES_I12_AD2>,
+    <MANIFESTATION_HERESIES_I12_AD3>,
+    <MANIFESTATION_HERESIES_I12_AD4>, 
+    <MANIFESTATION_HERESIES_I12_AD5>, 
+    <MANIFESTATION_HERESIES_I12_AD6> .
+
+
+
+
+
+#----------------------------------------------------------------------------------------------------------------------------
+
+# SECTION 2 - THE ADVERTISEMENTS
+
+# SECTION 2.0 - AD0 WOMEN'S CAUCUS FOR ART
+
+# This is the advertisement
+<MANIFESTATION_HERESIES_I12_AD0> a frbroo:F3_Manifestation ; 
+  rdfs:label "Heresies 12 Women's Caucus for Art advertisement" ;
+  # has a Type of "advertisement"
+  crm:P2_has_type wikidata:Q39911916 ;
+  # is published in I12 - here using property of P148, is there need to further specify?
+  # not really clear on distinction between frbroo:R5 and crm:P148
+  crm:P148i_is_component_of worldcat:57511158 ;
+  # advertisement is about 4 things: an organization, a newsletter run, a newsletter issue, and an introductory price
+  crm:P129_is_about wikidata:Q8030842, 
+    locworks:11316280, 
+    <WCA_ADDRESS>,
+    <WCA_NEWSLETTER_X_1>, 
+    <AD_PRICE_I12_AD0_P1> ;
+  # created by the organization running the ad
+  frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ; 
+    crm:P14_carried_out_by wikidata:Q8030842 ] ; 
+  # has a visual representation that can be located at the following iiif address
+  crm:P138i_has_representation <https://iiif.archivelab.org/iiif/heresies_12$96/218,119,1088,1328/full/0/default.jpg> ;
+      rdfs:label "Heresies 12 Women's Caucus for Art advertisement - visual representation" .
+
+
+# These are the things being advertised
+
+# Women's Caucus for Art Newsletter
+locworks:11316280 a frbroo:F18_Serial_Work ;
+  rdfs:label "Women's Caucus for Art Newsletter" ; 
+  crm:P2_has_type wikidata:Q264238 ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+    crm:P14_carried_out_by wikidata:Q8030842 ] ;
+  crm:P129_is_about wikidata:Q1246516 ;
+  crm:P39i_was_measured_by <AD_PRICE_I12_AD0_P1> ;
+  frbroo:R10_has_member <WCA_NEWSLETTER_X_1> .
+
+# Individual newsletter
+<WCA_NEWSLETTER_X_1> a frbroo:F2_Expression ;
+  rdfs:label "WCA Newsletter - Women Artists: A Bibliographic Update" ;
+  crm:P102_has_title "Women Artists: A Bibliographic Update" ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+    crm:P14_carried_out_by wikidata:Q8030842 ] ; 
+  frbroo:R10i_is_member_of locworks:11316280 .
+
+# Price
+<AD_PRICE_I12_AD0_P1> a crm:E16_Measurement ; 
+  rdfs:label "That Fall 1980 Nesletter issue may be ordered on an introductory one-time basis for $2.00 pre-paid" ;
+  crm:P2_has_type "introductory cost" ;
+  crm:P2_has_type "advertised price" ;
+  crm:P39_measured wikidata:Q8030842 ;
+  crm:P40_observed_dimension <2_00_USD> .
+
+
+#----------------------------------------------------------------------------------------------------------------------------
+
+# SECTION 2.1 - AD1 NEW POLITICAL SCIENCE
+
+# This is the advertisement
+<MANIFESTATION_HERESIES_I12_AD1> a frbroo:F3_Manifestation ; 
+  rdfs:label "Heresies 12 New Political Science advertisement" ;
+  # has a Type of "advertisement"
+  crm:P2_has_type wikidata:Q39911916 ;
+  # is published in I12 - here using property of P148, is there need to further specify?
+  # not really clear on distinction between frbroo:R5 and crm:P148
+  crm:P148i_is_component_of worldcat:57511158 ;
+  # advertisement is about 14 things: a journal, an organization, two specific issues, an issue listing (6), 3 pay rates, organization address
+  crm:P129_is_about wikidata:Q15745473, 
+    wikidata:Q5054351,
+    <NEW_POLITICAL_SCIENCE_FALL_1980>,
+    <NEW_POLITICAL_SCIENCE_1>,
+    <NEW_POLITICAL_SCIENCE_2>,
+    <NEW_POLITICAL_SCIENCE_3>,
+    <NEW_POLITICAL_SCIENCE_4>,
+    <NEW_POLITICAL_SCIENCE_5>,
+    <NEW_POLITICAL_SCIENCE_6>,
+    <NEW_POLITICAL_SCIENCE_AMERICAN_LEFT>,
+    <AD_PRICE_I12_AD1_P1>,
+    <AD_PRICE_I12_AD1_P2>,
+    <AD_PRICE_I12_AD1_P3>,
+    <NEW_POLITICAL_SCIENCE_ADDRESS> ;
+  # text copy in the advertisement
+  crm:P165_incorporates <NEW_POLITICAL_SCIENCE_AD_COPY_1>, 
+    <NEW_POLITICAL_SCIENCE_AD_COPY_2> ;
+  # created by the organization running the ad
+  frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ; 
+    crm:P14_carried_out_by wikidata:Q5054351 ] ; 
+  # has a visual representation that can be located at the following iiif address
+  crm:P138i_has_representation <https://iiif.archivelab.org/iiif/heresies_12$96/1318,123,1111,1163/full/0/default.jpg> ; 
+      rdfs:label "Heresies 12 New Political Science advertisement - visual representation" .
+
+
+
+# These are the things being advertised  
+
+# This is the Fall 1980 issue of New Political Science
+<NEW_POLITICAL_SCIENCE_FALL_1980> a frbroo:F2_Expression ; 
+  rdfs:label "New Political Science, Special Fall 1980 Issue, Sexuality & Capitalism" ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+    crm:P14_carried_out_by wikidata:Q5054351 ; 
+    crm:P4_has_time-span [ a crm:E52_Time-Span ; 
+      crm:P82_at_some_time_within "Fall 1980" ; 
+      crm:P82a_begin_of_the_begin "1980-01-01" ; 
+      crm:P82b_end_of_the_end "1980-12-31" ] ] ; 
+  crm:P1_identified_by [ a crm:E33_E41_Linguistic_Appellation ; 
+    rdfs:label "Special Fall 1980 Issue, Sexuality & Capitalism" ] ; 
+    crm:P190_has_symbolic_content "Special Fall 1980 Issue, Sexuality & Capitalism" ; 
+  frbroo:R10i_is_member_of wikidata:Q15745473 ; 
+  frbroo:R67_has_part <NEW_POLITICAL_SCIENCE_1>,
+    <NEW_POLITICAL_SCIENCE_2>,
+    <NEW_POLITICAL_SCIENCE_3>,
+    <NEW_POLITICAL_SCIENCE_4>,
+    <NEW_POLITICAL_SCIENCE_5>,
+    <NEW_POLITICAL_SCIENCE_6> .
+
+<NEW_POLITICAL_SCIENCE_1> a frbroo:F2_Expression ; 
+  rdfs:label "Sexuality & Power: Domonation or Liberation?" ; 
+  crm:P2_has_type wikidata:Q191067 ;
+  crm:P102_has_title "Sexuality & Power: Domonation or Liberation?" ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+      crm:P14_carried_out_by wikidata:Q12811081 ] ;
+    frbroo:R67i_forms_part_of <NEW_POLITICAL_SCIENCE_FALL_1980> .
+
+<NEW_POLITICAL_SCIENCE_2> a frbroo:F2_Expression ; 
+  rdfs:label "Anti-Oedipus & Molecular Politics" ; 
+  crm:P2_has_type wikidata:Q191067 ;
+  crm:P102_has_title "Anti-Oedipus & Molecular Politics" ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+      crm:P14_carried_out_by wikidata:Q7599437 ] ;
+    frbroo:R67i_forms_part_of <NEW_POLITICAL_SCIENCE_FALL_1980> .
+
+<NEW_POLITICAL_SCIENCE_3> a frbroo:F2_Expression ; 
+  rdfs:label "... Socialist Feminism in 1980" ; 
+  crm:P2_has_type wikidata:Q191067 ;
+  crm:P102_has_title "... Socialist Feminism in 1980" ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+      crm:P14_carried_out_by wikidata:Q856008 ] ;
+    frbroo:R67i_forms_part_of <NEW_POLITICAL_SCIENCE_FALL_1980> .    
+
+<NEW_POLITICAL_SCIENCE_4> a frbroo:F2_Expression ; 
+  rdfs:label "Beaver and Male Power in Pornography" ; 
+  crm:P2_has_type wikidata:Q191067 ;
+  crm:P102_has_title "Beaver and Male Power in Pornography" ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+      crm:P14_carried_out_by wikidata:Q241398 ] ;
+    frbroo:R67i_forms_part_of <NEW_POLITICAL_SCIENCE_FALL_1980> .
+
+<NEW_POLITICAL_SCIENCE_5> a frbroo:F2_Expression ; 
+  rdfs:label "Why Women Work for Wages" ; 
+  crm:P2_has_type wikidata:Q191067 ;
+  crm:P102_has_title "Why Women Work for Wages" ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+      crm:P14_carried_out_by <PADDY_QUICK> ] ;
+    frbroo:R67i_forms_part_of <NEW_POLITICAL_SCIENCE_FALL_1980> .
+
+<NEW_POLITICAL_SCIENCE_6> a frbroo:F2_Expression ; 
+  rdfs:label "The Family: Love It or Leave It" ; 
+  crm:P2_has_type wikidata:Q191067 ;
+  crm:P102_has_title "The Family: Love It or Leave It" ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+      crm:P14_carried_out_by wikidata:Q5365061 ] ;
+    frbroo:R67i_forms_part_of <NEW_POLITICAL_SCIENCE_FALL_1980> .
+
+
+<NEW_POLITICAL_SCIENCE_AMERICAN_LEFT> a frbroo:F2_Expression ; 
+  rdfs:label "New Political Science, The American Left in the 1980's" ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+    crm:P14_carried_out_by wikidata:Q5054351 ; 
+  crm:P1_identified_by [ a crm:E33_E41_Linguistic_Appellation ; 
+    rdfs:label "New Political Science, The American Left in the 1980's" ] ] ; 
+    crm:P190_has_symbolic_content "SNew Political Science, The American Left in the 1980's" ; 
+  frbroo:R10i_is_member_of wikidata:Q15745473 .
+
+
+<AD_PRICE_I12_AD1_P1> a crm:E16_Measurement ; 
+  crm:P2_has_type "advertised price" ;
+  crm:P2_has_type "individual" ;
+  crm:P2_has_type "subscription" ;
+  crm:P39_measured wikidata:Q15745473 ;
+  crm:P40_observed_dimension <17_00_USD> .
+
+<AD_PRICE_I12_AD1_P2> a crm:E16_Measurement ; 
+  crm:P2_has_type "advertised price" ;
+  crm:P2_has_type "low-income" ;
+  crm:P2_has_type "subscription" ;
+  crm:P39_measured wikidata:Q15745473 ;
+  crm:P40_observed_dimension <12_00_USD> .
+
+<AD_PRICE_I12_AD1_P3> a crm:E16_Measurement ; 
+  crm:P2_has_type "advertised price" ;
+  crm:P2_has_type "institutional" ;
+  crm:P2_has_type "subscription" ;
+  crm:P39_measured wikidata:Q15745473 ;
+  crm:P40_observed_dimension <28_00_USD> .
+
+
+wikidata:Q15745473 a frbroo:F18_Serial_Work ;
+  rdfs:label "New Political Science"^^xsd:string ;
+  crm:P102_has_title [ a crm:E35_Title ; 
+    crm:P190_has_symbolic_content "Quarterly Journal of the Caucus for a New Political Science" ;
+    crm:P2_has_type wikidata:Q1135389 ] ;
+  crm:P2_has_type wikidata:Q1002697 ;
+  crm:P129_is_about wikidata:Q36442 ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+    crm:P14_carried_out_by wikidata:Q5054351 ] ; 
+  frbroo:R11_has_issuing_rule <ISSUE_RULE_4_ANNUAL> ;
+  crm:P39i_was_measured_by <AD_PRICE_I12_AD0_P1> ,
+    <AD_PRICE_I12_AD0_P2> ,
+    <AD_PRICE_I12_AD0_P3> .
+
+<ISSUE_RULE_4_ANNUAL> a crm:E29_Design_or_Procedure ; 
+  crm:P2_has_type "Issuing rule" ;
+  rdfs:label "Every three months" ; 
+  crm:P43_has_dimension [ a crm:E54_Dimension ; 
+    rdfs:label "quarterly" ;
+    crm:P90_has_value "4" ;
+    crm:P91_has_unit "annual releases" ] .  
+
+
+
+# These are the things being incorporated  
+
+<NEW_POLITICAL_SCIENCE_AD_COPY_1> a crm:E33_Linguistic_Object ; 
+  crm:P129_is_about wikidata:Q5054351 ;
+  crm:P2_has_type "advertising copy" ;
+  crm:P190_has_content "The Caucus for a New Political Science is a national, non-sectarian organization of teachers, students, researchers and activists which aims to advance an alternative politics and create a socialist center of gravity in the profession." .
+
+<NEW_POLITICAL_SCIENCE_AD_COPY_2> a crm:E33_Linguistic_Object ; 
+  crm:P129_is_about wikidata:Q15745473 ;
+  crm:P2_has_type "advertising copy" ;
+  crm:P190_has_content "Featuring book reviews and sections on socialist pedagogy and organizing" .
+
+
+
+#----------------------------------------------------------------------------------------------------------------------------
+
+# SECTION 2.2 - AD2 MAENAD
+
+# !!! ISSUE WITH THIS <WIKIDATA REF> AS IT DOES NOT POINT TO THE JOURNAL BUT AN ARTICLE ABOUT THE JOURNAL
+
+# This is the advertisement
+<MANIFESTATION_HERESIES_I12_AD2> a frbroo:F3_Manifestation ; 
+  rdfs:label "Heresies 12 Maenad advertisement" ;
+  # has a Type of "advertisement"
+  crm:P2_has_type wikidata:Q39911916 ;
+  # is published in I12 - here using property of P148, is there need to further specify?
+  # not really clear on distinction between frbroo:R5 and crm:P148
+  crm:P148i_is_component_of worldcat:57511158 ;
+  # advertisement is about 4 things: a journal, an address, prices (4)
+    crm:P129_is_about <MAENAD>,
+    <MAENAD_CREATOR_ADDRESS>,
+    <AD_PRICE_I12_AD2_P1>,
+    <AD_PRICE_I12_AD2_P2>,
+    <AD_PRICE_I12_AD2_P3>,
+    <AD_PRICE_I12_AD2_P4> ;
+  # created by the organization running the ad
+  frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ; 
+    crm:P14_carried_out_by <MAENAD_CREATOR> ] ; 
+  # text copy in the advertisement
+  crm:P165_incorporates <MAENAD_FEATURES_LIST_1> ;
+  # has a visual representation that can be located at the following iiif address
+  crm:P138i_has_representation <https://iiif.archivelab.org/iiif/heresies_12$96/201,1511,1100,1639/full/0/default.jpg> ; 
+        rdfs:label "Heresies 12 Maenad advertisement - visual representation" .
+
+
+
+# These are the things being advertised  
+
+<AD_PRICE_I12_AD2_P1> a crm:E16_Measurement ; 
+  crm:P2_has_type "advertised price" ;
+  crm:P2_has_type "subscription" ;
+  crm:P39_measured <MAENAD> ;
+  crm:P40_observed_dimension <SUB_1>,
+    <12_00_USD> .
+
+<AD_PRICE_I12_AD2_P2> a crm:E16_Measurement ; 
+  crm:P2_has_type "advertised price" ;
+  crm:P2_has_type "single issue" ;
+  crm:P39_measured <MAENAD> ;
+  crm:P40_observed_dimension <3_50_USD> .
+
+<AD_PRICE_I12_AD2_P3> a crm:E16_Measurement ; 
+    crm:P2_has_type "advertised price" ;
+    crm:P2_has_type "subscription" ;
+    crm:P2_has_type "postage" ;
+    crm:P39_measured <MAENAD> ;
+  crm:P40_observed_dimension <SUB_1>,
+      <2_00_USD> .
+
+<AD_PRICE_I12_AD2_P4> a crm:E16_Measurement ; 
+    crm:P2_has_type "advertised price" ;
+    crm:P2_has_type "individual" ;
+    crm:P2_has_type "postage" ;
+    crm:P39_measured <MAENAD> ;
+  crm:P40_observed_dimension <SUB_1>,
+      <0_50_USD> .
+
+
+<MAENAD> a frbroo:F18_Serial_Work ;
+  rdfs:label "Maenad" ;
+  crm:P2_has_type wikidata:Q1002697 ;
+  crm:P102_has_title [ a crm:E35_Title ; 
+    crm:P190_has_symbolic_content "A Women's Literary Journal" ;
+    crm:P2_has_type wikidata:Q1135389 ] ;
+  crm:P129_is_about wikidata:Q8242, 
+    "women" ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+    crm:P14_carried_out_by <MAENAD_CREATOR> ] ;   
+  crm:P39i_was_measured_by <AD_PRICE_I12_AD2_P1>, 
+    <AD_PRICE_I12_AD2_P2>,
+    <AD_PRICE_I12_AD2_P3>,
+    <AD_PRICE_I12_AD2_P4> .
+
+
+
+# These are the things being incorporated  
+
+<MAENAD_FEATURES_LIST_1> a crm:E33_Linguistic_Object ; 
+  crm:P129_is_about <MAENAD> ;
+  crm:P2_has_type "advertising copy" ;
+  crm:P2_has_type "features list" ;
+  crm:P129_is_about wikidata:Q676,
+    wikidata:Q36649,
+    wikidata:Q8253,
+    wikidata:Q217602,
+    wikidata:Q265158,
+    wikidata:Q17737,
+    wikidata:Q17955 .
+
+
+
+
+
+#----------------------------------------------------------------------------------------------------------------------------
+
+# SECTION 2.3 - AD3 ALTERNATIVE PRESS INDEX
+
+# This is the advertisement
+<MANIFESTATION_HERESIES_I12_AD3> a frbroo:F3_Manifestation ; 
+  rdfs:label "Heresies 12 Alternative Press Index advertisement" ;
+  # has a Type of "advertisement"
+  crm:P2_has_type wikidata:Q39911916 ;
+  # is published in I12 - here using property of P148, is there need to further specify?
+  # not really clear on distinction between frbroo:R5 and crm:P148
+  crm:P148i_is_component_of worldcat:57511158 ;
+  # advertisement is about 3 things: a publication, prices, an address
+  crm:P129_is_about locworks:11196603,
+    <AD_PRICE_I12_AD3_P1>,
+    <AD_PRICE_I12_AD3_P2>,
+    <ALTERNATIVE_PRESS_ADDRESS> ;
+  # text copy in the advertisement
+  crm:P165_incorporates <ALERNATIVE_PRESS_AD_COPY_1>,
+    <ALERNATIVE_PRESS_AD_COPY_2>,
+    <ALERNATIVE_PRESS_TOPIC_LIST_1>,
+    <ALTERNATIVE_PRESS_SUBSCRIPTION_FORM> ;
+  # created by the organization running the ad
+  frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ; 
+    crm:P14_carried_out_by locnames:nr90027206 ] ; 
+  # has a visual representation that can be located at the following iiif address
+  crm:P138i_has_representation <https://iiif.archivelab.org/iiif/heresies_12$96/1381,1385,990,1702/full/0/default.jpg> ; 
+        rdfs:label "Heresies 12 Alternative Press Index advertisement - visual representation" .
+
+
+
+# These are the things being advertised  
+
+<AD_PRICE_I12_AD3_P1> a crm:E16_Measurement ; 
+    crm:P2_has_type "advertised price" ;
+    crm:P2_has_type "library" ;
+    crm:P39_measured locworks:11196603 ;
+  crm:P40_observed_dimension <80_00_USD> .
+
+<AD_PRICE_I12_AD3_P2> a crm:E16_Measurement ; 
+    crm:P2_has_type "advertised price" ;
+    crm:P2_has_type "movement groups" ;
+    crm:P39_measured locworks:11196603 ;
+  crm:P40_observed_dimension <25_00_USD> .
+
+
+locworks:11196603 a frbroo:F18_Serial_Work ;
+  rdfs:label "Alternative Press Index" ;
+  crm:P2_has_type wikidata:Q873506 ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+    crm:P14_carried_out_by locnames:nr90027206 ] ;
+  crm:P129_is_about wikidata:Q192855, 
+    wikidata:Q2482943 ;
+  frbroo:R11_has_issuing_rule <ISSUE_RULE_4_ANNUAL> ;
+  crm:P39i_was_measured_by <AD_PRICE_I12_AD3_P1>, 
+    <AD_PRICE_I12_AD3_P2> .
+
+
+
+# These are the things being incorporated
+
+<ALERNATIVE_PRESS_AD_COPY_1> a crm:E33_Linguistic_Object ; 
+  crm:P129_is_about locworks:11196603 ;
+  crm:P2_has_type "advertising copy" ;
+  crm:P190_has_content "ARE YOU FRUSTRATED BY THE DECENT PRESS? WHY NOT SUBSCRIBE TO THE ALTERNATIVE PRESS INDEX?" .
+
+<ALERNATIVE_PRESS_AD_COPY_1> a crm:E33_Linguistic_Object ; 
+  crm:P129_is_about locworks:11196603 ;
+  crm:P2_has_type "advertising copy" ;
+  crm:P190_has_content "The Alternative Press Index is the only complete index to periodicals that chronicle social change in the U.S. and around the world. Published quarterly, the API is a comprehensive guide to over 150 alternative and radical newspapers, magazines, and journals." .
+
+<ALERNATIVE_PRESS_TOPIC_LIST_1> a crm:E33_Linguistic_Object ; 
+  crm:P129_is_about locworks:11196603 ;
+  crm:P2_has_type "advertising copy" ;
+  crm:P2_has_type "topic list" ;
+  crm:P129_is_about wikidata:Q6199,
+    wikidata:Q208701,
+    wikidata:Q4202245,
+    wikidata:Q7245839,
+    wikidata:Q2482943,
+    "Radical Education",
+    "Black Movement",
+    "Radical Health",
+    wikidata:Q7252,
+    "Radical Science",
+    "Liberation Movements",
+    wikidata:Q7272 .
+
+<ALTERNATIVE_PRESS_SUBSCRIPTION_FORM> a crm:E33_Linguistic_Object ; 
+  crm:P2_has_type "subscription form" ;
+  crm:P129_is_about locnames:nr90027206,
+  <AD_PRICE_I12_AD3_P1>,
+  <AD_PRICE_I12_AD3_P2>, 
+  <ALTERNATIVE_PRESS_ADDRESS> .
+
+
+
+
+
+#----------------------------------------------------------------------------------------------------------------------------
+
+# SECTION 2.4 - AD4 FUSE
+
+# This is the advertisement
+<MANIFESTATION_HERESIES_I12_AD4> a frbroo:F3_Manifestation ; 
+  rdfs:label "Heresies 12 FUSE advertisement"; 
+  # has a Type of "advertisement"
+  crm:P2_has_type wikidata:Q39911916 ;
+  # is published in I12 - here using property of P148, is there need to further specify?
+  # not really clear on distinction between frbroo:R5 and crm:P148
+  crm:P148i_is_component_of worldcat:57511158 ;  
+  # advertisement is about 7 things: a journal, address, a specific issue, prices (4)
+  crm:P129_is_about wikidata:Q5509975, 
+    <FUSE_MUSIC>,
+    <FUSE_ADDRESS>,
+    <AD_PRICE_I12_AD4_P1>,
+    <AD_PRICE_I12_AD4_P2>,
+    <AD_PRICE_I12_AD4_P3>,
+    <AD_PRICE_I12_AD4_P4> ;
+  # text copy in the advertisement
+  crm:P165_incorporates <FUSE_AD_COPY_1>,
+    <FUSE_AD_COPY_2>,
+    <FUSE_TOPIC_LIST_1> ;
+  # created by the organization running the ad
+  frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ; 
+    crm:P14_carried_out_by <FUSE_CREATOR> ] ;   
+  # has a visual representation that can be located at the following iiif address
+  crm:P138i_has_representation <https://iiif.archivelab.org/iiif/heresies_12$97/157,127,1111,1560/full/0/default.jpg> ; 
+        rdfs:label "Heresies 12 FUSE advertisement - visual representation" .
+
+
+# These are the things being advertised
+
+<AD_PRICE_I12_AD4_P1> a crm:E16_Measurement ; 
+    crm:P2_has_type "advertised price" ;
+    crm:P2_has_type "individual" ;
+    crm:P2_has_type "subscription" ;
+    crm:P39_measured wikidata:Q5509975 ;
+  crm:P40_observed_dimension <12_00_USD> .
+
+<AD_PRICE_I12_AD4_P2> a crm:E16_Measurement ; 
+    crm:P2_has_type "advertised price" ;
+    crm:P2_has_type "institutional" ;
+    crm:P2_has_type "subscription" ;
+    crm:P39_measured wikidata:Q5509975 ;
+  crm:P40_observed_dimension <18_00_USD> .
+
+<AD_PRICE_I12_AD4_P3> a crm:E16_Measurement ; 
+    crm:P2_has_type "advertised price" ;
+    crm:P2_has_type "postage" ;
+    crm:P2_has_type "international" ;
+    crm:P39_measured wikidata:Q5509975 ;
+  crm:P40_observed_dimension <3_00_USD> .
+
+
+<AD_PRICE_I12_AD4_P4> a crm:E16_Measurement ; 
+    crm:P2_has_type "advertised price" ;
+    crm:P2_has_type "single issue" ;
+    crm:P39_measured <FUSE_MUSIC> ;
+  crm:P40_observed_dimension <1_00_USD> .
+
+
+
+# This is the Music issue of FUSE
+<FUSE_MUSIC> a frbroo:F2_Expression ; 
+  rdfs:label "FUSE Music Supplement (January 1981)" ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+    crm:P14_carried_out_by <FUSE_CREATOR> ] ; 
+  crm:P39i_was_measured_by <AD_PRICE_I12_AD4_P4> ;
+  frbroo:R10i_is_member_of wikidata:Q5509975 .
+
+
+wikidata:Q5509975 a frbroo:F18_Serial_Work ;
+  rdfs:label "FUSE" ; 
+  crm:P2_has_type wikidata:Q1002697 ;
+  crm:P129_is_about wikidata:Q2482943, 
+    wikidata:Q735 ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+    crm:P14_carried_out_by <FUSE_CREATOR> ] ; 
+  crm:P39i_was_measured_by <AD_PRICE_I12_AD4_P1>,
+    <AD_PRICE_I12_AD4_P2>,
+    <AD_PRICE_I12_AD4_P3> ;
+  frbroo:R10_has_member <FUSE_MUSIC> .
+
+
+
+# These are the things being incorporated
+
+<FUSE_AD_COPY_1> a crm:E33_Linguistic_Object ; 
+  crm:P129_is_about wikidata:Q5509975 ;
+  crm:P2_has_type "advertising copy" ;
+  crm:P190_has_content "FUSE focuses on socially relevant contemporary culture which ensures comprehensive women's coverage, such as Women's Performance, the Economic Position of Women within the Arts, the UN Festival of Women Artists, 'Pornographic' Women's Art, and the Multi-media Incest Awareness Project from the Women's Building in Los Angeles. Profiles of contemporary feminist artists like Carolee Schneeman, Martha Rosler, and Susan Britton appear regularly ... and then of course there are reviews of books, films, videotapes, exhibitions, records, performances - alternative works by and for women." .
+
+<FUSE_AD_COPY_2> a crm:E33_Linguistic_Object ; 
+  crm:P129_is_about wikidata:Q5509975 ;
+  crm:P2_has_type "advertising copy" ;
+  crm:P190_has_content "Outside of the cultural field, features on Women & Infanticide, the Criminalization of Immigrant Women, Makeup as Mask, Anorexia Nervosa, Unionized Women vs. Surveillance Systems, Censorship & Women, Strippers Unionizing, and Media Access for Women have appeared in the past two years." .
+
+<FUSE_TOPIC_LIST_1> a crm:E33_Linguistic_Object ; 
+  crm:P129_is_about wikidata:Q5509975 ;
+  crm:P2_has_type "advertising copy" ;
+  crm:P2_has_type "topic list" ;
+  crm:P129_is_about "Women's Performance",
+    "Economic Position of Women within the Arts",
+    "UN Festival of Women Artists",
+    "'Pornographic' Women's Art",
+    "Multi-media Incest Awareness Project",
+    "Women & Infanticide",
+    "the Criminalization of Immigrant Women",
+    "Makeup as Mask",
+    "Anorexia Nervosa",
+    "Unionized Women vs. Surveillance Systems",
+    "Censorship & Women",
+    "Strippers Unionizing",
+    "Media Access for Women" .
+
+
+
+
+
+#----------------------------------------------------------------------------------------------------------------------------
+
+# SECTION 2.5 - AD5 FEMINIST STUDIES
+
+# This is the advertisement
+<MANIFESTATION_HERESIES_I12_AD5> a frbroo:F3_Manifestation ; 
+  rdfs:label "Heresies 12 Feminist Studies advertisement"; 
+  # has a Type of "advertisement"
+  crm:P2_has_type wikidata:Q39911916 ;
+  # is published in I12 - here using property of P148, is there need to further specify?
+  # not really clear on distinction between frbroo:R5 and crm:P148
+  crm:P148i_is_component_of worldcat:57511158 ;  
+  # advertisement is about many things: a journal, an issue, a series of publications, how often the journal runs, prices, and contact information
+  crm:P129_is_about wikidata:Q1404511,
+    <FEMINIST_STUDIES_VII_1>,
+    <FEMINIST_STUDIES_7_1>,
+    <FEMINIST_STUDIES_7_2>,
+    <FEMINIST_STUDIES_7_3>,
+    <FEMINIST_STUDIES_7_4>,
+    <FEMINIST_STUDIES_7_5>,
+    <FEMINIST_STUDIES_7_6>,
+    <FEMINIST_STUDIES_7_7>,
+    <FEMINIST_STUDIES_7_8>,
+    <FEMINIST_STUDIES_7_9>,
+    <FEMINIST_STUDIES_7_10>,
+    <AD_PRICE_I12_AD5_P1>,
+    <AD_PRICE_I12_AD5_P2>,
+    <AD_PRICE_I12_AD5_P3>,
+    <AD_PRICE_I12_AD5_P4>,
+    <AD_PRICE_I12_AD5_P5>,
+    <AD_PRICE_I12_AD5_P6>,
+    <AD_PRICE_I12_AD5_P7>,
+    <AD_PRICE_I12_AD5_P8>,
+    <AD_PRICE_I12_AD5_P9>,
+    <AD_PRICE_I12_AD5_P10>,
+    <FEMINIST_STUDIES_ADDRESS> ;
+  # created by the organization running the ad
+  frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ; 
+    crm:P14_carried_out_by <FEMINIST_STUDIES_CREATORS> ] ;   
+  # has a visual representation that can be located at the following iiif address
+  crm:P138i_has_representation <https://iiif.archivelab.org/iiif/heresies_12$97/1288,136,1099,1551/full/0/default.jpg> ; 
+        rdfs:label "Heresies 12 Feminist Studies advertisement - visual representation" .
+  
+
+
+# These are the things being advertised  
+
+# This is the Volume 7, No. 1, Spring 1981 issue of Feminist Studies
+<FEMINIST_STUDIES_VII_1> a frbroo:F2_Expression ; 
+  rdfs:label "Feminist Studies, Volume 7, No. 1, Spring 1981" ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+    crm:P14_carried_out_by <FEMINIST_STUDIES_CREATORS> ; 
+    crm:P4_has_time-span [ a crm:E52_Time-Span ; 
+      crm:P82_at_some_time_within "Spring 1981" ; 
+      crm:P82a_begin_of_the_begin "1981-01-01" ; 
+      crm:P82b_end_of_the_end "1981-12-31" ] ] ; 
+  crm:P1_identified_by [ a crm:E33_E41_Linguistic_Appellation ; 
+    rdfs:label "Volume 7, No. 1, Spring 1981" ; 
+    crm:P106_is_composed_of [ a crm:E33_E41_Linguistic_Appellation ; 
+        crm:P190_has_symbolic_content "7" ; 
+        crm:P2_has_type "volume number" ],
+    [ a crm:E33_E41_Linguistic_Appellation ; 
+        crm:P190_has_symbolic_content "1" ; 
+        crm:P2_has_type "issue number" ],
+    [ a crm:E33_E41_Linguistic_Appellation ; 
+        crm:P190_has_symbolic_content "Spring 1981" ; 
+        crm:P2_has_type "seasonal date" ] ] ;
+  frbroo:R10i_is_member_of wikidata:Q1404511 ; 
+  frbroo:R67_has_part <FEMINIST_STUDIES_7_1>,
+    <FEMINIST_STUDIES_7_2>,
+    <FEMINIST_STUDIES_7_3>,
+    <FEMINIST_STUDIES_7_4>,
+    <FEMINIST_STUDIES_7_5>,
+    <FEMINIST_STUDIES_7_6>,
+    <FEMINIST_STUDIES_7_7>,
+    <FEMINIST_STUDIES_7_8>,
+    <FEMINIST_STUDIES_7_9>,
+    <FEMINIST_STUDIES_7_10> .
+
+
+<FEMINIST_STUDIES_7_1> a frbroo:F2_Expression ; 
+  rdfs:label "Never Again: The Organization of Atomic Bomb Victims in Osaka" ; 
+  crm:P2_has_type wikidata:Q191067 ;
+  crm:P102_has_title "Never Again: The Organization of Atomic Bomb Victims in Osaka" ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+      crm:P14_carried_out_by locnames:n2005062665, 
+        locnames:n85830806 ] ;
+    frbroo:R67i_forms_part_of <FEMINIST_STUDIES_VII_1> .
+
+<FEMINIST_STUDIES_7_2> a frbroo:F2_Expression ; 
+  rdfs:label "Two Poets of the Sandinista Struggle" ; 
+  crm:P2_has_type wikidata:Q191067 ;
+  crm:P102_has_title "Two Poets of the Sandinista Struggle" ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+      crm:P14_carried_out_by locnames:n86078083 ] ;
+    frbroo:R67i_forms_part_of <FEMINIST_STUDIES_VII_1> .
+
+<FEMINIST_STUDIES_7_3> a frbroo:F2_Expression ; 
+  rdfs:label "Gender and Dichotomy" ; 
+  crm:P2_has_type wikidata:Q191067 ;
+  crm:P102_has_title "Gender and Dichotomy" ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+      crm:P14_carried_out_by locnames:n89649099 ] ;
+    frbroo:R67i_forms_part_of <FEMINIST_STUDIES_VII_1> . 
+    
+<FEMINIST_STUDIES_7_4> a frbroo:F2_Expression ; 
+  rdfs:label "Family Reform Movements: Recent Feminism and its Opposition" ; 
+  crm:P2_has_type wikidata:Q191067 ;
+  crm:P102_has_title "Family Reform Movements: Recent Feminism and its Opposition" ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+      crm:P14_carried_out_by locnames:nr2001009350 ] ;
+    frbroo:R67i_forms_part_of <FEMINIST_STUDIES_VII_1> .       
+
+<FEMINIST_STUDIES_7_5> a frbroo:F2_Expression ; 
+  rdfs:label "With Stones from the Gorge" ; 
+  crm:P2_has_type wikidata:Q191067 ;
+  crm:P102_has_title "With Stones from the Gorge" ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+      crm:P14_carried_out_by locnames:n85274183 ] ;
+    frbroo:R67i_forms_part_of <FEMINIST_STUDIES_VII_1> .
+
+<FEMINIST_STUDIES_7_6> a frbroo:F2_Expression ; 
+  rdfs:label "Emma Goldman on Marry Wollstonecraft" ; 
+  crm:P2_has_type wikidata:Q191067 ;
+  crm:P102_has_title "Emma Goldman on Marry Wollstonecraft" ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+      crm:P14_carried_out_by locnames:n83173733 ] ;
+    frbroo:R67i_forms_part_of <FEMINIST_STUDIES_VII_1> .
+
+<FEMINIST_STUDIES_7_7> a frbroo:F2_Expression ; 
+  rdfs:label "Feminism as Life-Process: The Life and Career of Lucy Sprague Michtell" ; 
+  crm:P2_has_type wikidata:Q191067 ;
+  crm:P102_has_title "Feminism as Life-Process: The Life and Career of Lucy Sprague Michtell" ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+      crm:P14_carried_out_by wikidata:Q56000281 ] ;
+    frbroo:R67i_forms_part_of <FEMINIST_STUDIES_VII_1> .
+
+<FEMINIST_STUDIES_7_8> a frbroo:F2_Expression ; 
+  rdfs:label "Review Essay by Berenice Fisher" ; 
+  crm:P2_has_type wikidata:Q191067 ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+      crm:P14_carried_out_by locnames:n90633558 ] ;
+    frbroo:R67i_forms_part_of <FEMINIST_STUDIES_VII_1> .
+
+<FEMINIST_STUDIES_7_9> a frbroo:F2_Expression ; 
+  rdfs:label "Poems by Gioconda Belli" ; 
+  crm:P2_has_type wikidata:Q482;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+      crm:P14_carried_out_by wikidata:Q290491 ] ;
+    frbroo:R67i_forms_part_of <FEMINIST_STUDIES_VII_1> .
+
+<FEMINIST_STUDIES_7_10> a frbroo:F2_Expression ; 
+  rdfs:label "Poems by Claribel Alegria" ; 
+  crm:P2_has_type wikidata:Q482 ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+      crm:P14_carried_out_by wikidata:Q270601 ] ;
+    frbroo:R67i_forms_part_of <FEMINIST_STUDIES_VII_1> .
+
+
+<AD_PRICE_I12_AD5_P1> a crm:E16_Measurement ; 
+  crm:P2_has_type "advertised price" ;
+  crm:P2_has_type "subscription" ;
+  crm:P2_has_type "individual" ;
+  crm:P39_measured wikidata:Q1404511 ;
+    crm:P40_observed_dimension <SUB_1>,
+      <13_00_USD> .
+
+<AD_PRICE_I12_AD5_P2> a crm:E16_Measurement ; 
+    crm:P2_has_type "advertised price" ;
+    crm:P2_has_type "subscription" ;
+    crm:P2_has_type "individual" ;
+    crm:P39_measured wikidata:Q1404511 ;
+    crm:P40_observed_dimension <SUB_2>,
+      <24_00_USD> .
+
+<AD_PRICE_I12_AD5_P3> a crm:E16_Measurement ; 
+    crm:P2_has_type "advertised price" ;
+    crm:P2_has_type "subscription" ;
+    crm:P2_has_type "individual" ;
+    crm:P39_measured wikidata:Q1404511 ;
+    crm:P40_observed_dimension <SUB_3>,
+      <35_00_USD> .
+
+<AD_PRICE_I12_AD5_P4> a crm:E16_Measurement ; 
+    crm:P2_has_type "advertised price" ;
+    crm:P2_has_type "subscription" ;
+    crm:P2_has_type "institution" ;
+    crm:P39_measured wikidata:Q1404511 ;
+  crm:P40_observed_dimension <SUB_1>,
+      <24_00_USD> .
+
+<AD_PRICE_I12_AD5_P5> a crm:E16_Measurement ; 
+    crm:P2_has_type "advertised price" ;
+    crm:P2_has_type "subscription" ;
+    crm:P2_has_type "institution" ;
+    crm:P39_measured wikidata:Q1404511 ;
+  crm:P40_observed_dimension <SUB_2>,
+      <46_00_USD> .
+
+<AD_PRICE_I12_AD5_P6> a crm:E16_Measurement ; 
+    crm:P2_has_type "advertised price" ;
+    crm:P2_has_type "subscription" ;
+    crm:P2_has_type "institution" ;
+    crm:P39_measured wikidata:Q1404511 ;
+  crm:P40_observed_dimension <SUB_3>,
+      <68_00_USD> .
+
+<AD_PRICE_I12_AD5_P7> a crm:E16_Measurement  ; 
+    crm:P2_has_type "advertised price" ;
+    crm:P2_has_type "subscription" ;
+    crm:P2_has_type "foreign postage" ;
+    crm:P2_has_type "surface" ;
+    crm:P39_measured wikidata:Q1404511 ;
+  crm:P40_observed_dimension <SUB_1>,
+      <4_00_USD> .
+
+<AD_PRICE_I12_AD5_P8> a crm:E16_Measurement ; 
+    crm:P2_has_type "advertised price" ;
+    crm:P2_has_type "subscription" ;
+    crm:P2_has_type "foreign postage" ;
+    crm:P2_has_type "airmail" ;
+    crm:P39_measured wikidata:Q1404511 ;
+  crm:P40_observed_dimension <SUB_1>,
+      <14_00_USD> .
+
+<AD_PRICE_I12_AD5_P9> a crm:E16_Measurement ; 
+    crm:P2_has_type "advertised price" ;
+    crm:P2_has_type "single issue" ;
+    crm:P2_has_type "individual" ;
+    crm:P39_measured wikidata:Q1404511 ;
+    crm:P40_observed_dimension <5_00_USD> .
+
+<AD_PRICE_I12_AD5_P10> a crm:E16_Measurement ; 
+    crm:P2_has_type "advertised price" ;
+    crm:P2_has_type "single issue" ;
+    crm:P2_has_type "institution" ;
+    crm:P39_measured wikidata:Q1404511 ;
+  crm:P40_observed_dimension <10_00_USD> .
+
+
+wikidata:Q1404511 a frbroo:F18_Serial_Work ;
+  rdfs:label "Feminist Studies" ; 
+  crm:P102_has_title "Feminist Studies" ; 
+  crm:P2_has_type wikidata:Q1002697 ;
+  crm:P129_is_about wikidata:Q35069, 
+    wikidata:Q7252 ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+    crm:P14_carried_out_by <FEMINIST_STUDIES_CREATORS> ] ; 
+  frbroo:R10_has_member <FEMINIST_STUDIES_VII_1> ; 
+  frbroo:R11_has_issuing_rule <ISSUE_RULE_3_ANNUAL> ; 
+  crm:P39i_was_measured_by <AD_PRICE_I12_AD5_P1>,
+    <AD_PRICE_I12_AD5_P2>,
+    <AD_PRICE_I12_AD5_P3>,
+    <AD_PRICE_I12_AD5_P4>,
+    <AD_PRICE_I12_AD5_P5>,
+    <AD_PRICE_I12_AD5_P6>,
+    <AD_PRICE_I12_AD5_P7>,
+    <AD_PRICE_I12_AD5_P8>,
+    <AD_PRICE_I12_AD5_P9>,
+    <AD_PRICE_I12_AD5_P10> .
+
+<ISSUE_RULE_3_ANNUAL> a crm:E29_Design_or_Procedure ; 
+  rdfs:label "Three issues annually" ; 
+  crm:P2_has_type "Issuing rule" ;
+  crm:P43_has_dimension [ a crm:E54_Dimension ; 
+    crm:P90_has_value "3" ;
+    crm:P91_has_unit "annual releases" ] .  
+
+
+
+
+#----------------------------------------------------------------------------------------------------------------------------
+
+# SECTION 2.6 - AD6 LESBIAN HERSTORY ARCHIVES
+
+# This is the advertisement
+<MANIFESTATION_HERESIES_I12_AD6> a frbroo:F3_Manifestation ; 
+  rdfs:label "Heresies 12 Lesbian Herstory Archives advertisement"; 
+# has a Type of "advertisement"
+  crm:P2_has_type wikidata:Q39911916 ;
+  # is published in I12 - here using property of P148, is there need to further specify?
+  # not really clear on distinction between frbroo:R5 and crm:P148
+  crm:P148i_is_component_of worldcat:57511158 ;  
+  # advertisement is about 1 thing: an organization
+  crm:P129_is_about wikidata:Q6530249, 
+    <LESBIAN_HERSTORY_ARCHIVES_ADDRESS> ;
+  # text copy in the advertisement
+  crm:P165_incorporates <LESBIAN_HERSTORY_ARCHIVES_AD_COPY_1>,
+    <LESBIAN_HERSTORY_ARCHIVES_AD_COPY_2>,
+    <LESBIAN_HERSTORY_ARCHIVES_AD_COPY_3>,
+    <LESBIAN_HERSTORY_ARCHIVES_FEATURES_LIST_1> ; 
+  # created by the organization running the ad
+  frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ; 
+    crm:P14_carried_out_by wikidata:Q6530249 ] ;
+  # has a visual representation that can be located at the following iiif address
+  crm:P138i_has_representation <https://iiif.archivelab.org/iiif/heresies_12$97/152,1691,2203,398/full/0/default.jpg> ; 
+        rdfs:label "Heresies 12 Lesbian Herstory Archives advertisement - visual representation" .
+
+
+
+# These are the things being advertised  
+# Nothing unique here
+
+# These are the things being incorporated
+
+<LESBIAN_HERSTORY_ARCHIVES_AD_COPY_1> a crm:E33_Linguistic_Object ; 
+  crm:P129_is_about wikidata:Q6530249 ;
+  crm:P2_has_type "advertising copy" ;
+  crm:P190_has_content "A PLACE TO READ - TO DO RESEARCH, TO BROWSE, TO SEE WHO WE WERE AND WHO WE ARE" .
+
+<LESBIAN_HERSTORY_ARCHIVES_AD_COPY_2> a crm:E33_Linguistic_Object ; 
+  crm:P129_is_about wikidata:Q6530249 ;
+  crm:P2_has_type "advertising copy" ;
+  crm:P190_has_content "The LESBIAN HERSTORY ARCHIVES collects material on every aspect of Lesbian culture. We have books, magazines, news clippings, bibliographies, photos, historical information, tapes, films, diaries, graphics, memorabilia, and obscure references to our lives." . 
+
+<LESBIAN_HERSTORY_ARCHIVES_AD_COPY_3> a crm:E33_Linguistic_Object ; 
+  crm:P129_is_about wikidata:Q6530249 ;
+  crm:P2_has_type "advertising copy" ;
+  crm:P190_has_content "If you have Lesbian material that you would like to donate or want to use the Archives, write to us or call." . 
+
+<LESBIAN_HERSTORY_ARCHIVES_FEATURES_LIST_1> a crm:E33_Linguistic_Object ; 
+  crm:P129_is_about wikidata:Q6530249 ;
+  crm:P2_has_type "advertising copy" ;
+  crm:P2_has_type "features list" ;
+  crm:P129_is_about wikidata:Q571,
+    wikidata:Q41298,
+    wikidata:Q65651503,
+    wikidata:Q1631107,
+    wikidata:Q125191,
+    "historical information",
+    wikidata:Q747779,
+    wikidata:Q11424,
+    wikidata:Q185598,
+    wikidata:Q478798,
+    wikidata:Q212469,
+    "obscure references to our lives" .

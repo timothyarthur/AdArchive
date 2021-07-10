@@ -1,0 +1,102 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmpc: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+@prefix locnames: <https://id.loc.gov/authorities/names/> .
+@prefix locworks: <https://id.loc.gov/resources/works/> .
+@prefix locprovs: <http://id.loc.gov/entities/providers/> .
+@prefix locinsts: <http://id.loc.gov/resources/instances/> .
+@prefix worldcat: <http://worldcat.org/entity/work/id/> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix schema: <https://schema.org/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+
+#----------------------------------------------------------------------------------------------------------------------------
+
+# SECTION 1 - DECLARATION OF PREPARATORY INFORMATION
+
+# DECLARE THE EXISTANCE OF HERESIES
+# If you wish to state further details about Heresies as a publication you may want to break out the Creation event
+
+# Heresies is a serial publication with volumes/issues ("members"), created by the Heresies Collective
+wikidata:Q17022558 a frbroo:F18_Serial_Work
+  rdfs:label "Heresies" ;
+  crm:P2_has_type wikidata:Q1002697 ;
+  crm:P102_has_title [ a crm:E35_Title ;
+    crm:P2_has_type bf:Title ;
+    crm:P190_has_symbolic_content "Heresies: A Feminist Publication on Art and Politics"] ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation;
+    crm:P14_carried_out_by wikidata:Q20857976 ] ;
+  frbroo:R10_has_member worldcat:5612572673 .
+
+# DECLARE THE EXISTENCE OF THE ISSUE UNDER CONSIDERATION IN THIS DATASET
+# If you wish to state further details about Heresies as a publication you may want to break out the Creation event
+
+# Issue #23 "Coming of Age"
+worldcat:5612572673 a frbroo:F3_Manifestation ;
+  rdfs:label "Heresies: A Feminist Publication on Art and Politics - Issue 23: Coming of Age"
+  crm:P2_has_type wikidata:Q28869365 ;
+  crm:P102_has_title [ a crm:E35_Title ;
+    crm:P2_has_type bf:Title ;
+    crm:P190_has_symbolic_content "Coming of Age" ] ;
+  frbroo:R24i_was_created_through [ a frbrpp:F30_Manifestation_Creation ;
+    crm:P14_carried_out_by wikidata:Q20857976 ] ;
+  crm:P148_has_component _:H23_OOBs
+
+#----------------------------------------------------------------------------------------------------------------------------
+
+# SECTION 2 - THE ADVERTISEMENTS
+
+#Section 2.0 - Off Our Backs Ad
+<MANIFESTATION_HERESIES_I23_AD0> a frbroo:F3_Manifestation ;
+  rdfs:label "Heresies 23 off our backs advertisement"
+  crm:P2_has_type wikidata:Q39911916 ;
+  crm:P148i_is_component_of worldcat:5612572673 ;
+  #Double check abouts: off our backs. What else? subscription prices. Address. Testimonial?
+  #What about overall topic?
+  crm:P129_is_about wikidata:Q7078947 ,
+    <OFF_OUR_BACKS_CREATORS_ADDRESS> ,
+    <AD_PRICE_I23_AD0_P1> ,
+    <AD_PRICE_I23_AD0_P2> ,
+    "feminist news" ;
+  frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ;
+    crm:P14_carried_out_by wikidata:Q7078947 ] ;
+  crm:P165_incorporates <OFF_OUR_BACKS_TOPIC_LIST_1> ,
+  #Check relationship between copy and other elements
+    <OFF_OUR_BACKS_TOPIC_LIST_2> ,
+    <OFF_OUR_BACKS_TOPIC_LIST_3> ,
+    <OFF_OUR_BACKS_FEATURES_LIST_1> ,
+    <OFF_OUR_BACKS_FEATURES_LIST_2> ,
+    <OFF_OUR_BACKS_FEATURES_LIST_3> ,
+    <OFF_OUR_BACKS_ENDORSEMENT> ,
+    <OFF_OUR_BACKS_SUBSCRIPTION_FORM> ;
+  crm:P138i_has_representation <https://iiif.archivelab.org/iiif/heresies_23$97/912,158,596,1202/full/0/default.jpg> ;
+      rdfs:label "Heresies 23 off our backs advertisement - visual representation" .
+
+# These are the things being advertised
+
+<AD_PRICE_I23_AD0_P1> a crm:E16_Measurement ;
+  crm:P2_has_type schema:ListPrice ;
+
+# These are the things being incorporated
+<OFF_OUR_BACKS_TOPIC_LIST_1> a crm:E33_Linguistic_Object ;
+  crm:P129_is_about wikidata:Q7078947 ;
+  crm:P2_has_type "advertising copy",
+    "topic list" ;
+  crm:P129_is_about "working women's issues",
+    "health",
+    "reproductive rights",
+    "Black women's issues",
+    "Lesbian and gay rights" ;
+  #Can copy simply be incorporated here?
+  #This string also includes a feature list from our previous model
+  crm:P190_has_content "news from every continent - working women's issues, health, reproductive rights, Black women's issues, lesbian and gay rights"
+
+#ADDRESSES NOT MENTIONED IN THIS SECTION IN LINCS DATA. WHY NOT?
+#<OFF_OUR_BACKS_CREATORS_ADDRESS>

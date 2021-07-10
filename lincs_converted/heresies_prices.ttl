@@ -1,0 +1,425 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmpc: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+@prefix locnames: <https://id.loc.gov/authorities/names/> .
+@prefix locworks: <https://id.loc.gov/resources/works/> .
+@prefix locprovs: <http://id.loc.gov/entities/providers/> .
+@prefix locinsts: <http://id.loc.gov/resources/instances/> .
+@prefix worldcat: <http://worldcat.org/entity/work/id/> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+
+#----------------------------------------------------------------------------------------------------------------------------
+
+#Subscription lengths
+
+<SUB_1> a crm:E54_Dimension ;
+  rdfs:label "1 year" ;
+    crm:P2_has_type "subscription duration" ;
+    crm:P90_has_value "1" ;
+    crm:P91_has_unit "year" .
+
+<SUB_2> a crm:E54_Dimension ;
+  rdfs:label "2 years" ;
+    crm:P2_has_type "subscription duration" ;
+    crm:P90_has_value "2" ;
+    crm:P91_has_unit "year" .
+
+<SUB_3> a crm:E54_Dimension ;
+  rdfs:label "3 years" ;
+    crm:P2_has_type "subscription duration" ;
+    crm:P90_has_value "3" ;
+    crm:P91_has_unit "year" .
+
+
+
+# Price amounts
+
+<2_00_USD> a crm:E54_Dimension ; 
+    crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$2.00" ;
+    crm:P90_has_value "2.00" ;
+    crm:P91_has_unit "dollars" .
+
+<17_00_USD> a crm:E54_Dimension ; 
+    crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$17.00" ;
+    crm:P90_has_value "17.00" ;
+    crm:P91_has_unit "dollars" .
+
+<12_00_USD> a crm:E54_Dimension ; 
+    crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$12.00" ;
+    crm:P90_has_value "12.00" ;
+    crm:P91_has_unit "dollars" .
+
+<28_00_USD> a crm:E54_Dimension ; 
+    crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$28.00" ;
+    crm:P90_has_value "28.00" ;
+    crm:P91_has_unit "dollars" .
+
+<3_50_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$3.50" ;
+  crm:P90_has_value "3.50" ;
+  crm:P91_has_unit "us dollars" .
+
+<0_50_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$0.50" ;
+    crm:P90_has_value "0.50" ;
+    crm:P91_has_unit "us dollars" .
+
+<80_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$80.00" ;
+    crm:P90_has_value "80.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<25_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$25.00" ;
+    crm:P90_has_value "80.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<18_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$18.00" ;
+  crm:P90_has_value "18.00" ;
+  crm:P91_has_unit "us dollars" .
+
+<3_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$3.00" ;
+  crm:P90_has_value "3.00" ;
+  crm:P91_has_unit "us dollars" .
+
+<1_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$1.00" ;
+  crm:P90_has_value "1.00" ;
+  crm:P91_has_unit "us dollars" .
+
+<13_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$13.00" ;
+    crm:P90_has_value "13.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<24_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$24.00" ;
+    crm:P90_has_value "24.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<35_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$35.00" ;
+    crm:P90_has_value "35.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<46_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$46.00" ;
+    crm:P90_has_value "46.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<68_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$68.00" ;
+    crm:P90_has_value "68.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<4_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$4.00" ;
+    crm:P90_has_value "4.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<14_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$14.00" ;
+    crm:P90_has_value "14.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<5_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$5.00" ;
+    crm:P90_has_value "5.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<10_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$10.00" ;
+    crm:P90_has_value "10.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<10_50_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$10.50" ;
+    crm:P90_has_value "10.50" ;
+    crm:P91_has_unit "us dollars" .
+
+<21_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$21.00" ;
+    crm:P90_has_value "21.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<27_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$27.00" ;
+    crm:P90_has_value "27.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<70_00_USD> a crm:E54_Dimension ;
+    rdfs:label "US $70.00" ;
+    crm:P90_has_value "70.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<31_81_GBP> a crm:E54_Dimension ;
+    rdfs:label "GBP 31.81" ;
+    crm:P90_has_value "31.81" ;
+    crm:P91_has_unit "stirling pounds" .
+
+<133_00_USD> a crm:E54_Dimension ;
+	rdfs:label "US $133.00" ;
+    crm:P90_has_value "133.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<60_45_GBP> a crm:E54_Dimension ;
+	rdfs:label "GBP 60.45" ;
+    crm:P90_has_value "60.45" ;
+    crm:P91_has_unit "stirling pounds" .
+
+<30_00_USD> a crm:E54_Dimension ;
+	rdfs:label "US $30.00" ;
+    crm:P90_has_value "30.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<13_63_GBP> a crm:E54_Dimension ;
+	rdfs:label "GBP 13.61" ;
+    crm:P90_has_value "13.63" ;
+    crm:P91_has_unit "stirling pounds" .
+
+<PRICE_0> a crm:E54_Dimension ;
+	rdfs:label "Free" ;
+    crm:P90_has_value "0" ;
+    crm:P91_has_unit "dollars" .
+
+<29_50_USD> a crm:E54_Dimension ;
+	rdfs:label "US $29.50" ;
+    crm:P90_has_value "29.50" ;
+    crm:P91_has_unit "us dollars" .
+
+<12_85_GBP> a crm:E54_Dimension ;
+	rdfs:label "GBP 12.85" ;
+    crm:P90_has_value "12.85" ;
+    crm:P91_has_unit "stirling pounds" .
+
+<14_25_USD> a crm:E54_Dimension ;
+	rdfs:label "US $14.25" ;
+    crm:P90_has_value "14.25" ;
+    crm:P91_has_unit "us dollars" .
+
+<6_00_GBP> a crm:E54_Dimension ;
+	rdfs:label "GBP 6.00" ;
+    crm:P90_has_value "6.00" ;
+    crm:P91_has_unit "stirling pounds" .
+
+<5_75_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$5.75" ;
+    crm:P90_has_value "5.75" ;
+    crm:P91_has_unit "us dollars" .
+
+<7_50_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$7.50" ;
+    crm:P90_has_value "7.50" ;
+    crm:P91_has_unit "us dollars" .
+
+<9_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$9.00" ;
+    crm:P90_has_value "9.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<15_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$15.00" ;
+    crm:P90_has_value "15.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<3_25_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$3.25" ;
+    crm:P90_has_value "3.25" ;
+    crm:P91_has_unit "us dollars" .
+
+<11_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$11.00" ;
+    crm:P90_has_value "11.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<8_50_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$8.50" ;
+    crm:P90_has_value "8.50" ;
+    crm:P91_has_unit "us dollars" .
+
+<3_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$3.00" ;
+    crm:P90_has_value "3.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<13_50_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$13.50" ;
+    crm:P90_has_value "13.50" ;
+    crm:P91_has_unit "us dollars" .
+
+<16_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$16.00" ;
+    crm:P90_has_value "16.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<1_50_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$1.50" ;
+    crm:P90_has_value "1.50" ;
+    crm:P91_has_unit "us dollars" .
+
+<7_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$7.00" ;
+    crm:P90_has_value "7.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<20_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$20.00" ;
+    crm:P90_has_value "20.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<0_60_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$0.60" ;
+    crm:P90_has_value "0.60" ;
+    crm:P91_has_unit "us dollars" .
+
+<8_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$8.00" ;
+    crm:P90_has_value "8.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<2_75_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$2.75" ;
+    crm:P90_has_value "2.75" ;
+    crm:P91_has_unit "us dollars" .
+
+<6_50_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$6.50" ;
+    crm:P90_has_value "6.50" ;
+    crm:P91_has_unit "us dollars" .
+
+<2_50_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$2.50" ;
+    crm:P90_has_value "2.50" ;
+    crm:P91_has_unit "us dollars" .
+
+<40_00_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$40.00" ;
+    crm:P90_has_value "40.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<0_75_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$0.75" ;
+    crm:P90_has_value "0.75" ;
+    crm:P91_has_unit "us dollars" .
+
+<45_00_USD> a crm:E54_Dimension ;
+    crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$45.00" ;
+    crm:P90_has_value "45.00" ;
+    crm:P91_has_unit "us dollars" .
+
+<1_25_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$1.25" ;
+    crm:P90_has_value "1.25" ;
+    crm:P91_has_unit "us dollars" .
+
+<2_20_GBP> a crm:E54_Dimension ;
+    rdfs:label "GBP 2.20" ;
+    crm:P90_has_value "2.20" ;
+    crm:P91_has_unit "stirling pounds" .
+
+<4_00_GBP> a crm:E54_Dimension ;
+    rdfs:label "GBP 4.00" ;
+    crm:P90_has_value "4.00" ;
+    crm:P91_has_unit "stirling pounds" .
+
+<3_75_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$3.75" ;
+    crm:P90_has_value "3.75" ;
+    crm:P91_has_unit "us dollars" .
+
+<9_50_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$9.50" ;
+    crm:P90_has_value "9.50" ;
+    crm:P91_has_unit "us dollars" .
+
+<3_20_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$3.20" ;
+    crm:P90_has_value "3.20" ;
+    crm:P91_has_unit "us dollars" .
+
+<3_70_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$3.70" ;
+    crm:P90_has_value "3.70" ;
+    crm:P91_has_unit "us dollars" .
+
+<3_90_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$3.90" ;
+    crm:P90_has_value "3.90" ;
+    crm:P91_has_unit "us dollars" .
+
+<5_50_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$5.50" ;
+    crm:P90_has_value "5.50" ;
+    crm:P91_has_unit "us dollars" .
+
+<4_50_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$4.50" ;
+    crm:P90_has_value "4.50" ;
+    crm:P91_has_unit "us dollars" .
+
+<1_75_USD> a crm:E54_Dimension ;
+  crm:P2_has_type wikidata:Q160151 ;
+    rdfs:label "$1.75" ;
+    crm:P90_has_value "1.75" ;
+    crm:P91_has_unit "us dollars" .

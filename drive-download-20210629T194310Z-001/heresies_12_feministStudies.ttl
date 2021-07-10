@@ -1,0 +1,369 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix dig: <http://www.ics.forth.gr/isl/CRMdig/> .
+@prefix ns0: <http://www.wikidata.org/entity/> .
+
+# 1. ADVERTISEMENT
+
+ns0:Q39911916 a crm:E55_Type ;
+  rdfs:label "advertisement" .
+
+# This is the advertisement
+<MANIFESTATION_HERESIES_I12_AD6> a frbroo:F3_Manifestation ; 
+  rdfs:label "Heresies 12 Feminist Studies advertisement"; 
+  # has a Type of "advertisement"
+  crm:P2_has_type ns0:Q39911916 ;
+  # is published in I12 - here using property of P148, is there need to further specify?
+  # not really clear on distinction between frbroo:R5 and crm:P148
+  crm:P148i_is_component_of <http://worldcat.org/entity/work/id/57511158> ;  
+  # advertisement is about many things: a journal, an issue, a series of publications, how often the journal runs, prices, and contact information
+  crm:P129_is_about ns0:Q1404511,
+  	<FEMINIST_STUDIES_VII_1>,
+  	<FEMINIST_STUDIES_1>,
+  	<FEMINIST_STUDIES_2>,
+  	<FEMINIST_STUDIES_3>,
+  	<FEMINIST_STUDIES_4>,
+  	<FEMINIST_STUDIES_5>,
+  	<FEMINIST_STUDIES_6>,
+  	<FEMINIST_STUDIES_7>,
+  	<FEMINIST_STUDIES_8>,
+  	<FEMINIST_STUDIES_9>,
+  	<FEMINIST_STUDIES_10>,
+  	<ISSUE_RULE_3_ANNUAL>,
+  	<AD_PRICE_SUB_IND_1>,
+  	<AD_PRICE_SUB_IND_2>,
+  	<AD_PRICE_SUB_IND_3>,
+  	<AD_PRICE_SUB_INST_1>,
+  	<AD_PRICE_SUB_INST_2>,
+  	<AD_PRICE_SUB_INST_3>,
+  	<AD_PRICE_SHIP_1>,
+  	<AD_PRICE_SHIP_2>,
+  	<AD_PRICE_SINGLE_1>,
+  	<AD_PRICE_SINGLE_2>,
+  	<FEMINIST_STUDIES_ADDRESS> ;
+  # created by the organization running the ad
+  frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ; 
+    crm:P14_carried_out_by <FEMINIST_STUDIES_CREATORS> ] ;   
+  # has a visual representation that can be located at the following iiif address
+  crm:P138i_has_representation [ a crm:E36_Visual_Item ; 
+      la:Digitally_known_by [ a dig:D1_Digital_Object ; 
+        rdfs:label "Heresies 12 New Political Science advertisement - visual representation" ;
+        la:access_point <https://iiif.archivelab.org/iiif/heresies_12$97/1288,136,1099,1551/full/0/default.jpg> ; 
+        la:digitally_available_via [ a la:DigitalService ; 
+          la:access_point <https://iiif.archivelab.org/iiif/heresies_12$97> ] ] ] .
+
+
+# 2. THINGS BEING ADVERTISED 
+
+# This is the Volume 7, No. 1, Spring 1981 issue of Feminist Studies
+<FEMINIST_STUDIES_VII_1> a frbroo:F3_Manifestation ; 
+  rdfs:label "Feminist Studies, Volume 7, No. 1, Spring 1981" ;
+  frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ; 
+    crm:P14_carried_out_by <FEMINIST_STUDIES_CREATORS> ; 
+    crm:P4_has_time-span [ a crm:E52_Time-Span ; 
+    	crm:P82_at_some_time_within "Spring 1981" ; 
+    	crm:P82a_begin_of_the_begin "1981-01-01" ; 
+    	crm:P82b_end_of_the_end "1981-12-31" ] ] ; 
+  crm:P1_identified_by [ a crm:E33_E41_Linguistic_Appellation ; 
+  	rdfs:label "Volume 7, No. 1, Spring 1981" ; 
+  	crm:P106_is_composed_of [ a crm:E33_E41_Linguistic_Appellation ; 
+        crm:P190_has_symbolic_content "7" ; 
+        crm:P2_has_type "volume number" ],
+    [ a crm:E33_E41_Linguistic_Appellation ; 
+        crm:P190_has_symbolic_content "1" ; 
+        crm:P2_has_type "issue number" ],
+    [ a crm:E33_E41_Linguistic_Appellation ; 
+        crm:P190_has_symbolic_content "Spring 1981" ; 
+        crm:P2_has_type "seasonal date" ] ] ;
+  frbroo:R10i_is_member_of ns0:Q1404511 ; 
+  frbroo:R67_has_part <FEMINIST_STUDIES_1>,
+  	<FEMINIST_STUDIES_2>,
+  	<FEMINIST_STUDIES_3>,
+  	<FEMINIST_STUDIES_4>,
+  	<FEMINIST_STUDIES_5>,
+  	<FEMINIST_STUDIES_6>,
+  	<FEMINIST_STUDIES_7>,
+  	<FEMINIST_STUDIES_8>,
+  	<FEMINIST_STUDIES_9>,
+  	<FEMINIST_STUDIES_10> .
+
+
+# Article list includes: 
+
+<JANET_BRUIN> a crm:E21_Person .
+<STEPHEN_SALAFF> a crm:E21_Person .
+<ELECTA_ARENAL> a crm:E21_Person .
+<NANCY_JAY> a crm:E21_Person .
+<SUSAN_HARDING> a crm:E21_Person .
+<EDITH_A_JENKINS> a crm:E21_Person .
+<ALICE_WEXLER> a crm:E21_Person .
+<JOYCE_ANTLER> a crm:E21_Person .
+<BERENICE_FISHER> a crm:E21_Person .
+<GIOCONDA_BELLI> a crm:E21_Person .
+<CLARIBEL_ALEGRIA> a crm:E21_Person .
+
+<FEMINIST_STUDIES_1> a frbroo:F1_Work ; 
+	rdfs:label "Never Again: The Organization of Atomic Bomb Victims in Osaka" ; 
+	crm:P102_has_title "Never Again: The Organization of Atomic Bomb Victims in Osaka" ;
+	frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+    	crm:P14_carried_out_by <JANET_BRUIN>, 
+    		<STEPHEN_SALAFF> ] ;
+    frbroo:R67i_forms_part_of <FEMINIST_STUDIES_VII_1> .
+
+<FEMINIST_STUDIES_2> a frbroo:F1_Work ; 
+	rdfs:label "Two Poets of the Sandinista Struggle" ; 
+	crm:P102_has_title "Two Poets of the Sandinista Struggle" ;
+	frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+    	crm:P14_carried_out_by <ELECTA_ARENAL> ] ;
+    frbroo:R67i_forms_part_of <FEMINIST_STUDIES_VII_1> .
+
+<FEMINIST_STUDIES_3> a frbroo:F1_Work ; 
+	rdfs:label "Gender and Dichotomy" ; 
+	crm:P102_has_title "Gender and Dichotomy" ;
+	frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+    	crm:P14_carried_out_by <NANCY_JAY> ] ;
+    frbroo:R67i_forms_part_of <FEMINIST_STUDIES_VII_1> . 
+    
+<FEMINIST_STUDIES_4> a frbroo:F1_Work ; 
+	rdfs:label "Family Reform Movements: Recent Feminism and its Opposition' ; 
+	crm:P102_has_title "Family Reform Movements: Recent Feminism and its Opposition' ;
+	frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+    	crm:P14_carried_out_by <SUSAN_HARDING> ] ;
+    frbroo:R67i_forms_part_of <FEMINIST_STUDIES_VII_1> .       
+
+<FEMINIST_STUDIES_5> a frbroo:F1_Work ; 
+	rdfs:label "With Stones from the Gorge" ; 
+	crm:P102_has_title "With Stones from the Gorge" ;
+	frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+    	crm:P14_carried_out_by <EDITH_A_JENKINS> ] ;
+    frbroo:R67i_forms_part_of <FEMINIST_STUDIES_VII_1> .
+
+<FEMINIST_STUDIES_6> a frbroo:F1_Work ; 
+	rdfs:label "Emma Goldman on Marry Wollstonecraft"   ; 
+	crm:P102_has_title "Emma Goldman on Marry Wollstonecraft" ;
+	frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+    	crm:P14_carried_out_by <EDITH_A_JENKINS> ] ;
+    frbroo:R67i_forms_part_of <FEMINIST_STUDIES_VII_1> .
+
+<FEMINIST_STUDIES_7> a frbroo:F1_Work ; 
+	rdfs:label "Feminism as Life-Process: The Life and Career of Lucy Sprague Michtell" ; 
+	crm:P102_has_title "Feminism as Life-Process: The Life and Career of Lucy Sprague Michtell" ;
+	frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+    	crm:P14_carried_out_by <JOYCE_ANTLER> ] ;
+    frbroo:R67i_forms_part_of <FEMINIST_STUDIES_VII_1> .
+
+<FEMINIST_STUDIES_8> a frbroo:F1_Work ; 
+	rdfs:label "Review Essay by Berenice Fisher" ; 
+	frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+    	crm:P14_carried_out_by <BERENICE_FISHER> ] ;
+    frbroo:R67i_forms_part_of <FEMINIST_STUDIES_VII_1> .
+
+<FEMINIST_STUDIES_9> a frbroo:F1_Work ; 
+	rdfs:label "Poems by Gioconda Belli" ; 
+	frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+    	crm:P14_carried_out_by <GIOCONDA_BELLI> ] ;
+    frbroo:R67i_forms_part_of <FEMINIST_STUDIES_VII_1> .
+
+<FEMINIST_STUDIES_10> a frbroo:F1_Work ; 
+	rdfs:label "Poems by Claribel Alegria" ; 
+	frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+    	crm:P14_carried_out_by <CLARIBEL_ALEGRIA> ] ;
+    frbroo:R67i_forms_part_of <FEMINIST_STUDIES_VII_1> .
+
+
+# PRICES  
+
+<AD_PRICE_SUB_IND_1> a E16_Measurement ; 
+	crm:P2_has_type "advertised price" ;
+	crm:P2_has_type "subscription" ;
+	crm:P2_has_type "individual" ;
+    crm:P40_observed_dimension <SUB_1>,
+    	<PRICE_13_00_USD> .
+
+<SUB_1> a crm:E54_Dimension ;
+	rdfs:label "1 year" ;
+    crm:P2_has_type "subscription duration" ;
+    crm:P90_has_value "1" ;
+    crm:P91_has_unit "year" .
+
+<PRICE_13_00_USD> a crm:E54_Dimension ;
+	rdfs:label "$13.00" ;
+    crm:P90_has_value "13.00" ;
+    crm:P91_has_unit "us dollars" .
+
+
+<AD_PRICE_SUB_IND_2> a E16_Measurement ; 
+    crm:P2_has_type "advertised price" ;
+    crm:P2_has_type "subscription" ;
+    crm:P2_has_type "individual" ;
+    crm:P40_observed_dimension <SUB_2>,
+    	<PRICE_24_00_USD> .
+
+<SUB_2 a crm:E54_Dimension ;
+	rdfs:label "2 years" ;
+    crm:P2_has_type "subscription duration" ;
+    crm:P90_has_value "2" ;
+    crm:P91_has_unit "year" .
+
+<PRICE_24_00_USD> a crm:E54_Dimension ;
+	rdfs:label "$24.00" ;
+    crm:P90_has_value "24.00" ;
+    crm:P91_has_unit "us dollars" .
+
+
+<AD_PRICE_SUB_IND_3> a E16_Measurement ; 
+    crm:P2_has_type "advertised price" ;
+    crm:P2_has_type "subscription" ;
+    crm:P2_has_type "individual" ;
+    crm:P40_observed_dimension <SUB_3>,
+    	<PRICE_35_00_USD> .
+
+<SUB_3 a crm:E54_Dimension ;
+	rdfs:label "3 years" ;
+    crm:P2_has_type "subscription duration" ;
+    crm:P90_has_value "3" ;
+    crm:P91_has_unit "year" .
+
+<PRICE_35_00_USD> a crm:E54_Dimension ;
+	rdfs:label "$35.00" ;
+    crm:P90_has_value "35.00" ;
+    crm:P91_has_unit "us dollars" .
+
+
+<AD_PRICE_SUB_INST_1> a crm:E16_Measurement ; 
+    crm:P2_has_type "adverised price" ;
+    crm:P2_has_type "subscription" ;
+    crm:P2_has_type "institution" ;
+	crm:P40_observed_dimension <SUB_1>,
+    	<PRICE_24_00_USD> .
+
+
+<AD_PRICE_SUB_INST_2> a crm:E16_Measurement ; 
+    crm:P2_has_type "advertised price" ;
+    crm:P2_has_type "subscription" ;
+    crm:P2_has_type "institution" ;
+	crm:P40_observed_dimension <SUB_2>,
+    	<PRICE_46_00_USD> .
+
+<PRICE_46_00_USD> a crm:E54_Dimension ;
+	rdfs:label "$46.00" ;
+    crm:P90_has_value "46.00" ;
+    crm:P91_has_unit "us dollars" .
+    
+
+<AD_PRICE_SUB_INST_3> a crm:E16_Measurement ; 
+    crm:P2_has_type "price" ;
+    crm:P2_has_type "subscription" ;
+    crm:P2_has_type "institution" ;
+	crm:P40_observed_dimension <SUB_3>,
+    	<PRICE_68_00_USD> .
+
+<PRICE_68_00_USD> a crm:E54_Dimension ;
+	rdfs:label "$68.00" ;
+    crm:P90_has_value "68.00" ;
+    crm:P91_has_unit "us dollars" .
+
+
+<AD_PRICE_SHIP_1> a crm:E16_Measurement  ; 
+    crm:P2_has_type "price" ;
+    crm:P2_has_type "subscription" ;
+    crm:P2_has_type "foreign postage" ;
+    crm:P2_has_type "surface" ;
+	crm:P40_observed_dimension <SUB_1>,
+    	<PRICE_4_00_USD> .
+
+<PRICE_4_00_USD> a crm:E54_Dimension ;
+	rdfs:label "$4.00" ;
+    crm:P90_has_value "4.00" ;
+    crm:P91_has_unit "us dollars" .
+
+
+<AD_PRICE_SHIP_2> a crm:E16_Measurement ; 
+    crm:P2_has_type "price" ;
+    crm:P2_has_type "subscription" ;
+    crm:P2_has_type "foreign postage" ;
+    crm:P2_has_type "airmail" ;
+    crm:P2_has_type "1 year" ;
+	crm:P40_observed_dimension <SUB_1>,
+    	<PRICE_14_00_USD> .
+
+<PRICE_14_00_USD> a crm:E54_Dimension ;
+	rdfs:label "$14.00" ;
+    crm:P90_has_value "14.00" ;
+    crm:P91_has_unit "us dollars" .
+
+
+<AD_PRICE_SINGLE_1> a crm:E16_Measurement ; 
+    crm:P2_has_type "price" ;
+    crm:P2_has_type "single issue" ;
+    crm:P2_has_type "individual" ;
+    crm:P40_observed_dimension <PRICE_5_00_USD> .
+    
+<PRICE_5_00_USD> a crm:E54_Dimension ;
+	rdfs:label "$5.00" ;
+    crm:P90_has_value "5.00" ;
+    crm:P91_has_unit "us dollars" .
+
+
+<AD_PRICE_SINGLE_2> a crm:E16_Measurement ; 
+    crm:P2_has_type "price" ;
+    crm:P2_has_type "single issue" ;
+    crm:P2_has_type "institution" ;
+	crm:P40_observed_dimension <PRICE_10_00_USD> .
+
+<PRICE_10_00_USD> a crm:E54_Dimension ;
+	rdfs:label "$10.00" ;
+    crm:P90_has_value "10.00" ;
+    crm:P91_has_unit "us dollars" .
+
+
+
+# 3. JOURNAL / ORGANIZATION BEING ADVERTISED 
+
+ns0:Q1002697 a crm:E55_Type ; 
+  rdfs:label "periodical" .
+
+ns0:Q1404511 a frbroo:F18_Serial_Work ;
+  rdfs:label "Feminist Studies" ; 
+  crm:P102_has_title "Feminist Studies" ; 
+  crm:P2_has_type ns0:Q1002697 ;
+  crm:P129_is_about ns0:Q35069, 
+    ns0:Q7252 ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ; 
+    crm:P14_carried_out_by <FEMINIST_STUDIES_CREATORS> ] ; 
+  frbroo:R10_has_member <FEMINIST_STUDIES_VII_1> ; 
+  frbroo:R11_has_issuing_rule <ISSUE_RULE_3_ANNUAL> ; 
+  crm:P39i_was_measured_by <AD_PRICE_SUB_IND_1>,
+    <AD_PRICE_SUB_IND_2>,
+    <AD_PRICE_SUB_IND_3>,
+    <AD_PRICE_SUB_INST_1>,
+    <AD_PRICE_SUB_INST_2>,
+    <AD_PRICE_SUB_INST_3>,
+    <AD_PRICE_SHIP_1>,
+    <AD_PRICE_SHIP_2>,
+    <AD_PRICE_SINGLE_1>,
+    <AD_PRICE_SINGLE_2> .
+
+
+<ISSUE_RULE_3_ANNUAL> a crm:E29_Design_or_Procedure ; 
+	rdfs:label "Three issues annually" ; 
+	crm:P43_has_dimensions [ a crm:E54_Dimension ; 
+		crm:P90_has_value "3" ;
+		crm:P91_has_unit "annual releases" ] .  
+
+# Feminist Studies creators - need to break this out
+<FEMINIST_STUDIES_CREATORS> a crm:E74_Group ; 
+  rdfs:label "Feminist Studies, Women's Studies Program, University of Maryland" ;
+  crm:P74_has_current_or_former_residence [ a crm:E53_Place ;
+    crm:P1_is_identified_by <FEMINIST_STUDIES_ADDRESS> ;
+    crm:P168_place_is_defined_by "38.989697, -76.937759" ] .
+
+<FEMINIST_STUDIES_ADDRESS> a crm:E33_E41_Linguistic_Appellation ; 
+    crm:P190_has_symbolic_content "Feminist Studies, Women's Studies Program, University of Maryland, College Park, Maryland 20742" ; 
+    crm:P2_has_type "Mailing address" .
