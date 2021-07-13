@@ -1,1 +1,9 @@
-June 8, 2021
+July 13, 2021
+Link between copy and features/topic list not established in CIDOC model as I had Thought
+See issue 6 DYKE ad to illustrate
+  <DYKE_AD_COPY_1> refers to the same text as <DYKE_FEATURES_LIST_1>
+    Yet the two are not linked
+Why not just integrate all element types under overriding type ad copy?
+  This would then have subtypes topic and feature list
+  One element of ad copy could also be a feature and/or topic list
+See issue23_test to illstrate

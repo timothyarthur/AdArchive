@@ -36,8 +36,6 @@ wikidata:Q17022558 a frbroo:F18_Serial_Work
   frbroo:R10_has_member worldcat:5612572673 .
 
 # DECLARE THE EXISTENCE OF THE ISSUE UNDER CONSIDERATION IN THIS DATASET
-# If you wish to state further details about Heresies as a publication you may want to break out the Creation event
-
 # Issue #23 "Coming of Age"
 worldcat:5612572673 a frbroo:F3_Manifestation ;
   rdfs:label "Heresies: A Feminist Publication on Art and Politics - Issue 23: Coming of Age"
@@ -47,7 +45,7 @@ worldcat:5612572673 a frbroo:F3_Manifestation ;
     crm:P190_has_symbolic_content "Coming of Age" ] ;
   frbroo:R24i_was_created_through [ a frbrpp:F30_Manifestation_Creation ;
     crm:P14_carried_out_by wikidata:Q20857976 ] ;
-  crm:P148_has_component _:H23_OOBs
+  crm:P148_has_component <MANIFESTATION_HERESIES_I23_AD0>
 
 #----------------------------------------------------------------------------------------------------------------------------
 
@@ -58,22 +56,18 @@ worldcat:5612572673 a frbroo:F3_Manifestation ;
   rdfs:label "Heresies 23 off our backs advertisement"
   crm:P2_has_type wikidata:Q39911916 ;
   crm:P148i_is_component_of worldcat:5612572673 ;
-  #Double check abouts: off our backs. What else? subscription prices. Address. Testimonial?
-  #What about overall topic?
   crm:P129_is_about wikidata:Q7078947 ,
     <OFF_OUR_BACKS_CREATORS_ADDRESS> ,
     <AD_PRICE_I23_AD0_P1> ,
     <AD_PRICE_I23_AD0_P2> ,
     "feminist news" ;
   frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ;
-    crm:P14_carried_out_by wikidata:Q7078947 ] ;
-  crm:P165_incorporates <OFF_OUR_BACKS_TOPIC_LIST_1> ,
-  #Check relationship between copy and other elements
-    <OFF_OUR_BACKS_TOPIC_LIST_2> ,
-    <OFF_OUR_BACKS_TOPIC_LIST_3> ,
-    <OFF_OUR_BACKS_FEATURES_LIST_1> ,
-    <OFF_OUR_BACKS_FEATURES_LIST_2> ,
-    <OFF_OUR_BACKS_FEATURES_LIST_3> ,
+    crm:P14_carried_out_by <OFF_OUR_BACKS_CREATORS> ] ;
+  crm:P165_incorporates <OFF_OUR_BACKS_AD_COPY_1> ,
+    <OFF_OUR_BACKS_AD_COPY_2> ,
+    <OFF_OUR_BACKS_AD_COPY_3> ,
+    <OFF_OUR_BACKS_AD_COPY_4> ,
+    <OFF_OUR_BACKS_AD_COPY_5> ,
     <OFF_OUR_BACKS_ENDORSEMENT> ,
     <OFF_OUR_BACKS_SUBSCRIPTION_FORM> ;
   crm:P138i_has_representation <https://iiif.archivelab.org/iiif/heresies_23$97/912,158,596,1202/full/0/default.jpg> ;
@@ -83,20 +77,85 @@ worldcat:5612572673 a frbroo:F3_Manifestation ;
 
 <AD_PRICE_I23_AD0_P1> a crm:E16_Measurement ;
   crm:P2_has_type schema:ListPrice ;
+  crm:P2_has_type wikidata:Q43006303 ;
+  #Any other relevant types?
+  crm:P39_measured wikidata:Q7078947 ;
+    crm:P40_observed_dimension <SUB_1>,
+      <15_00_USD> .
+
+<AD_PRICE_I23_AD0_P2>  a crm:E16_Measurement ;
+  crm:P2_has_type schema:ListPrice ;
+    crm:P40_observed_dimension <4_00_USD> .
+    #TODO: Represent number of issues
 
 # These are the things being incorporated
-<OFF_OUR_BACKS_TOPIC_LIST_1> a crm:E33_Linguistic_Object ;
+<OFF_OUR_BACKS_AD_COPY_1>
   crm:P129_is_about wikidata:Q7078947 ;
-  crm:P2_has_type "advertising copy",
-    "topic list" ;
-  crm:P129_is_about "working women's issues",
-    "health",
-    "reproductive rights",
-    "Black women's issues",
+  crm:P2_has_type "ad copy" ;
+  crm:P190_has_symbolic_content "the best in feminist journalism"
+
+<OFF_OUR_BACKS_AD_COPY_2> a crm:E33_Linguistic_Object ;
+  crm:P129_is_about wikidata:Q7078947 ;
+  crm:P2_has_type "ad copy" ,
+    "topic list" ,
+    "features list" ;
+  # Problem with allowing one element to be both a topic and a feature list is that it's unclear which 'abouts' are topics and which features
+  # "News from every continent" is a 'feature'
+  # Sort of also a topic? (from every continent)
+  crm:P129_is_about "news from every continent" ,
+  # The following are 'topics'
+    "working women's issues" ,
+    "health" ,
+    "reproductive rights" ,
+    "Black women's issues" ,
     "Lesbian and gay rights" ;
   #Can copy simply be incorporated here?
-  #This string also includes a feature list from our previous model
-  crm:P190_has_content "news from every continent - working women's issues, health, reproductive rights, Black women's issues, lesbian and gay rights"
+  crm:P190_has_symbolic_content "news from every continent - working women's issues, health, reproductive rights, Black women's issues, lesbian and gay rights" ;
 
-#ADDRESSES NOT MENTIONED IN THIS SECTION IN LINCS DATA. WHY NOT?
-#<OFF_OUR_BACKS_CREATORS_ADDRESS>
+<OFF_OUR_BACKS_AD_COPY_3>
+  crm:P129_is_about wikidata:Q7078947 ;
+  crm:P2_has_type "ad copy" ;
+  crm:P190_has_symbolic_content "blow by blow reports of women's conferences" ;
+  crm:P129_is_about "reports of women's conferences", #Or just reports? A feature
+    "women's conferences" . #A topic
+
+<OFF_OUR_BACKS_AD_COPY_4>
+  crm:P129_is_about wikidata:Q7078947 ;
+  crm:P2_has_type "ad copy" ;
+  crm:P190_has_symbolic_content "book reviews, commentaries, letters - open to all feminist sides of the current debates on sexuality, reproductive technology, motherhood, and more ..." ;
+  crm:P129_is_about "book reviews", #Features
+    "commentaries",
+    "letters",
+    "feminism", #Topics
+    "sexuality",
+    "reproductive technology",
+    "motherhood" .
+
+<OFF_OUR_BACKS_AD_COPY_5>
+  crm:P129_is_about wikidata:Q7078947 ;
+  crm:P2_has_type "ad copy" ;
+  crm:P190_has_symbolic_content "Walk into oob's 18th year" .
+
+<OFF_OUR_BACKS_ENDORSEMENT>
+  crm:P129_is_about wikidata:Q7078947 ;
+  crm:P2_has_type "endorsement" ,
+    "topics list" ;
+  crm:P190_has_symbolic_content "'oob is international in scope and focuses on diverse topics dealing with poor women, working class women, minority women, prison, custody, and abortion. It's never been simple-minded. It's what I think of as feminism.' - Marilyn Frye, author of The Politics of Reality" ;
+  crm:P129_is_about "poor women",
+    "working class women",
+    "minority women",
+    "prison",
+    "custody",
+    "abortion",
+    "feminism" ;
+  crm:P94i_was_created_by [ a crm:E65_Creation ;
+  #Endorsement written by Marilyn Frye
+  #TODO: Indicate that Marilyn Frye was the author of the Politics of Reality
+    crm:P14_carried_out_by wikidata:Q13562998 ] .
+
+<OFF_OUR_BACKS_SUBSCRIPTION_FORM>
+  crm:P2_has_type "subscription form" ;
+  crm:P129_is_about wikidata:Q7078947 ,
+  <OFF_OUR_BACKS_CREATORS_ADDRESS> ,
+  <AD_PRICE_I23_AD0_P1> ,
+  <AD_PRICE_I23_AD0_P2> .

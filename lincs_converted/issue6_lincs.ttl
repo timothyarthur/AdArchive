@@ -324,8 +324,6 @@ wikidata:Q1404511 frbroo:R10_has_member <FEMINIST_STUDIES_IV_1>,
 
 
 
-
-
 #----------------------------------------------------------------------------------------------------------------------------
 
 # SECTION 2.1 - AD1 OFF OUR BACKS
@@ -357,6 +355,7 @@ wikidata:Q1404511 frbroo:R10_has_member <FEMINIST_STUDIES_IV_1>,
   # has a visual representation that can be located at the following iiif address
   crm:P138i_has_representation <https://iiif.archivelab.org/iiif/heresies_06$120/207,1225,777,976/full/0/default.jpg> ;
         rdfs:label "Heresies 6 Off Our Backs advertisement - visual representation" .
+
 
 
 # These are the things being advertised
@@ -505,9 +504,9 @@ locinsts:19699885 a frbroo:F18_Serial_Work ;
   crm:P2_has_type wikidata:Q1002697 ;
   frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
     crm:P14_carried_out_by <DYKE_CREATORS> ] ;
-  crm:P129_is_about wikidata:Q18299,
-    wikidata:Q6649,
-    wikidata:Q11042,
+  crm:P129_is_about wikidata:Q18299 ,
+    wikidata:Q6649 ,
+    wikidata:Q11042 ,
     wikidata:Q7163 ;
   frbroo:R11_has_issuing_rule <ISSUE_RULE_4_ANNUAL> ;
   crm:P39i_was_measured_by <AD_PRICE_I6_AD2_P1>,
@@ -517,6 +516,10 @@ locinsts:19699885 a frbroo:F18_Serial_Work ;
 
 # These are the things being incorporated
 
+# This represents the same copy as features list 1, yet this relationship is not indicated
+# Why not just merge both under copy, with dual type ad copy and features list?
+# Is it necessary to separate these elements so strictly by type?
+# Unified element could contain both full text of copy and separated features with URIs assigned where possible
 <DYKE_AD_COPY_1> a crm:E33_Linguistic_Object ;
   crm:P129_is_about locinsts:19699885 ;
   crm:P2_has_type "ad copy" ;
@@ -535,16 +538,16 @@ locinsts:19699885 a frbroo:F18_Serial_Work ;
     wikidata:Q9357091,
     "contemporary lesbian events",
     "lesbian lives",
-    wikidata:Q35874,
-    wikidata:Q309,
-    wikidata:Q11424,
+    wikidata:Q35874 ,
+    wikidata:Q309 ,
+    wikidata:Q11424 ,
     wikidata:Q571 .
 
 <DYKE_FEATURES_LIST_1> a crm:E33_Linguistic_Object ;
   crm:P129_is_about locinsts:19699885 ;
   crm:P2_has_type "features list" ;
-  crm:P129_is_about wikidata:Q35760,
-    wikidata:Q217602,
+  crm:P129_is_about wikidata:Q35760 ,
+    wikidata:Q217602 ,
     wikidata:Q178651 .
 
 
