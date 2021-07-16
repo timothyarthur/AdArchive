@@ -25,7 +25,7 @@
 # If you wish to state further details about Heresies as a publication you may want to break out the Creation event
 
 # Heresies is a serial publication with volumes/issues ("members"), created by the Heresies Collective
-wikidata:Q17022558 a frbroo:F18_Serial_Work
+wikidata:Q17022558 a frbroo:F18_Serial_Work ;
   rdfs:label "Heresies" ;
   crm:P2_has_type wikidata:Q1002697 ;
   crm:P102_has_title [ a crm:E35_Title ;
@@ -38,12 +38,12 @@ wikidata:Q17022558 a frbroo:F18_Serial_Work
 # DECLARE THE EXISTENCE OF THE ISSUE UNDER CONSIDERATION IN THIS DATASET
 # Issue #23 "Coming of Age"
 worldcat:5612572673 a frbroo:F3_Manifestation ;
-  rdfs:label "Heresies: A Feminist Publication on Art and Politics - Issue 23: Coming of Age"
+  rdfs:label "Heresies: A Feminist Publication on Art and Politics - Issue 23: Coming of Age" ;
   crm:P2_has_type wikidata:Q28869365 ;
   crm:P102_has_title [ a crm:E35_Title ;
     crm:P2_has_type bf:Title ;
     crm:P190_has_symbolic_content "Coming of Age" ] ;
-  frbroo:R24i_was_created_through [ a frbrpp:F30_Manifestation_Creation ;
+  frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ;
     crm:P14_carried_out_by wikidata:Q20857976 ] ;
   crm:P148_has_component <MANIFESTATION_HERESIES_I23_AD0>
 
@@ -54,10 +54,10 @@ worldcat:5612572673 a frbroo:F3_Manifestation ;
 #Section 2.0 - Off Our Backs Ad
 <MANIFESTATION_HERESIES_I23_AD0> a frbroo:F3_Manifestation ;
   rdfs:label "Heresies 23 off our backs advertisement"
-  crm:P2_has_type wikidata:Q39911916 ;
-  crm:P148i_is_component_of worldcat:5612572673 ;
+  crm:P2_has_type wikidata:Q39911916 ; #An advertisement
+  crm:P148i_is_component_of worldcat:5612572673 ; #Component of the issue
   crm:P129_is_about wikidata:Q7078947 ,
-    <OFF_OUR_BACKS_CREATORS_ADDRESS> ,
+    <OFF_OUR_BACKS_CREATORS_ADDRESS_2> , ## Address varies from previous, add new to agents?
     <AD_PRICE_I23_AD0_P1> ,
     <AD_PRICE_I23_AD0_P2> ,
     "feminist news" ;
@@ -75,6 +75,28 @@ worldcat:5612572673 a frbroo:F3_Manifestation ;
 
 # These are the things being advertised
 
+#TODO: Tailor this, which was taken from another issue
+#Off Our Backs
+wikidata:Q7078947 a frbroo:F18_Serial_Work ;
+  rdfs:label "Off Our Backs"^^xsd:string ;
+  crm:P2_has_type wikidata:Q1002697 ;
+  crm:P102_has_title [ a crm:E35_Title ;
+    crm:P190_has_symbolic_content "An Independent Womens Newsjournal" ; ##Not the title?
+    crm:P2_has_type wikidata:Q1135389 ],
+    [ a crm:E35_Title ;
+    crm:P190_has_symbolic_content "OOB" ;
+    crm:P2_has_type bibo:shortTitle ] ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+    crm:P14_carried_out_by <OFF_OUR_BACKS_CREATORS> ] ;
+  crm:P129_is_about wikidata:Q38926 ;
+  crm:P39i_was_measured_by <AD_PRICE_I6_AD1_P1>,
+    <AD_PRICE_I6_AD1_P2>,
+    <AD_PRICE_I6_AD1_P3>,
+    <AD_PRICE_I6_AD1_P4>,
+    <AD_PRICE_I6_AD1_P5>,
+    <AD_PRICE_I6_AD1_P6> .
+
+
 <AD_PRICE_I23_AD0_P1> a crm:E16_Measurement ;
   crm:P2_has_type schema:ListPrice ;
   crm:P2_has_type wikidata:Q43006303 ;
@@ -83,13 +105,17 @@ worldcat:5612572673 a frbroo:F3_Manifestation ;
     crm:P40_observed_dimension <SUB_1>,
       <15_00_USD> .
 
-<AD_PRICE_I23_AD0_P2>  a crm:E16_Measurement ;
+<AD_PRICE_I23_AD0_P2> a crm:E16_Measurement ;
   crm:P2_has_type schema:ListPrice ;
     crm:P40_observed_dimension <4_00_USD> .
     #TODO: Represent number of issues
 
 # These are the things being incorporated
-<OFF_OUR_BACKS_AD_COPY_1>
+
+##TODO: Restructure into separate lists
+##3 of each or 1 of each?
+##Probably 3
+<OFF_OUR_BACKS_AD_COPY_1> a crm:E33_Linguistic_Object ;
   crm:P129_is_about wikidata:Q7078947 ;
   crm:P2_has_type "ad copy" ;
   crm:P190_has_symbolic_content "the best in feminist journalism"
@@ -112,14 +138,14 @@ worldcat:5612572673 a frbroo:F3_Manifestation ;
   #Can copy simply be incorporated here?
   crm:P190_has_symbolic_content "news from every continent - working women's issues, health, reproductive rights, Black women's issues, lesbian and gay rights" ;
 
-<OFF_OUR_BACKS_AD_COPY_3>
+<OFF_OUR_BACKS_AD_COPY_3> a crm:E33_Linguistic_Object ;
   crm:P129_is_about wikidata:Q7078947 ;
   crm:P2_has_type "ad copy" ;
   crm:P190_has_symbolic_content "blow by blow reports of women's conferences" ;
   crm:P129_is_about "reports of women's conferences", #Or just reports? A feature
     "women's conferences" . #A topic
 
-<OFF_OUR_BACKS_AD_COPY_4>
+<OFF_OUR_BACKS_AD_COPY_4> a crm:E33_Linguistic_Object ;
   crm:P129_is_about wikidata:Q7078947 ;
   crm:P2_has_type "ad copy" ;
   crm:P190_has_symbolic_content "book reviews, commentaries, letters - open to all feminist sides of the current debates on sexuality, reproductive technology, motherhood, and more ..." ;
@@ -131,16 +157,15 @@ worldcat:5612572673 a frbroo:F3_Manifestation ;
     "reproductive technology",
     "motherhood" .
 
-<OFF_OUR_BACKS_AD_COPY_5>
+<OFF_OUR_BACKS_AD_COPY_5> a crm:E33_Linguistic_Object ;
   crm:P129_is_about wikidata:Q7078947 ;
   crm:P2_has_type "ad copy" ;
   crm:P190_has_symbolic_content "Walk into oob's 18th year" .
 
-<OFF_OUR_BACKS_ENDORSEMENT>
+<OFF_OUR_BACKS_ENDORSEMENT> a crm:E33_Linguistic_Object ;
   crm:P129_is_about wikidata:Q7078947 ;
-  crm:P2_has_type "endorsement" ,
-    "topics list" ;
-  crm:P190_has_symbolic_content "'oob is international in scope and focuses on diverse topics dealing with poor women, working class women, minority women, prison, custody, and abortion. It's never been simple-minded. It's what I think of as feminism.' - Marilyn Frye, author of The Politics of Reality" ;
+  crm:P2_has_type "endorsement" ;
+  crm:P190_has_symbolic_content "oob is international in scope and focuses on diverse topics dealing with poor women, working class women, minority women, prison, custody, and abortion. It's never been simple-minded. It's what I think of as feminism." ;
   crm:P129_is_about "poor women",
     "working class women",
     "minority women",
@@ -150,12 +175,187 @@ worldcat:5612572673 a frbroo:F3_Manifestation ;
     "feminism" ;
   crm:P94i_was_created_by [ a crm:E65_Creation ;
   #Endorsement written by Marilyn Frye
-  #TODO: Indicate that Marilyn Frye was the author of the Politics of Reality
     crm:P14_carried_out_by wikidata:Q13562998 ] .
 
-<OFF_OUR_BACKS_SUBSCRIPTION_FORM>
+#The Politics of Reality is a book written by Marilyn Frye
+##Should this be connected directly to the ad? How?
+##Is the endorsement 'about' this work? The ad?
+##Need more clarity on work vs expression vs manifestation
+wikidata:Q7757694 a frbroo:F1_Work ;
+  rdfs:label "The Politics of Reality" ;
+  crm:P2_has_type wikidata:Q571 ;
+  crm:P102_has_title [ a crm:E35_Title ;
+    crm:P2_has_type bf:Title ;
+    crm:P190_has_symbolic_content "The Politics of Reality" ] ;
+  frbroo:R24i_was_created_through [ a frbroo:F27_Work_Conception ;
+    crm:P14_carried_out_by wikidata:Q13562998 ] .
+
+<OFF_OUR_BACKS_SUBSCRIPTION_FORM> a crm:E33_Linguistic_Object ;
   crm:P2_has_type "subscription form" ;
   crm:P129_is_about wikidata:Q7078947 ,
   <OFF_OUR_BACKS_CREATORS_ADDRESS> ,
   <AD_PRICE_I23_AD0_P1> ,
   <AD_PRICE_I23_AD0_P2> .
+
+
+#Section 2.1 - Tulsa Studies in Women's Literature Ad
+<MANIFESTATION_HERESIES_I23_AD1> a frbroo:F3_Manifestation ;
+  rdfs:label "Heresies 23 Tulsa Studies in Women's Literature advertisement"
+  crm:P2_has_type wikidata:Q39911916 ; # An ad
+  crm:P148i_is_component_of worldcat:5612572673 ; # Component of the heresies issue
+  crm:P129_is_about wikidata:Q7852369 , # The TSWL publication
+    <TULSA_STUDIES_SPRING_1988> ,#The Issue advertised
+    #Articles of the issue (blank nodes)
+    <TULSA_STUDIES_1> , #Should these identifiers specify the issue? Not the case in issue 12 New political science
+    <TULSA_STUDIES_2> ,
+    <TULSA_STUDIES_3> ,
+    <TULSA_STUDIES_4> ,
+    <TULSA_STUDIES_5> ,
+    <TULSA_STUDIES_6> ,
+    <TULSA_STUDIES_7> ,
+    <TULSA_STUDIES_CREATORS_ADDRESS> ,#TSWL address
+    #Topics
+    wikidata:Q17345318 ; # Women's writing
+  frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ;
+    crm:P14_carried_out_by <TULSA_STUDIES_CREATORS> ] ; ##Should this be a blank node in the agents list instead? - Yes, or find URI for creators
+  #crm:P165_incorporates <TULSA_STUDIES_CONTENTS_LIST> ; ##Are contents lists no longer used? Is anything else incorporated?
+  crm:P138i_has_representation <https://iiif.archivelab.org/iiif/heresies_23$97/1216,1383,1137,1751/full/0/default.jpg> ;
+      rdfs:label "Heresies 23 Tulsa Studies in Women's Literature advertisement - visual representation" .
+
+##TODO
+wikidata:Q7852369 a frbroo:F18_Serial_Work ; #Tulsa Studies in Women's Literature
+  rdfs:label "Tulsa Studies in Women's Literature" ;
+
+<TULSA_STUDIES_SPRING_1988> a frbroo:F2_Expression ;
+  rdfs:label "Tulsa Studies in Women's Literature, Volume 7, Number 1, Spring 1988" ;
+  crm:P2_has_type wikidata:Q28869365 ; #type is issue
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+    crm:P14_carried_out_by <TULSA_STUDIES_CREATORS> ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ; ## Was not necessarily created in this time span!
+      crm:P82_at_some_time_within "Spring 1988" ;
+      crm:P82a_begin_of_the_begin "1988-01-01" ;
+      crm:P82b_end_of_the_end "1988-12-31" ] ] ;
+  crm:P1_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+    crm:P190_has_symbolic_content "Tulsa Studies in Women's Literature, Volume 7, Number 1, Spring 1988" ] ;
+  frbroo:R10i_is_member_of wikidata:Q7852369 ;
+  frbroo:R67_has_part <TULSA_STUDIES_1> , #Articles advertised
+      <TULSA_STUDIES_2> ,
+      <TULSA_STUDIES_3> ,
+      <TULSA_STUDIES_4> ,
+      <TULSA_STUDIES_5> ,
+      <TULSA_STUDIES_6> ,
+      <TULSA_STUDIES_7> .
+
+#Articles advertised
+## Joel's google sheets version lacked abouts for the individual articles, I've attempted to add some
+<TULSA_STUDIES_1> a frbroo:F2_Expression ;
+  rdfs:label "'Plaisir et proffict' in the Reading and Writing of Marguerite de Valois" ;
+  crm:P2_has_type wikidata:Q191067 ; #Type is article
+  crm:P102_has_title [ a crm:E35_Title ;
+    crm:P2_has_type bf:Title ;
+    crm:P190_has_symbolic_content "'Plaisir et proffict' in the Reading and Writing of Marguerite de Valois" ] ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+    crm:P14_carried_out_by "Cathleen M. Bauschatz" ] ;
+  frbroo:R67i_forms_part_of <TULSA_STUDIES_SPRING_1988> ;
+  crm:P129_is_about wikidata:Q220845 . #Marguerite de Valois
+
+<TULSA_STUDIES_2> a frbroo:F2_Expression ;
+  rdfs:label "Gender and Poetic Tradition: The Shaping of Charlotte Bronte's Literary Career" ;
+  crm:P2_has_type wikidata:Q191067 ; #Type is article
+  crm:P102_has_title [ a crm:E35_Title ;
+    crm:P2_has_type bf:Title ;
+    crm:P190_has_symbolic_content "Gender and Poetic Tradition: The Shaping of Charlotte Bronte's Literary Career" ] ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+    crm:P14_carried_out_by locnames:n92033564 ] ;
+  frbroo:R67i_forms_part_of <TULSA_STUDIES_SPRING_1988> ;
+  crm:P129_is_about "Charlotte Bronte" ,
+    "Gender and poetic tradition" . ##??
+
+<TULSA_STUDIES_3> a frbroo:F2_Expression ;
+  rdfs:label "Elizabeth Barrett Browning and Her Prometheuses: Self-Will and a Woman Poet" ;
+  crm:P2_has_type wikidata:Q191067 ; #Type is article
+  crm:P102_has_title [ a crm:E35_Title ;
+    crm:P2_has_type bf:Title ;
+    crm:P190_has_symbolic_content "Elizabeth Barrett Browning and Her Prometheuses: Self-Will and a Woman Poet" ] ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+    crm:P14_carried_out_by locnames:no93002671 ] ;
+  frbroo:R67i_forms_part_of <TULSA_STUDIES_SPRING_1988> ;
+  crm:P129_is_about "Elizabeth Barrett Browning" ,
+    "Poetry--Woman authors" , #??
+    "self-will" . #??
+
+<TULSA_STUDIES_4> a frbroo:F2_Expression ;
+  rdfs:label "Sarah Gardner: 'Such Trumpery' or 'A Lustre to Her Sex'?" ;
+  crm:P2_has_type wikidata:Q191067 ; #Type is article
+  crm:P102_has_title [ a crm:E35_Title ;
+    crm:P2_has_type bf:Title ;
+    crm:P190_has_symbolic_content "Sarah Gardner: 'Such Trumpery' or 'A Lustre to Her Sex'?"] ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+    crm:P14_carried_out_by wikidata:Q47119724 ] ;
+  frbroo:R67i_forms_part_of <TULSA_STUDIES_SPRING_1988> ;
+  crm:P129_is_about "Sarah Gardner" .
+
+<TULSA_STUDIES_5> a frbroo:F2_Expression ;
+  rdfs:label "Feminist Fantasies: Zora Neale Hurston's Their Eyes Were Watching God" ;
+  crm:P2_has_type wikidata:Q191067 ; #Type is article
+  crm:P102_has_title [ a crm:E35_Title ;
+    crm:P2_has_type bf:Title ;
+    crm:P190_has_symbolic_content "Feminist Fantasies: Zora Neale Hurston's Their Eyes Were Watching God" ] ; ##Should I add quotes to indicate title?
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+    crm:P14_carried_out_by "Jennifer Jordan" ] ;
+  frbroo:R67i_forms_part_of <TULSA_STUDIES_SPRING_1988> ;
+  crm:P129_is_about "Zora Neale Hurston",
+    "Their Eyes Were Watching God" . ##Should I add a line indicating that Hurston wrote 'Their Eyes Were Watching God'?
+
+<TULSA_STUDIES_6> a frbroo:F2_Expression ;
+  rdfs:label "Feminine Sensationalism, Eroticism, and Self-Assertion: M. E. Braddon and Ouida" ;
+  crm:P2_has_type wikidata:Q191067 ; #Type is article
+  crm:P102_has_title [ a crm:E35_Title ;
+    crm:P2_has_type bf:Title ;
+    crm:P190_has_symbolic_content "Feminine Sensationalism, Eroticism, and Self-Assertion: M. E. Braddon and Ouida" ] ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+    crm:P14_carried_out_by wikidata:Q71030574 ] ;
+  frbroo:R67i_forms_part_of <TULSA_STUDIES_SPRING_1988> ;
+  crm:P129_is_about "M. E. Braddon" ,
+    "Ouida",
+    "feminine sensationalism" , ##??
+    "feminine eroticism" , ##??
+    "feminine self-assertion" . ##??
+
+<TULSA_STUDIES_7> a frbroo:F2_Expression ;
+  rdfs:label "Reshuffling the Deck; Or, (Re)Reading Race and Gender in Black Women's Writing" ;
+  crm:P2_has_type wikidata:Q191067 ; #Type is article
+  crm:P102_has_title [ a crm:E35_Title ;
+    crm:P2_has_type bf:Title ;
+    crm:P190_has_symbolic_content "Reshuffling the Deck; Or, (Re)Reading Race and Gender in Black Women's Writing" ] ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+    crm:P14_carried_out_by wikidata:Q5129264 ] ;
+  frbroo:R67i_forms_part_of <TULSA_STUDIES_SPRING_1988> ;
+  crm:P129_is_about "Black women's writing" ,
+    "race" ,
+    "gender" .
+
+
+# Ad/publication creators
+##These should ultimately be broken out to the heresies_agents.ttl file
+
+<TULSA_STUDIES_CREATORS> a crm:E74_Group ;
+  crm:P74_has_current_or_former_residence [ a crm:E53_Place ;
+  crm:P1_is_identified_by <TULSA_STUDIES_CREATORS_ADDRESS> ;
+  crm:P168_place_is_defined_by "36.154320, -95.946200" ] .
+
+<TULSA_STUDIES_CREATORS_ADDRESS> a crm:E33_E41_Linguistic_Appellation ;
+  crm:P190_has_symbolic_content "Tulsa Studies in Women's Literature, The University of Tulsa, 600 South College Avenue, Tulsa, Oklahoma, 74104" ;
+  crm:P2_has_type wikidata:Q319608 .
+
+<OFF_OUR_BACKS_CREATORS> a crm:E74_Group ; #Already present in heresies_agents.ttl, but lacks address from issue 23
+  crm:P74_has_current_or_former_residence [ a crm:E53_Place ; #Issue 6 address
+    crm:P1_is_identified_by <OFF_OUR_BACKS_CREATORS_ADDRESS> ;
+    crm:P168_place_is_defined_by "38.913620, -77.045070" ] ;
+  crm:P74_has_current_or_former_residence [ a crm:E53_Place ; #Issue 23 address
+    crm:P1_is_identified_by <OFF_OUR_BACKS_CREATORS_ADDRESS_2> ;
+    crm:P168_place_is_defined_by "38.921170, -77.041840" ] .
+
+<OFF_OUR_BACKS_CREATORS_ADDRESS_2> a crm:E33_E41_Linguistic_Appellation ; ##Differs from earlier address. Add new residence to creator
+  crm:P190_has_symbolic_content "off our backs, 2423 18th Street NW, Washington DC 20009, U.S.A." ;
+  crm:P2_has_type wikidata:Q319608 .

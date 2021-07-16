@@ -344,7 +344,6 @@ wikidata:Q1404511 frbroo:R10_has_member <FEMINIST_STUDIES_IV_1>,
     <AD_PRICE_I6_AD1_P4>,
     <AD_PRICE_I6_AD1_P5>,
     <AD_PRICE_I6_AD1_P6>,
-#ADDRESS NOT MENTIONED BELOW
     <OFF_OUR_BACKS_CREATORS_ADDRESS> ;
   # created by the organization running the ad
   frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ;
@@ -414,6 +413,7 @@ wikidata:Q7078947 a frbroo:F18_Serial_Work ;
   rdfs:label "Off Our Backs"^^xsd:string ;
   crm:P2_has_type wikidata:Q1002697 ;
   crm:P102_has_title [ a crm:E35_Title ;
+    ##Why is this listed as the title? Why is off our backs not among the titles?
     crm:P190_has_symbolic_content "An Independent Womens Newsjournal" ;
     crm:P2_has_type wikidata:Q1135389 ],
     [ a crm:E35_Title ;
@@ -516,14 +516,18 @@ locinsts:19699885 a frbroo:F18_Serial_Work ;
 
 # These are the things being incorporated
 
-# This represents the same copy as features list 1, yet this relationship is not indicated
-# Why not just merge both under copy, with dual type ad copy and features list?
-# Is it necessary to separate these elements so strictly by type?
-# Unified element could contain both full text of copy and separated features with URIs assigned where possible
+## This represents the same copy as features list 1, yet this relationship is not indicated
+## Why not just merge both under copy, with dual type ad copy and features list?
+## Is it necessary to separate these elements so strictly by type?
+## Unified element could contain both full text of copy and separated features with URIs assigned where possible
 <DYKE_AD_COPY_1> a crm:E33_Linguistic_Object ;
   crm:P129_is_about locinsts:19699885 ;
-  crm:P2_has_type "ad copy" ;
-  crm:P190_has_symbolic_content "A Magazine of Lesbian Culture and Politics Featuring Essays, Analysis and Interviews" .
+  crm:P2_has_type "ad copy",
+    "features list" ;
+  crm:P190_has_symbolic_content "A Magazine of Lesbian Culture and Politics Featuring Essays, Analysis and Interviews" ;
+  crm:P129_is_about wikidata:Q35760 , #essays
+    wikidata:Q217602 , #analysis
+    wikidata:Q178651 . #interviews
 
 <DYKE_AD_COPY_2> a crm:E33_Linguistic_Object ;
   crm:P129_is_about locinsts:19699885 ;
@@ -542,13 +546,6 @@ locinsts:19699885 a frbroo:F18_Serial_Work ;
     wikidata:Q309 ,
     wikidata:Q11424 ,
     wikidata:Q571 .
-
-<DYKE_FEATURES_LIST_1> a crm:E33_Linguistic_Object ;
-  crm:P129_is_about locinsts:19699885 ;
-  crm:P2_has_type "features list" ;
-  crm:P129_is_about wikidata:Q35760 ,
-    wikidata:Q217602 ,
-    wikidata:Q178651 .
 
 
 
