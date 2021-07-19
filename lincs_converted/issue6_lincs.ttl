@@ -413,9 +413,9 @@ wikidata:Q7078947 a frbroo:F18_Serial_Work ;
   rdfs:label "Off Our Backs"^^xsd:string ;
   crm:P2_has_type wikidata:Q1002697 ;
   crm:P102_has_title [ a crm:E35_Title ;
-    ##Why is this listed as the title? Why is off our backs not among the titles?
+    ## Why is off our backs not among the titles?
     crm:P190_has_symbolic_content "An Independent Womens Newsjournal" ;
-    crm:P2_has_type wikidata:Q1135389 ],
+    crm:P2_has_type wikidata:Q1135389 ], #Subtitle
     [ a crm:E35_Title ;
     crm:P190_has_symbolic_content "OOB" ;
     crm:P2_has_type bibo:shortTitle ] ;

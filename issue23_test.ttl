@@ -75,26 +75,21 @@ worldcat:5612572673 a frbroo:F3_Manifestation ;
 
 # These are the things being advertised
 
-#TODO: Tailor this, which was taken from another issue
-#Off Our Backs
+#Off Our Backs, the serial publication
 wikidata:Q7078947 a frbroo:F18_Serial_Work ;
   rdfs:label "Off Our Backs"^^xsd:string ;
   crm:P2_has_type wikidata:Q1002697 ;
   crm:P102_has_title [ a crm:E35_Title ;
-    crm:P190_has_symbolic_content "An Independent Womens Newsjournal" ; ##Not the title?
-    crm:P2_has_type wikidata:Q1135389 ],
+    crm:P190_has_symbolic_content "Off Our Backs" ;
+    crm:P2_has_type wikidata:Q216353 ],
     [ a crm:E35_Title ;
     crm:P190_has_symbolic_content "OOB" ;
     crm:P2_has_type bibo:shortTitle ] ;
   frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
     crm:P14_carried_out_by <OFF_OUR_BACKS_CREATORS> ] ;
-  crm:P129_is_about wikidata:Q38926 ;
-  crm:P39i_was_measured_by <AD_PRICE_I6_AD1_P1>,
-    <AD_PRICE_I6_AD1_P2>,
-    <AD_PRICE_I6_AD1_P3>,
-    <AD_PRICE_I6_AD1_P4>,
-    <AD_PRICE_I6_AD1_P5>,
-    <AD_PRICE_I6_AD1_P6> .
+  crm:P129_is_about wikidata:Q38926 ; #news
+  crm:P39i_was_measured_by <AD_PRICE_I23_AD0_P1> ,
+    <AD_PRICE_I23_AD0_P2> .
 
 
 <AD_PRICE_I23_AD0_P1> a crm:E16_Measurement ;
@@ -116,16 +111,16 @@ wikidata:Q7078947 a frbroo:F18_Serial_Work ;
 ##3 of each or 1 of each?
 ##Probably 3
 <OFF_OUR_BACKS_AD_COPY_1> a crm:E33_Linguistic_Object ;
-  crm:P129_is_about wikidata:Q7078947 ;
+  crm:P129_is_about wikidata:Q7078947 ,
+    "feminist journalism" ;
   crm:P2_has_type "ad copy" ;
-  crm:P190_has_symbolic_content "the best in feminist journalism"
+  crm:P190_has_symbolic_content "the best in feminist journalism" .
 
 <OFF_OUR_BACKS_AD_COPY_2> a crm:E33_Linguistic_Object ;
   crm:P129_is_about wikidata:Q7078947 ;
   crm:P2_has_type "ad copy" ,
     "topic list" ,
     "features list" ;
-  # Problem with allowing one element to be both a topic and a feature list is that it's unclear which 'abouts' are topics and which features
   # "News from every continent" is a 'feature'
   # Sort of also a topic? (from every continent)
   crm:P129_is_about "news from every continent" ,
@@ -222,10 +217,20 @@ wikidata:Q7757694 a frbroo:F1_Work ;
   crm:P138i_has_representation <https://iiif.archivelab.org/iiif/heresies_23$97/1216,1383,1137,1751/full/0/default.jpg> ;
       rdfs:label "Heresies 23 Tulsa Studies in Women's Literature advertisement - visual representation" .
 
-##TODO
+# The serial publication Tulsa Studies in Women's Literature
 wikidata:Q7852369 a frbroo:F18_Serial_Work ; #Tulsa Studies in Women's Literature
-  rdfs:label "Tulsa Studies in Women's Literature" ;
+  rdfs:label "Tulsa Studies in Women's Literature"^^xsd:string ;
+  crm:P2_has_type wikidata:Q1002697 ; #type is periodical
+  crm:P102_has_title [ a crm:E35_Title ;
+    crm:P190_has_symbolic_content "Tulsa Studies in Women's Literature" ;
+    crm:P2_has_type wikidata:Q216353 ] ;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+    crm:P14_carried_out_by <TULSA_STUDIES_CREATORS> ] ;
+  crm:P129_is_about wikidata:Q17345318 ; #Women's writing
+  frbroo:R10_has_member <TULSA_STUDIES_SPRING_1988> .
 
+
+# The issue advertised
 <TULSA_STUDIES_SPRING_1988> a frbroo:F2_Expression ;
   rdfs:label "Tulsa Studies in Women's Literature, Volume 7, Number 1, Spring 1988" ;
   crm:P2_has_type wikidata:Q28869365 ; #type is issue
@@ -305,7 +310,7 @@ wikidata:Q7852369 a frbroo:F18_Serial_Work ; #Tulsa Studies in Women's Literatur
     crm:P14_carried_out_by "Jennifer Jordan" ] ;
   frbroo:R67i_forms_part_of <TULSA_STUDIES_SPRING_1988> ;
   crm:P129_is_about "Zora Neale Hurston",
-    "Their Eyes Were Watching God" . ##Should I add a line indicating that Hurston wrote 'Their Eyes Were Watching God'?
+    "Their Eyes Were Watching God" . ##Should I add triples indicating that Hurston wrote 'Their Eyes Were Watching God'?
 
 <TULSA_STUDIES_6> a frbroo:F2_Expression ;
   rdfs:label "Feminine Sensationalism, Eroticism, and Self-Assertion: M. E. Braddon and Ouida" ;
@@ -324,7 +329,8 @@ wikidata:Q7852369 a frbroo:F18_Serial_Work ; #Tulsa Studies in Women's Literatur
 
 <TULSA_STUDIES_7> a frbroo:F2_Expression ;
   rdfs:label "Reshuffling the Deck; Or, (Re)Reading Race and Gender in Black Women's Writing" ;
-  crm:P2_has_type wikidata:Q191067 ; #Type is article
+  crm:P2_has_type wikidata:Q191067 , #Type is article
+    wikidata:Q265158 ; #Type is review
   crm:P102_has_title [ a crm:E35_Title ;
     crm:P2_has_type bf:Title ;
     crm:P190_has_symbolic_content "Reshuffling the Deck; Or, (Re)Reading Race and Gender in Black Women's Writing" ] ;
@@ -335,6 +341,105 @@ wikidata:Q7852369 a frbroo:F18_Serial_Work ; #Tulsa Studies in Women's Literatur
     "race" ,
     "gender" .
 
+
+
+# Section 2.2 - Connexions advertisment
+<MANIFESTATION_HERESIES_I23_AD2> a frbroo:F3_Manifestation ;
+  rdfs:label "Heresies Issue 23 Connexions advertisement"
+  crm:P2_has_type wikidata:Q39911916 ; # An ad
+  crm:P148i_is_component_of worldcat:5612572673 ; # Component of the heresies issue
+  crm:P129_is_about locworks:11275507 , # The publication Connexions
+    <CONNEXIONS_FALL_1987> ,#The Issue advertised
+    <CONNEXIONS_CREATORS_ADDRESS> , ##Is this correct since we have an LOC URI for the creators?
+    #Topics
+    "women in the visual arts" ;
+  frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ;
+    crm:P14_carried_out_by locnames:n78021186 ] ; # The publisher, People's Translation Service
+  crm:P165_incorporates <CONNEXIONS_AD_COPY_1> ,
+    <CONNEXIONS_SUBSCRIPTION_FORM> ;
+  crm:P138i_has_representation <https://iiif.archivelab.org/iiif/heresies_23$97/90,1359,1122,1706/full/0/default.jpg> ;
+      rdfs:label "Heresies 23 Connexions advertisement - visual representation" .
+
+<CONNEXIONS_FALL_1987> a frbroo:F2_Expression ;
+  rdfs:label "Connexions: Women in the Visual Arts, Number 24, Fall 1987" ;
+  crm:P2_has_type wikidata:Q28869365 ; #Type is issue
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+    crm:P14_carried_out_by locnames:n78021186 ; # The publisher, People's Translation Service
+    crm:P4_has_time-span [ a crm:E52_Time-Span ; ## Was not necessarily created in this time span!
+      crm:P82_at_some_time_within "Fall 1987" ;
+      crm:P82a_begin_of_the_begin "1987-01-01" ;
+      crm:P82b_end_of_the_end "1987-12-31" ] ] ;
+  crm:P1_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+    crm:P190_has_symbolic_content "Connexions: Women in the Visual Arts, Number 24, Fall 1987" ] ;
+  crm:P102_has_title [ a crm:E35_Title ;
+    crm:P190_has_symbolic_content "Women in the Visual Arts" ;
+    crm:P2_has_type wikidata:Q1135389 ] ; #Subtitle
+  frbroo:R10i_is_member_of locworks:11275507 ; # Member of the serial publication
+  crm:P129_is_about "women in the visual arts" .
+
+locworks:11275507 a frbroo:F18_Serial_Work ;
+  rdfs:label "Connexions"^^xsd:string ;
+  crm:P2_has_type wikidata:Q1002697 ; #type is periodical
+  crm:P102_has_title [ a crm:E35_Title ;
+    crm:P190_has_symbolic_content "Connexions" ;
+    crm:P2_has_type wikidata:Q216353 ] ,
+    [ a crm:E35_Title ;
+    crm:P190_has_symbolic_content "An International Women's Quarterly" ; ##Is this a true subtitle?
+    crm:P2_has_type wikidata:Q1135389 ] ; #Subtitle
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+    crm:P14_carried_out_by locnames:n78021186 ] ;
+  crm:P129_is_about "women's issues" ;
+  frbroo:R10_has_member <CONNEXIONS_FALL_1987> .
+
+<CONNEXIONS_AD_COPY_1> a crm:E33_Linguistic_Object ;
+  crm:P129_is_about <CONNEXIONS_FALL_1987> ;
+  crm:P2_has_type "ad copy" ,
+    "features list" ;
+  crm:P190_has_symbolic_content "In May, 1987 Connexions sent out a call for entries to women artists in Africa, Asian, Australia, Latin America, and Europe. The response was very exciting! Connexions #24 features controversial and provocative artwork from women all over teh world plus an international resource list for women artists." ;
+  crm:P129_is_about "Women artists--Africa", #Topics
+    "Women artists--Asia" ,
+    "Women artists--Australia" ,
+    "Women artists--Latin America" ,
+    "Women artists--Europe " ,
+    "artwork from women all over the world" , #Features
+    "international resource list for women artists" .
+
+<CONNEXIONS_SUBSCRIPTION_FORM> a crm:E33_Linguistic_Object ;
+  crm:P2_has_type "subscription form" ;
+  crm:P129_is_about <CONNEXIONS_FALL_1987> ,
+  <CONNEXIONS_CREATORS_ADDRESS> ,
+  <AD_PRICE_I23_AD2> .
+
+<AD_PRICE_I23_AD2> a crm:E16_Measurement ;
+##How to represent postage vs sub price?
+##SHould there be separate prices for each?
+
+
+
+#Section 2.3 - Womyn's Braille Press Ad
+<MANIFESTATION_HERESIES_I23_AD3> a frbroo:F3_Manifestation ;
+  rdfs:label "Heresies Issue 23 Womyn's Braille Press advertisement"
+  crm:P2_has_type wikidata:Q39911916 ; # An ad
+  crm:P148i_is_component_of worldcat:5612572673 ; # Component of the heresies issue
+  crm:P129_is_about wikidata:Q106298387 , # Womyn's Braille Press
+    wikidata:Q1002697 , # Heresies
+    <WOMYNS_BRAILLE_PRESS_ADDRESS> ,
+    "publications on tape" , ##?
+    "accessible publishing" ; ##?
+  frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ;
+    crm:P14_carried_out_by wikidata:Q106298387 ] ; # Womyn's Braille Press
+  crm:P165_incorporates <WOMYNS_BRAILLE_PRESS_AD_COPY> ;
+  crm:P138i_has_representation <https://iiif.archivelab.org/iiif/heresies_23$97/125,963,725,392/full/0/default.jpg> ;
+      rdfs:label "Heresies Issue 23 Womyn's Braille Press advertisement - visual representation" .
+
+<WOMYNS_BRAILLE_PRESS_AD_COPY> a crm:E33_Linguistic_Object ;
+  crm:P2_has_type "ad copy" ;
+  crm:P129_is_about wikidata:Q106298387 , # Womyn's Braille Press
+    wikidata:Q1002697 , # Heresies
+    <WOMYNS_BRAILLE_PRESS_ADDRESS> ,
+    "publications on tape" ,##?
+    "accessible publishing" ; ##?
+  crm:P190_has_symbolic_content "HERESIES is now available on tape from Womyn's Braille Press, Box 8745, Minneapolis MN 55408." .
 
 # Ad/publication creators
 ##These should ultimately be broken out to the heresies_agents.ttl file
@@ -348,6 +453,7 @@ wikidata:Q7852369 a frbroo:F18_Serial_Work ; #Tulsa Studies in Women's Literatur
   crm:P190_has_symbolic_content "Tulsa Studies in Women's Literature, The University of Tulsa, 600 South College Avenue, Tulsa, Oklahoma, 74104" ;
   crm:P2_has_type wikidata:Q319608 .
 
+#off our backs creators
 <OFF_OUR_BACKS_CREATORS> a crm:E74_Group ; #Already present in heresies_agents.ttl, but lacks address from issue 23
   crm:P74_has_current_or_former_residence [ a crm:E53_Place ; #Issue 6 address
     crm:P1_is_identified_by <OFF_OUR_BACKS_CREATORS_ADDRESS> ;
@@ -358,4 +464,26 @@ wikidata:Q7852369 a frbroo:F18_Serial_Work ; #Tulsa Studies in Women's Literatur
 
 <OFF_OUR_BACKS_CREATORS_ADDRESS_2> a crm:E33_E41_Linguistic_Appellation ; ##Differs from earlier address. Add new residence to creator
   crm:P190_has_symbolic_content "off our backs, 2423 18th Street NW, Washington DC 20009, U.S.A." ;
+  crm:P2_has_type wikidata:Q319608 .
+
+# Connexions creators
+locnames:n78021186 a crm:E74_Group ;
+  rdfs:label "People's Translation Service" ; ##Is this correct? Address is for "Connexions", but PTS is publisher, receives payment
+  crm:P74_has_current_or_former_residence [ a crm:E53_Place ;
+  crm:P1_is_identified_by <CONNEXIONS_CREATORS_ADDRESS> ;
+  crm:P168_place_is_defined_by "37.831260, -122.263820" ] .
+
+<CONNEXIONS_CREATORS_ADDRESS> a crm:E33_E41_Linguistic_Appellation ;
+  crm:P190_has_symbolic_content "Connexions, 4228 Telegraph Ave., Oakland CA 94609" ;
+  crm:P2_has_type wikidata:Q319608 .
+
+#Womyn's Braille Press
+wikidata:Q106298387 a crm:E74_Group ;
+  rdfs:label "Womyn's Braille Press" ;
+  crm:P74_has_current_or_former_residence [ a crm:E53_Place ;
+  crm:P1_is_identified_by <WOMYNS_BRAILLE_PRESS_ADDRESS> ;
+  crm:P168_place_is_defined_by "46.737170, -96.035626" ] .
+
+<WOMYNS_BRAILLE_PRESS_ADDRESS> a crm:E33_E41_Linguistic_Appellation ;
+  crm:P190_has_symbolic_content "Womyn's Braille Press, Box 8745, Minneapolis MN 55408" ;
   crm:P2_has_type wikidata:Q319608 .
