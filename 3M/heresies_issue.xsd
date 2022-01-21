@@ -3,10 +3,7 @@
     <xs:element name="heresies_issue">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="issue_no" type="xs:int"/>
-                <xs:element name="title" type="xs:string"/>
-                <xs:element name="pub_year" type="xs:gYear"> </xs:element>
-                <xs:element name="pub_month" minOccurs="0" type="xs:gMonth"> </xs:element>
+                <xs:element ref="issue_title"/>
                 <xs:element name="ad" minOccurs="1" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
@@ -236,7 +233,7 @@
     <xs:element name="issue_title">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="text"/>
+                <xs:element ref="title"/>
                 <xs:element name="number" minOccurs="0" type="xs:string"/>
                 <xs:element minOccurs="0" ref="date"> </xs:element>
             </xs:sequence>
