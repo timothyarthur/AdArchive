@@ -31,7 +31,7 @@ wikidata:Q17022558 a frbroo:F18_Serial_Work ;
   crm:P102_has_title [ a crm:E35_Title ;
     crm:P2_has_type bf:Title ;
     crm:P190_has_symbolic_content "Heresies: A Feminist Publication on Art and Politics"] ;
-  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation;
+  frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
     crm:P14_carried_out_by wikidata:Q20857976 ] ;
   frbroo:R10_has_member worldcat:5612572673 .
 
@@ -45,7 +45,11 @@ worldcat:5612572673 a frbroo:F3_Manifestation ;
     crm:P190_has_symbolic_content "Coming of Age" ] ;
   frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ;
     crm:P14_carried_out_by wikidata:Q20857976 ] ;
-  crm:P148_has_component <MANIFESTATION_HERESIES_I23_AD0>
+  crm:P148_has_component <MANIFESTATION_HERESIES_I23_AD0> ,
+    <MANIFESTATION_HERESIES_I23_AD1> ,
+    <MANIFESTATION_HERESIES_I23_AD2> ,
+    <MANIFESTATION_HERESIES_I23_AD3> ,
+    <MANIFESTATION_HERESIES_I23_AD4> .
 
 #----------------------------------------------------------------------------------------------------------------------------
 
@@ -53,7 +57,7 @@ worldcat:5612572673 a frbroo:F3_Manifestation ;
 
 #Section 2.0 - Off Our Backs Ad
 <MANIFESTATION_HERESIES_I23_AD0> a frbroo:F3_Manifestation ;
-  rdfs:label "Heresies 23 off our backs advertisement"
+  rdfs:label "Heresies 23 off our backs advertisement" ;
   crm:P2_has_type wikidata:Q39911916 ; #An advertisement
   crm:P148i_is_component_of worldcat:5612572673 ; #Component of the issue
   crm:P129_is_about wikidata:Q7078947 ,
@@ -131,25 +135,25 @@ wikidata:Q7078947 a frbroo:F18_Serial_Work ;
     "Black women's issues" ,
     "Lesbian and gay rights" ;
   #Can copy simply be incorporated here?
-  crm:P190_has_symbolic_content "news from every continent - working women's issues, health, reproductive rights, Black women's issues, lesbian and gay rights" ;
+  crm:P190_has_symbolic_content "news from every continent - working women's issues, health, reproductive rights, Black women's issues, lesbian and gay rights" .
 
 <OFF_OUR_BACKS_AD_COPY_3> a crm:E33_Linguistic_Object ;
   crm:P129_is_about wikidata:Q7078947 ;
   crm:P2_has_type "ad copy" ;
   crm:P190_has_symbolic_content "blow by blow reports of women's conferences" ;
-  crm:P129_is_about "reports of women's conferences", #Or just reports? A feature
+  crm:P129_is_about "reports of women's conferences" , #Or just reports? A feature
     "women's conferences" . #A topic
 
 <OFF_OUR_BACKS_AD_COPY_4> a crm:E33_Linguistic_Object ;
   crm:P129_is_about wikidata:Q7078947 ;
   crm:P2_has_type "ad copy" ;
   crm:P190_has_symbolic_content "book reviews, commentaries, letters - open to all feminist sides of the current debates on sexuality, reproductive technology, motherhood, and more ..." ;
-  crm:P129_is_about "book reviews", #Features
-    "commentaries",
-    "letters",
-    "feminism", #Topics
-    "sexuality",
-    "reproductive technology",
+  crm:P129_is_about "book reviews" , #Features
+    "commentaries" ,
+    "letters" ,
+    "feminism" , #Topics
+    "sexuality" ,
+    "reproductive technology" ,
     "motherhood" .
 
 <OFF_OUR_BACKS_AD_COPY_5> a crm:E33_Linguistic_Object ;
@@ -195,7 +199,7 @@ wikidata:Q7757694 a frbroo:F1_Work ;
 
 #Section 2.1 - Tulsa Studies in Women's Literature Ad
 <MANIFESTATION_HERESIES_I23_AD1> a frbroo:F3_Manifestation ;
-  rdfs:label "Heresies 23 Tulsa Studies in Women's Literature advertisement"
+  rdfs:label "Heresies 23 Tulsa Studies in Women's Literature advertisement" ;
   crm:P2_has_type wikidata:Q39911916 ; # An ad
   crm:P148i_is_component_of worldcat:5612572673 ; # Component of the heresies issue
   crm:P129_is_about wikidata:Q7852369 , # The TSWL publication
@@ -241,7 +245,7 @@ wikidata:Q7852369 a frbroo:F18_Serial_Work ; #Tulsa Studies in Women's Literatur
       crm:P82a_begin_of_the_begin "1988-01-01" ;
       crm:P82b_end_of_the_end "1988-12-31" ] ] ;
   crm:P1_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
-    crm:P190_has_symbolic_content "Tulsa Studies in Women's Literature, Volume 7, Number 1, Spring 1988" ] ;
+    crm:P190_has_symbolic_content "Tulsa Studies in Women's Literature, Volume 7, Number 1, Spring 1988" ] ; ##Break down into composing parts
   frbroo:R10i_is_member_of wikidata:Q7852369 ;
   frbroo:R67_has_part <TULSA_STUDIES_1> , #Articles advertised
       <TULSA_STUDIES_2> ,
@@ -345,7 +349,7 @@ wikidata:Q7852369 a frbroo:F18_Serial_Work ; #Tulsa Studies in Women's Literatur
 
 # Section 2.2 - Connexions advertisment
 <MANIFESTATION_HERESIES_I23_AD2> a frbroo:F3_Manifestation ;
-  rdfs:label "Heresies Issue 23 Connexions advertisement"
+  rdfs:label "Heresies Issue 23 Connexions advertisement" ;
   crm:P2_has_type wikidata:Q39911916 ; # An ad
   crm:P148i_is_component_of worldcat:5612572673 ; # Component of the heresies issue
   crm:P129_is_about locworks:11275507 , # The publication Connexions
@@ -410,7 +414,7 @@ locworks:11275507 a frbroo:F18_Serial_Work ;
   <CONNEXIONS_CREATORS_ADDRESS> ,
   <AD_PRICE_I23_AD2> .
 
-<AD_PRICE_I23_AD2> a crm:E16_Measurement ;
+#<AD_PRICE_I23_AD2> a crm:E16_Measurement ;
 ##How to represent postage vs sub price?
 ##SHould there be separate prices for each?
 
@@ -418,7 +422,7 @@ locworks:11275507 a frbroo:F18_Serial_Work ;
 
 #Section 2.3 - Womyn's Braille Press Ad
 <MANIFESTATION_HERESIES_I23_AD3> a frbroo:F3_Manifestation ;
-  rdfs:label "Heresies Issue 23 Womyn's Braille Press advertisement"
+  rdfs:label "Heresies Issue 23 Womyn's Braille Press advertisement" ;
   crm:P2_has_type wikidata:Q39911916 ; # An ad
   crm:P148i_is_component_of worldcat:5612572673 ; # Component of the heresies issue
   crm:P129_is_about wikidata:Q106298387 , # Womyn's Braille Press
@@ -440,6 +444,89 @@ locworks:11275507 a frbroo:F18_Serial_Work ;
     "publications on tape" ,##?
     "accessible publishing" ; ##?
   crm:P190_has_symbolic_content "HERESIES is now available on tape from Womyn's Braille Press, Box 8745, Minneapolis MN 55408." .
+
+
+
+#Section 2.4 - WomanSpirit Ad
+<MANIFESTATION_HERESIES_I23_AD3> a frbroo:F3_Manifestation ;
+  rdfs:label "Heresies Issue 23 WomanSpirit advertisement" ;
+  crm:P2_has_type wikidata:Q39911916 ; # An ad
+  crm:P148i_is_component_of worldcat:5612572673 ; # Component of the heresies issue
+  crm:P129_is_about wikidata:Q48732990 , # WomanSpirit
+    <WOMANSPIRIT_ADDRESS> ,
+    "Lesbians over 60" , ##?
+    "anthologies" ; ##?
+  frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ;
+    crm:P14_carried_out_by <WOMANSPIRIT_CREATORS> ] ; # WomanSpirit
+  crm:P165_incorporates <WOMANSPIRIT_AD_COPY_1> ,
+    <WOMANSPIRIT_AD_COPY_2> ;
+  crm:P138i_has_representation <https://iiif.archivelab.org/iiif/heresies_23$97/130,145,676,797/full/0/default.jpg> ;
+      rdfs:label "Heresies Issue 23 WomanSpirit advertisement - visual representation" .
+
+<WOMANSPIRIT_AD_COPY_1> a crm:E33_Linguistic_Object ;
+  crm:P2_has_type "ad copy" ;
+  crm:P129_is_about wikidata:Q48732990 , ## WomanSpirit??
+    "lesbianism",
+    "lesbians over sixty" ;
+  crm:P190_has_symbolic_content "Lesbians Over Sixty: OTHER LESBIANS WANT TO KNOW" .
+
+<WOMANSPIRIT_AD_COPY_2> a crm:E33_Linguistic_Object ;
+  crm:P2_has_type "ad copy" ;
+  crm:P129_is_about wikidata:Q48732990 , #WomanSpirit
+    "love between women over sixty" ,
+    "poems" , #Features
+    "short prose pieces" ,
+    "letters" ,
+    "diary entries" ,
+    "songs" ,
+    "photos" ,
+    "drawings" ;
+  crm:P190_has_symbolic_content "For an anthology, we are collecting accounts of love between women over sixty, for their unique perspective on our loving lives. We are interested in reading your material. Send your poems, short prose pieces, letters, diary entries, songs, photos and drawings. Photocopies, please. Include S.A.S.E. Deadline extended to Crones Day—Halloween 1988. Send material to OLD LOVERS, c/o WomanSpirit, 2000 King Mountain Trail, Sunny Valley, OR 97497." .
+##Features list??
+
+
+# Section 2.4 - New York Feminist Art Institute advertisment
+<MANIFESTATION_HERESIES_I23_AD4> a frbroo:F3_Manifestation ;
+  rdfs:label "Heresies Issue 23 New York Feminist Art Institute advertisement" ;
+  crm:P2_has_type wikidata:Q39911916 ; # An ad
+  crm:P148i_is_component_of worldcat:5612572673 ; # Component of the heresies issue
+  crm:P129_is_about locnames:nr2001007238 , # New York Feminist Art Institute/Women's Center for Learning
+    <NYFAI_ADDRESS> ,
+    "Low cost studio and storage space" , ##?
+    "Summer classes" ; ##?
+  frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ;
+    crm:P14_carried_out_by locnames:nr2001007238 ] ; # New York Feminist Art Institute/Women's Center for Learning
+  crm:P165_incorporates <NYFAI_AD_COPY_1> ,
+    <NYFAI_AD_COPY_2> ;
+  crm:P138i_has_representation <https://iiif.archivelab.org/iiif/heresies_23$97/1576,162,771,1213/full/0/default.jpg> ;
+      rdfs:label "Heresies Issue 23 New York Feminist Art Institute advertisement - visual representation" .
+
+<NYFAI_AD_COPY_1> a crm:E33_Linguistic_Object ;
+  crm:P2_has_type "ad copy" ;
+  crm:P129_is_about locnames:nr2001007238 , # New York Feminist Art Institute/Women's Center for Learning
+    "low cost studio & storage space",
+    "summer classes" ;
+  crm:P190_has_symbolic_content "NYFAI Women's Center for Learning Has Available Now: LOW COST STUDIO & STORAGE SPACE / SUMMER CLASSES BEGIN ON JUNE 9th" .
+
+<NYFAI_AD_COPY_2> a crm:E33_Linguistic_Object ;
+  crm:P2_has_type "ad copy" ;
+  crm:P129_is_about locnames:nr2001007238 ; # New York Feminist Art Institute/Women's Center for Learning
+  crm:P190_has_symbolic_content "Please Call For More Information" .
+
+locnames:nr2001007238 a crm:E74_Group ;
+  rdfs:label "New York Feminist Art Institute/Women's Center for Learning" ;
+  crm:P1_is_identified_by [ a crm:E53_Place ;
+    crm:P1_is_identified_by <NYFAI_ADDRESS>,
+      [ a crm:E41_Appellation ;
+      crm:P190_has_symbolic_content "212-219-9590" ;
+      crm:P2_has_type "Phone number" ] ;
+    crm:P168_place_is_defined_by "40.717850, -74.005050" ] .
+
+<NYFAI_ADDRESS> a crm:E33_E41_Linguistic_Appellation ;
+  crm:P190_has_symbolic_content "91 Franklin Street, New York City, NY 10013" ;
+  crm:P2_has_type wikidata:Q319608 .
+
+
 
 # Ad/publication creators
 ##These should ultimately be broken out to the heresies_agents.ttl file
@@ -481,9 +568,18 @@ locnames:n78021186 a crm:E74_Group ;
 wikidata:Q106298387 a crm:E74_Group ;
   rdfs:label "Womyn's Braille Press" ;
   crm:P74_has_current_or_former_residence [ a crm:E53_Place ;
-  crm:P1_is_identified_by <WOMYNS_BRAILLE_PRESS_ADDRESS> ;
-  crm:P168_place_is_defined_by "46.737170, -96.035626" ] .
+    crm:P1_is_identified_by <WOMYNS_BRAILLE_PRESS_ADDRESS> ;
+    crm:P168_place_is_defined_by "46.737170, -96.035626" ] .
 
 <WOMYNS_BRAILLE_PRESS_ADDRESS> a crm:E33_E41_Linguistic_Appellation ;
   crm:P190_has_symbolic_content "Womyn's Braille Press, Box 8745, Minneapolis MN 55408" ;
+  crm:P2_has_type wikidata:Q319608 .
+
+<WOMANSPIRIT_CREATORS> a crm:E74_Group ; ##Do we need this?
+  crm:P74_has_current_or_former_residence [ a crm:E53_Place ;
+    crm:P1_is_identified_by <WOMANSPIRIT_CREATORS_ADDRESS> ;
+    crm:P168_place_is_defined_by "42.651120, -123.313400" ] .
+
+<WOMANSPIRIT_CREATORS_ADDRESS> a crm:E33_E41_Linguistic_Appellation ;
+  crm:P190_has_symbolic_content "WomanSpirit, 2000 King Mountain Trail, Sunny Valley, OR 97497" ;
   crm:P2_has_type wikidata:Q319608 .

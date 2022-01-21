@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<heresies_issue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/Users/tim/Documents/AdArchive/3M/heresies_issue.xsd">
+    <issue_no>3</issue_no>
+    <title>Lesbian art and artists</title>
+    <pub_year>1977</pub_year><pub_month>--09</pub_month>
+    <ad>
+        <clipping_uri/>
+        <ad_creators uri=""/>
+        <about/><publication_advertised><title type="wikidata:Q1135389"/><creator/><issue_advertised><title><text/><date/></title><article_advertised><creator><name>Alice Austen</name></creator></article_advertised></issue_advertised></publication_advertised><illustration><clipping_uri/><type/><about/><represents/></illustration>
+    </ad>
+</heresies_issue>

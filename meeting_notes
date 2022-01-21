@@ -6,7 +6,88 @@ See issue 6 DYKE ad to illustrate
 Why not just integrate all element types under overriding type ad copy?
   This would then have subtypes topic and feature list
   One element of ad copy could also be a feature and/or topic list
-See issue23_test to illstrate
+See issue23_test to illustrate
 
 Look into illustration from off our backs
 Restructure oob ad
+
+July 27, 2021
+Scheduled meeting with LINCS team for Wednesday, August 11th
+Finished issue 23 triples
+  Thinking about how to automate reconciliation
+Read IJHAC paper
+
+Next week:
+Develop reconciliation method
+
+Begin planning for meeting
+  Work on centralized record of questions relating to data model
+
+Play around with researchspace
+
+Choose another issue to start writing triples for
+
+Look again at IJHAC paper
+
+Hard copies!!
+
+LINCS Meeting, August 11
+Illustrations
+
+http://graph.lincsproject.ca/adarchive
+
+List of all illustrations
+
+August 24
+Worked on describing images, Issue 17
+Set up meeting with Erin and Natalie for tomorrow
+
+Send notes on meeting to Michelle and Jana
+
+
+August 25 - Meeting with Erin and Natalie
+Easy things to automate:
+  Inserting RDFS labels
+  Mapping already encountered literals
+    Should create master list of literal mappings
+
+File with templates to copy and paste
+
+Options: Write in CSV or XML, then convert to RDF with 3M
+
+Convert to XML to turtle
+  Create mapping via 3M
+
+Minting entities:
+  Insert placeholders
+
+Mapping literals - create master list
+  Mapping can take place in XML-RDF conversion
+
+Go through complete process for one thing at a time
+  Small mappings, bite-size approach
+
+XPATH commands
+  Look up tutorial
+  Look at example files
+
+ResearchSpace doesn't like blank nodes, this will force declaration
+
+August 31 Meeting
+
+
+September 20 Meeting
+
+Organize meeting with researchspace People
+Kim, Zachary, etc?
+Look over Alex's Notes
+
+October 4
+N Triples
+Send followup
+  Hi, just wanted to follow up with you on this
+    When do you start to become available, limited options
+
+October 12
+Put together some csv data for openrefine workshop
+Make a list of weird ads

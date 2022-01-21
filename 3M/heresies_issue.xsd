@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="heresies_issue">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="issue_no" type="xs:int"/>
+                <xs:element name="title" type="xs:string"/>
+                <xs:element name="pub_year" type="xs:gYear"> </xs:element>
+                <xs:element name="pub_month" minOccurs="0" type="xs:gMonth"> </xs:element>
+                <xs:element name="ad" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ad_creators">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="name" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="location" minOccurs="0"
+                                            maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="address" type="xs:string"/>
+                                                  <xs:element name="coordinates" type="xs:string"/>
+                                                  <xs:element name="phone_number" type="xs:string"
+                                                  minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="uri" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:anyURI"/>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element maxOccurs="unbounded" minOccurs="1" ref="about"/>
+                            <xs:element maxOccurs="unbounded" minOccurs="0"
+                                ref="publication_advertised"/>
+                            <xs:element maxOccurs="unbounded" minOccurs="0" ref="features_list"/>
+                            <xs:element maxOccurs="unbounded" minOccurs="0" ref="topics_list"/>
+                            <xs:element maxOccurs="unbounded" minOccurs="0" ref="contents_list"/>
+                            <xs:element maxOccurs="unbounded" minOccurs="0" ref="copy"/>
+                            <xs:element maxOccurs="unbounded" minOccurs="0" ref="price"/>
+                            <xs:element maxOccurs="unbounded" minOccurs="0" ref="subscription_form"/>
+                            <xs:element maxOccurs="unbounded" minOccurs="0" ref="illustration"/>
+                            <xs:element name="embedded_ad" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element maxOccurs="unbounded" ref="about"/>
+                                        <xs:element minOccurs="0" ref="publication_advertised"/>
+                                        <xs:element minOccurs="0" ref="features_list"/>
+                                        <xs:element minOccurs="0" ref="topics_list"/>
+                                        <xs:element minOccurs="0" ref="contents_list"/>
+                                        <xs:element minOccurs="0" ref="copy"/>
+                                        <xs:element minOccurs="0" ref="price"/>
+                                        <xs:element minOccurs="0" ref="subscription_form"/>
+                                        <xs:element minOccurs="0" ref="illustration"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="clipping_uri" type="xs:anyURI"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="clipping_uri" type="xs:anyURI"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="uri" type="xs:anyURI"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="about"/>
+    <xs:element name="publication_advertised">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="title"> </xs:element>
+                <xs:element maxOccurs="unbounded" ref="creator"> </xs:element>
+                <xs:element name="type" type="xs:anyURI" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="about" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="no_pages" type="xs:int" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>For monographs</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="issuing_rule" minOccurs="0">
+                    <xs:complexType>
+                        <xs:all>
+                            <xs:element name="no_issues" type="xs:int"/>
+                            <xs:element name="time_span" type="xs:string"/>
+                        </xs:all>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="issue_advertised" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="title">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="text"/>
+                                        <xs:element name="number" minOccurs="0" type="xs:string"/>
+                                        <xs:element name="date" minOccurs="0">
+                                            <xs:complexType mixed="true">
+                                                <xs:attribute name="type"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="about" minOccurs="0" maxOccurs="unbounded"/>
+                            <xs:element name="no_pages" minOccurs="0" type="xs:int"/>
+                            <xs:element minOccurs="0" name="copy_deadline"/>
+                            <xs:element maxOccurs="unbounded" minOccurs="0" ref="article_advertised"
+                                > </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="uri" type="xs:anyURI"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element maxOccurs="unbounded" minOccurs="0" ref="article_advertised"> </xs:element>
+                <xs:element minOccurs="0" name="date_founded" type="xs:gYear"/>
+                <xs:element minOccurs="0" name="circulation" type="xs:int"/>
+            </xs:sequence>
+            <xs:attribute name="uri" type="xs:anyURI"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="features_list">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="text" type="xs:string"/>
+                <xs:element name="subject" type="xs:anyURI"/>
+                <xs:element name="feature" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="topics_list">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="text" type="xs:string"/>
+                <xs:element name="subject" type="xs:anyURI"/>
+                <xs:element name="topic" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="contents_list">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="text" type="xs:string"/>
+                <xs:element name="subject" type="xs:anyURI"/>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="article" type="xs:anyURI"/>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="author"/>
+                <xs:element maxOccurs="unbounded" name="topic" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="copy">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="text" type="xs:string"/>
+                <xs:element name="about" maxOccurs="unbounded"/>
+                <xs:element name="author" minOccurs="0"/>
+                <xs:element name="date" minOccurs="0" type="xs:string"/>
+                <xs:element name="source" minOccurs="0"/>
+                <xs:element name="type" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="price">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="subject" type="xs:anyURI"/>
+                <xs:element name="value" type="xs:decimal"/>
+                <xs:element name="currency" type="xs:string"/>
+                <xs:element name="type" maxOccurs="unbounded" type="xs:anyURI"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="subscription_form">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="text" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="illustration">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="type"/>
+                <xs:element name="about" maxOccurs="unbounded"/>
+                <xs:element name="represents" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute name="clipping_uri" type="xs:anyURI"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="creator">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name"/>
+                <xs:element name="role" minOccurs="0">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:anyURI">
+                            <xs:enumeration value="wikidata:Q482980"/>
+                            <xs:enumeration value="wikidata:Q1607826"/>
+                            <xs:enumeration value="wikidata:Q2516866"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="uri"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="title">
+        <xs:complexType mixed="true">
+            <xs:attribute name="type" use="optional">
+                <xs:simpleType>
+                    <xs:restriction base="xs:anyURI">
+                        <xs:enumeration value="bibo:shortTitle">
+                            <xs:annotation>
+                                <xs:documentation>Short form of a
+                                                  title</xs:documentation>
+                            </xs:annotation>
+                        </xs:enumeration>
+                        <xs:enumeration value="wikidata:Q1135389">
+                            <xs:annotation>
+                                <xs:documentation>Subtitle</xs:documentation>
+                            </xs:annotation>
+                        </xs:enumeration>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="article_advertised">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" ref="title"> </xs:element>
+                <xs:element maxOccurs="unbounded" minOccurs="0" ref="creator"> </xs:element>
+                <xs:element name="about" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute name="uri" type="xs:anyURI"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

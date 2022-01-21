@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<heresies_issue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="full_template.xsd">
+    <issue_no></issue_no>
+    <title></title>
+    <pub_year></pub_year>
+    <ad>
+        <clipping_uri></clipping_uri>
+        <ad_creators uri="">
+            <name></name>
+        </ad_creators>
+        <about></about>
+    </ad>
+</heresies_issue>
