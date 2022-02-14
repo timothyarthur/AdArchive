@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<generator_policy>
+    <generator name="URIorUUID" prefix="temp_lincs_temp">
+        <custom generatorClass="gr.forth.URIorUUID">
+            <set-arg name="text"/>
+        </custom>
+    </generator>
+    
+    <generator name="heresies_issue_label">
+        <pattern>Heresies: A Feminist Publication on Art and Politics - Issue {issue_no}: {issue_title}</pattern>
+    </generator>
+    
+    <generator name="ad_label">
+        <pattern>Heresies {issue_no} {creator_name} ad</pattern>
+    </generator>
+    
+    <generator name="ad_clipping_label">
+        <pattern>Heresies {issue_no} {creator_name} ad - visual representation</pattern>
+    </generator>
+</generator_policy >

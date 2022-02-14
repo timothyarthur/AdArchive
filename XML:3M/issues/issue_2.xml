@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<heresies_issue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="heresies_issue.xsd">
+    <issue_no>2</issue_no>
+    <title>Patterns of Communication and Space Among Women</title>
+    <pub_year>1977</pub_year>
+    <pub_month>--05</pub_month>
+    <ad>
+        <clipping_uri>https://iiif.archivelab.org/iiif/heresies_02$123/241,325,666,1205/full/0/default.jpg</clipping_uri>
+        <ad_creators uri="WOMEN_LITERATURE_CREATORS">
+            <name>Women &amp; Literature Creators</name>
+        </ad_creators>
+        <about>women's literature</about>
+        <publication_advertised uri="wikidata:Q105473631">
+            <title>Women &amp; Literature</title>
+            <creator uri="WOMEN_LITERATURE_CREATORS"/>
+            <creator uri="wikidata:Q275574">
+                <name>Janet M. Todd</name>
+                <role>wikidata:Q1607826</role>
+            </creator>
+            <type>scholarly journal</type>
+        </publication_advertised>
+        <features_list>
+            <text>book reviews and notes of work in progress</text>
+            <subject>wikidata:Q105473631</subject>
+            <feature>book reviews</feature>
+            <feature>notes of works in progress</feature>
+        </features_list>
+        <features_list>
+            <text>annual bibliography of women and English and American literature</text>
+            <subject>wikidata:Q105473631</subject>
+            <feature>bibliography</feature>
+        </features_list>
+        <topics_list>
+            <text>articles on known and lesser known women writers such as Jane Austen, Charlotte
+                Bronte and Mary Leadbeater</text>
+            <subject>wikidata:Q105473631</subject>
+            <topic>known women writers</topic>
+            <topic>lesser known women writers</topic>
+            <topic>Jane Austen</topic>
+            <topic>Charlotte Bronte</topic>
+            <topic>Mary Leadbeater</topic>
+        </topics_list>
+        <topics_list>
+            <text>articles on the literary treatment of women in works such as Christabel and
+                Paradise Lost</text>
+            <subject>wikidata:Q105473631</subject>
+            <topic>literary treatment of women</topic>
+            <topic>Christabel</topic>
+            <topic>Paradise Lost</topic>
+        </topics_list>
+        <topics_list>
+            <text>annual bibliography of women and English and American literature</text>
+            <subject>wikidata:Q105473631</subject>
+            <topic>women and English literature</topic>
+            <topic>women</topic>
+            <topic>English literature</topic>
+            <topic>American literature</topic>
+            <topic>women and American literature</topic>
+        </topics_list>
+        <copy>
+            <text>a scholarly journal of women writers and the literary treatment of women</text>
+            <about>women writers</about>
+            <about>literary treatment of women</about>
+        </copy>
+        <price>
+            <subject>wikidata:Q105473631</subject>
+            <value>7</value>
+            <currency>USD</currency>
+            <type>subscription</type>
+        </price>
+        <subscription_form>
+            <text>Please enter my subscription.</text>
+            <text>Name</text>
+            <text>Address</text>
+            <text>Mail with check of $7 to: The Editor, Women &amp; Literature, Department of
+                English, Douglass College, Rutgers University, New Brunsick, N.J. 08903.</text>
+        </subscription_form>
+        <illustration>
+            <clipping_uri>https://iiif.archivelab.org/iiif/heresies_02$123/660,368,207,269/full/0/default.jpg</clipping_uri>
+            <type>line drawing</type>
+            <type>illustration</type>
+            <type>logo</type>
+            <about>wikidata:Q105473631</about>
+            <represents>woman</represents>
+            <represents>portrait head</represents>
+        </illustration>
+
+    </ad>
+    <ad>
+        <clipping_uri>https://iiif.archivelab.org/iiif/heresies_02$123/249,1603,1444,1464/full/0/default.jpg</clipping_uri>
+        <ad_creators uri="CAMERA_OBSCURA_CREATORS">
+            <name>Camera Obscura Creators</name>
+            <location>
+                <address>P.O. Box 4517 Berkeley, Ca. 94704</address>
+                <coordinates>37.868270, -122.262540</coordinates>
+            </location>
+        </ad_creators>
+        <about>feminism and film theory</about>
+        <publication_advertised uri="wikidata:Q5026000">
+            <title>Camera Obscura</title>
+            <title type="wikidata:Q1135389">A journal of feminism and film theory</title>
+            <creator uri="CAMERA_OBSCURA_CREATORS"/>
+            <type>scholarly journal</type>
+            <about>feminism and film theory</about>
+            <issuing_rule>
+                <no_issues>3</no_issues>
+                <time_span>year</time_span>
+            </issuing_rule>
+        </publication_advertised>
+        <topics_list>
+            <text>Articles on:[/]Feminism and Film, Critical Approaches[/]Yvonne Rainer's Film about
+                a woman who....[/]Jackie Raynal's Deux Fois</text>
+            <subject>wikidata:Q5026000</subject>
+            <topic>Feminism and Film: Critical Approaches</topic>
+            <topic>Yvonne Rainer</topic>
+            <topic>Film about a woman who...</topic>
+            <topic>Jackie Raynal</topic>
+            <topic>Deux Foix (Jackie Raynal film) </topic>
+        </topics_list>
+        <topics_list>
+            <text>Recent French Critical Theory in Translation</text>
+            <subject>wikidata:Q5026000</subject>
+            <topic>Recent French Critical Theory in Translation</topic>
+        </topics_list>
+        <topics_list>
+            <text>A Section on Works in Progress: Current Film Practice</text>
+            <subject>wikidata:Q5026000</subject>
+            <topic>Filmic works in progress</topic>
+            <topic>Current film practice</topic>
+        </topics_list>
+        <copy>
+            <text>Semiology, textual analysis, psychoanalysis, as tools for a theoretical study of
+                film from a feminist and socialist perspective</text>
+            <about>semiology</about>
+            <about>textual analysis</about>
+            <about>psychoanalysis</about>
+            <about>film--theoretical study</about>
+            <about>film--theoretical study--feminist</about>
+            <about>film--theoretical study--socialist</about>
+            <about>feminism</about>
+            <about>socialism</about>
+            <about>film</about>
+        </copy>
+        <price>
+            <subject>wikidata:Q5026000</subject>
+            <value>2</value>
+            <currency>USD</currency>
+            <type>single copies</type>
+        </price>
+        <price>
+            <subject>wikidata:Q5026000</subject>
+            <value>6</value>
+            <currency>USD</currency>
+            <type>US and Canada</type>
+            <type>individual</type>
+            <type>subscription</type>
+        </price>
+        <price>
+            <subject>wikidata:Q5026000</subject>
+            <value>12</value>
+            <currency>USD</currency>
+            <type>US and Canada</type>
+            <type>institutional</type>
+            <type>subscription</type>
+        </price>
+        <price>
+            <subject>wikidata:Q5026000</subject>
+            <value>9</value>
+            <currency>USD</currency>
+            <type>Outside US and Canada</type>
+            <type>individual</type>
+            <type>subscription</type>
+        </price>
+        <price>
+            <subject>wikidata:Q5026000</subject>
+            <value>18</value>
+            <currency>USD</currency>
+            <type>Outside US and Canada</type>
+            <type>institutional</type>
+            <type>subscription</type>
+        </price>
+        <illustration>
+            <clipping_uri>https://iiif.archivelab.org/iiif/heresies_02$123/523,1640,628,483/full/0/default.jpg</clipping_uri>
+            <type>illustration</type>
+            <type>logo</type>
+            <about>Camera Obscura (publication)</about>
+            <represents>Camera obscura (device)</represents>
+            <represents>face</represents>
+        </illustration>
+    </ad>
+    <ad>
+        <clipping_uri>https://iiif.archivelab.org/iiif/heresies_02$123/1780,1896,679,1167/full/0/default.jpg</clipping_uri>
+        <ad_creators uri="CITY_WOMEN_CREATORS">
+            <name>City Women Creators</name>
+            <location>
+                <address>City Women 212 Forsyth St[/]NYC 1002</address>
+                <coordinates>40.718840,-73.992610</coordinates>
+            </location>
+        </ad_creators>
+        <about>women in New York City</about>
+        <publication_advertised uri="oclc:27787228">
+            <title>City Women</title>
+            <title type="wikidata:Q1135389">Woman's Guide to NY</title>
+            <creator uri="CITY_WOMEN_CREATORS"/>
+            <type>newspaper</type>
+            <about>woman</about>
+            <about>New York City</about>
+            <about>Women in New York City</about>
+        </publication_advertised>
+        <copy>
+            <text>To find out what's happening for women in NYC buy CITY WOMEN at News-[/]stands, Bookstores or Subscribe.</text>
+            <about>woman</about>
+            <about>New York City</about>
+            <about>Women--New York City</about>
+            <about>Newsstands</about>
+            <about>Bookstores</about>
+            <about>Subscriptions</about>
+        </copy>
+        <price>
+            <subject>oclc:27787228</subject>
+            <value>0.50</value>
+            <currency>USD</currency>
+            <type>monthly</type>
+            <type>subscription</type>
+        </price>
+        <price>
+            <subject>oclc:27787228</subject>
+            <value>6</value>
+            <currency>USD</currency>
+            <type>yearly</type>
+            <type>subscription</type>
+        </price>
+        <subscription_form>
+            <text>Name[/]Address[/]Enclosed $[\t]Beginning</text>
+        </subscription_form>
+    </ad>
+    <ad>
+        <clipping_uri>https://iiif.archivelab.org/iiif/heresies_02$124/137,1260,1049,683/full/0/default.jpg</clipping_uri>
+        <ad_creators uri="CRITERIA_CREATORS">
+            <name>Criteria Creators</name>
+            <location>
+                <address>11145 West Georgia St., Vancouver, B.C. V6E 3H2</address>
+                <coordinates>49.285770,-123.123100</coordinates>
+            </location>
+        </ad_creators>
+        <about>critical review of the arts</about>
+        <publication_advertised uri="wikidata:Q105742204">
+            <title>Criteria</title>
+            <title type="wikidata:Q1135389">A Critical Review of the Arts</title>
+            <creator uri="CRITERIA_CREATORS"/>
+            <issuing_rule>
+                <no_issues>3</no_issues>
+                <time_span>yearly</time_span>
+            </issuing_rule>
+        </publication_advertised>
+        <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+        <contents_list>
+            <text>Avis Lang Rosenberg on Jack Chambers[/]Robin Blaser on Jack Burnham[/]Toby Chapman MacLennan[/]Interviews with Michael Snow, Judy Chicago/Lloyd Hamrol, Dennis Wheeler, Joyce Wieland</text>
+            <subject>wikidata:Q105742204</subject>
+            <author>Avis Lang Rosenberg</author>
+            <author>Robin Blaser</author>
+            <author>Toby Chapman MacLennan</author>
+            <topic>Jack Chambers</topic>
+            <topic>Jack Burnham</topic>
+            <topic>Michael Snow</topic>
+            <topic>Judy Chicago</topic>
+            <topic>Lloyd Hamrol</topic>
+            <topic>Dennis Wheeler</topic>
+            <topic>Joyce Wieland</topic>
+        </contents_list><?oxy_custom_end?>
+
+        <price>
+            <subject>wikidata:Q105742204</subject>
+            <value>3</value>
+            <currency>USD</currency>
+            <type>subscription</type>
+            <type>yearly</type>
+        </price>
+        <price>
+            <subject>wikidata:Q105742204</subject>
+            <value>1</value>
+            <currency>USD</currency>
+            <type>single issue</type>
+        </price>
+        <price>
+            <subject>wikidata:Q105742204</subject>
+            <value>1.50</value>
+            <currency>USD</currency>
+            <type>back issue</type>
+        </price>
+        <illustration>
+            <clipping_uri>https://iiif.archivelab.org/iiif/heresies_02$123/1792,1931,650,650/full/0/default.jpg</clipping_uri>
+            <type>logo</type>
+            <about>wikidata:Q105742204</about>
+            <represents>New York City</represents>
+        </illustration>
+    </ad>
+    <ad>
+        <clipping_uri>https://iiif.archivelab.org/iiif/heresies_02$124/137,1989,1012,1068/full/0/default.jpg</clipping_uri>
+        <ad_creators uri="TIDE_PUBLICATIONS"/>
+        <about>lesbian issues</about>
+        <publication_advertised uri="wikidata:Q17005163">
+            <title>The Lesbian Tide</title>
+            <creator uri="TIDE_PUBLICATIONS"/>
+            <issuing_rule>
+                <no_issues>6</no_issues>
+                <time_span>year</time_span>
+            </issuing_rule>
+            <date_founded>1971</date_founded>
+            <circulation>6700</circulation>
+        </publication_advertised>
+        <features_list>
+            <text>ANALYSIS INTERVIEWS[/]NEWS REVIEWS POETRY</text>
+            <subject>wikidata:Q17005163</subject>
+            <feature>analysis</feature>
+            <feature>interviews</feature>
+            <feature>news</feature>
+            <feature>reviews</feature>
+            <feature>poetry</feature>
+        </features_list>
+        <copy>
+            <text>the oldest lesbian publication in the U.S. (since 1971)</text>
+            <about>lesbian publications--United States</about>
+            <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+            <about>founding</about><?oxy_custom_end?>
+        </copy>
+        <copy>
+            <text>the largest lesbian publication in the U.S. (6,700 circulation)</text>
+            <about>lesbian publications--United States</about>
+            <about>circulation</about>
+        </copy>
+        <copy>
+            <text>by and for the national lesbian, feminist, and gay communities</text>
+            <about>lesbian community--United States</about>
+            <about>feminist community--United States</about>
+            <about>Gay community--United States</about>
+        </copy>
+        <copy>
+            <text>for advertising and bulk distribution rates write: 8855 Cattaragus Ave., Los Angeles, CA 90034 (213) 839-7254</text>
+            <about>advertising</about>
+            <about>bulk distribution</about>
+        </copy>
+        <price>
+            <subject>wikidata:Q17005163</subject>
+            <value>6</value>
+            <currency>USD</currency>
+            <type>yearly</type>
+            <type>subscription</type>
+            <type>individual</type>
+        </price>
+        <price>
+            <subject>wikidata:Q17005163</subject>
+            <value>10</value>
+            <currency>USD</currency>
+            <type>institutional</type>
+            <type>subscription</type>
+        </price>
+        <price>
+            <subject>wikidata:Q17005163</subject>
+            <value>1.25</value>
+            <currency>USD</currency>
+            <type>sample issue</type>
+        </price>
+    </ad>
+    <ad>
+        <clipping_uri>https://iiif.archivelab.org/iiif/heresies_02$124/1385,758,860,2306/full/0/default.jpg</clipping_uri>
+        <ad_creators uri="NEW_WOMENS_TIMES_CREATORS"/>
+        <about>women's issues</about>
+        <publication_advertised uri="NEW_WOMENS_TIMES">
+            <title>New Women's Times</title>
+            <creator uri="NEW_WOMENS_TIMES_CREATORS"/>
+        </publication_advertised>
+        <copy>
+            <text>read the New Women's Times from the hometown of Susan B. Anthony</text>
+            <about>Susan B. Anthony</about>
+            <about>Rochester, New York</about>
+        </copy>
+        <price>
+            <subject>NEW_WOMENS_TIMES</subject>
+            <value>5</value>
+            <currency>USD</currency>
+            <type>individual</type>
+            <type>subscription</type>
+            <type>yearly</type>
+        </price>
+        <price>
+            <subject>NEW_WOMENS_TIMES</subject>
+            <value>10</value>
+            <currency>USD</currency>
+            <type>institutional</type>
+            <type>subscription</type>
+            <type>yearly</type>
+        </price>
+        <price>
+            <subject>NEW_WOMENS_TIMES</subject>
+            <value>0.50</value>
+            <currency>USD</currency>
+            <type>Back issue</type>
+        </price>
+        <subscription_form>
+            <text>yes! I want to subscribe to new women's times</text>
+            <text>name:</text>
+            <text>address:</text>
+            <text>city:</text>
+            <text>state</text>
+            <text>new women's times 1357 monroe ave Rochester, ny 14618</text>
+        </subscription_form>
+        <illustration>
+            <clipping_uri>https://iiif.archivelab.org/iiif/heresies_02$124/1407,778,828,1626/full/0/default.jpg</clipping_uri>
+            <type>illustration</type>
+            <about>NEW_WOMENS_TIMES</about>
+            <represents>woman</represents>
+            <represents>reading</represents>
+        </illustration>
+    </ad>
+    <ad>
+        <clipping_uri>https://iiif.archivelab.org/iiif/heresies_02$123/1763,122,686,1715/full/0/default.jpg</clipping_uri>
+        <ad_creators uri="WOMANART_CREATORS"/>
+        <about>art by women</about>
+        <publication_advertised uri="wikidata:Q105472534">
+            <title>womanart</title>
+            <creator uri="WOMANART_CREATORS"/>
+            <type>magazine</type>
+            <issue_advertised uri="WOMANART_SPRING/SUMMER_1977">
+                <title>
+                    <text>Womanart Spring/Summer, 1977</text>
+                    <date>Spring/Summer, 1977</date>
+                </title>
+                <article_advertised uri="WOMANART_STUART_ATAVISM">
+                    <title>Atavism, geomythology, and Zen</title>
+                    <creator uri="wikidata:Q6837258">
+                        <name>Michelle Stuart</name>
+                        <role>wikidata:Q482980</role>
+                    </creator>
+
+                    <about>Atavism</about>
+                    <about>geomythology</about>
+                    <about>Zen</about>
+                </article_advertised>
+                <article_advertised uri="WOMANART_WOMENS_CAUCUS_REPORT">
+                    <title>Report from the President</title>
+                    <creator uri="wikidata:Q8030842">
+                        <name>Women's Caucus for Art</name>
+                    </creator>
+
+                    <about>wikidata:Q8030842</about>
+                </article_advertised>
+            </issue_advertised>
+            <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+            <!--How to represent preceding publications??--><?oxy_custom_end?>
+        </publication_advertised>
+        <features_list>
+            <text>plus more articles, reviews, reports</text>
+            <subject>WOMANART_SPRING/SUMMER_1977</subject>
+            <feature>article</feature>
+            <feature>review</feature>
+            <feature>report</feature>
+        </features_list>
+        <contents_list>
+            <text>In the Spring/Summer issue:[/]Michelle Stuart: Atavism, geomythology, and Zen[/]Women in American Architecture[/]Floral paintings of Georgia O'Keeffe[/Women's Caucus for Art: Report from the President</text>
+            <subject>WOMANART_SPRING/SUMMER_1977</subject>
+            <article>WOMANART_STUART_ATAVISM</article>
+            <article>WOMANART_WOMENS_CAUCUS_REPORT</article>
+            <topic>Women in American Architecture</topic>
+            <topic>Floral paintings of Georgia O'Keeffe</topic>
+            <topic>Georgia O'Keeffe</topic>
+        </contents_list>
+        <copy>
+            <text>Have you read womanart the new fine arts magazine devoted to art by women</text>
+            <about>fine arts</about>
+            <about>art by women</about>
+        </copy>
+        <copy>
+            <text>Subscribe now!</text>
+            <about>subscription</about>
+        </copy>
+        <price>
+            <subject>wikidata:Q105472534</subject>
+            <value>5</value>
+            <currency>USD</currency>
+            <type>subscription</type>
+            <type>yearly</type>
+        </price>
+        <price>
+            <subject>wikidata:Q105472534</subject>
+            <value>9</value>
+            <currency>USD</currency>
+            <type>subscription</type>
+            <type>two years</type>
+        </price>
+        <subscription_form>
+            <text>Send check of money order to: Womanart, P.O. Box 3358 Grand Central Sta., NYC 10017</text>
+        </subscription_form>
+    </ad>
+    <ad>
+        <clipping_uri>https://iiif.archivelab.org/iiif/heresies_02$123/1005,327,673,1204/full/0/default.jpg</clipping_uri>
+        <ad_creators uri="CHRYSALIS_CREATORS"/>
+        <about>Women's culture</about>
+        <publication_advertised uri="wikidata:Q16958172">
+            <title>Chrysalis</title>
+            <creator uri="CHRYSALIS_CREATORS"/>
+            <no_pages>150</no_pages>
+        </publication_advertised>
+        <features_list>
+            <text>Each issue provides 150 pages of[/]feature articles[/]investigative reporting[/]reviews[/]criticism[/]historical analysis[/]theory[/]creative writing[/]visual art</text>
+            <subject>wikidata:Q16958172</subject>
+            <feature>feature articles</feature>
+            <feature>investigative reporting</feature>
+            <feature>reviews</feature>
+            <feature>criticism</feature>
+            <feature>historical analysis</feature>
+            <feature>theory</feature>
+            <feature>creative writing</feature>
+            <feature>visual art</feature>
+        </features_list>
+        <features_list>
+            <text>access to practical resources following the model of Chrysalis's predecessors[/]The New Women's Survival Catalog[/]and[/]The New Woman's Survival Sourcebook</text>
+            <subject>wikidata:Q16958172</subject>
+            <feature>practical resources</feature>
+        </features_list>
+        <topics_list>
+            <text>representing the broadest spectrum of feminist thought</text>
+            <subject>wikidata:Q16958172</subject>
+            <topic>feminist thought</topic>
+        </topics_list>
+        <price>
+            <subject>wikidata:Q16958172</subject>
+            <value>10</value>
+            <currency>USD</currency>
+            <type>subscription</type>
+        </price>
+    </ad>
+    <ad>
+        <clipping_uri>https://iiif.archivelab.org/iiif/heresies_02$124/1265,116,1090,637/full/0/default.jpg</clipping_uri>
+        <ad_creators uri="HARVEST_PUBLICATIONS">
+            <name>Harvest Publications</name>
+            <location>
+                <address>907 Santa Barbara Street, Santa Barbara, California 93101</address>
+                <coordinates>34.422750, -119.698400</coordinates>
+            </location>
+        </ad_creators>
+        <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+        <about>labour issues</about><?oxy_custom_end?>
+        <publication_advertised uri="HARVEST_QUARTERLY">
+            <title>Harvest Quarterly</title>
+            <creator uri="HARVEST_PUBLICATIONS"/>
+            <issue_advertised uri="HARVEST_QUARTERLY_3_4">
+                <title>
+                    <text>Harvest Quarterly Nos. 3-4</text>
+                    <number>3-4</number>
+                </title>
+                <article_advertised>
+                    <title>Doing Oral History</title>
+                    <creator>
+                        <name>Sherna Gluck</name>
+                        <role>wikidata:Q482980</role>
+                    </creator>
+                    <about>oral history</about>
+                    <about>oral history--practice</about>
+                </article_advertised>
+                <article_advertised>
+                    <title>California's Canneries: An Introduction</title>
+                    <about>Canneries--California</about>
+                    <about>Canneries</about>
+                </article_advertised>
+                <article_advertised>
+                    <title>Organizing the Great Cannery Strike of 1917</title>
+                    <creator>
+                        <name>Jaclyn Greenberg</name>
+                        <role>wikidata:Q482980</role>
+                    </creator>
+                    <about>Great Cannery Strike of 1917</about>
+                    <about>Great Cannery Strike of 1917--Organization</about>
+                </article_advertised>
+                <article_advertised>
+                    <title>Working in the California Canneries</title>
+                    <creator>
+                        <name>Elizabeth Nicholas</name>
+                        <role>wikidata:Q482980</role>
+                    </creator>
+                    <about>Canneries--California--Workers</about>
+                    <about>Canneries--California</about>
+                    <about>Canneries--Workers</about>
+                    <about>Canneries</about>
+                </article_advertised>
+                <article_advertised>
+                    <title>Unpublished Essay on Dialectical Materialism</title>
+                    <creator uri="wikidata:Q5816">
+                        <name>Mao</name>
+                    </creator>
+                    <about>dialectical materialism</about>
+                </article_advertised>
+                <article_advertised>
+                    <title>Issues in Militarization</title>
+                    <creator uri="viaf:59213820">
+                        <name>Paul Stevenson</name>
+                        <role>wikidata:Q482980</role>
+                    </creator>
+                    <about>Militarization</about>
+                </article_advertised>
+            </issue_advertised>
+        </publication_advertised>
+        <price>
+            <subject>HARVEST_QUARTERLY_3_4</subject>
+            <value>3</value>
+            <currency>USD</currency>
+            <type>double issue</type>
+        </price>
+        <price>
+            <subject>HARVEST_QUARTERLY</subject>
+            <value>1.50</value>
+            <currency>USD</currency>
+            <type>single issue</type>
+        </price>
+        <price>
+            <subject>HARVEST_QUARTERLY</subject>
+            <value>5</value>
+            <currency>USD</currency>
+            <type>yearly</type>
+            <type>subscription</type>
+        </price>
+        <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+        <!--How to represent bundle discount??--><?oxy_custom_end?>
+        <subscription_form>
+            <text>from[/]NAME[/t]APT[/]ADDRESS[/]CITY/STATE/ZIP CODE[/]Start the subscription with Quarterly #</text>
+            <text>Enclosed $[/t]$1.50 per issue. $5.00 per year[/]for[/t]copies of Quarterly #[/]for[/t]issues of the Quarterly[/]for a bundle order (10 copies or more at 30% discount) of[/]Quarterly #</text>
+        </subscription_form>
+        <illustration>
+            <clipping_uri>https://iiif.archivelab.org/iiif/heresies_02$124/2127,334,208,242/full/0/default.jpg</clipping_uri>
+            <type>illustration</type>
+            <about>HARVEST_QUARTERLY</about>
+            <about>labourer</about>
+            <represents>woman</represents>
+        </illustration>
+    </ad>
+</heresies_issue>

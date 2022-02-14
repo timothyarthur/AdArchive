@@ -1,0 +1,505 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix crmpc: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#> .
+@prefix locnames: <https://id.loc.gov/authorities/names/> .
+@prefix locworks: <https://id.loc.gov/resources/works/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+@prefix worldcat: <http://worldcat.org/entity/work/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+wikidata:Q17022558 a frbroo:F18_Serial_Work ;
+    rdfs:label "Heresies" ;
+    crmpc:P102_has_title [ a crmpc:E35_Title ;
+            crmpc:P190_has_symbolic_content "Heresies: A Feminist Publication on Art and Politics" ;
+            crmpc:P2_has_type bf:Title ] ;
+    crmpc:P2_has_type wikidata:Q1002697 ;
+    frbroo:R10_has_member worldcat:5612572673 ;
+    frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+            crmpc:P14_carried_out_by wikidata:Q20857976 ] .
+
+wikidata:Q7757694 a frbroo:F1_Work ;
+    rdfs:label "The Politics of Reality" ;
+    crmpc:P102_has_title [ a crmpc:E35_Title ;
+            crmpc:P190_has_symbolic_content "The Politics of Reality" ;
+            crmpc:P2_has_type bf:Title ] ;
+    crmpc:P2_has_type wikidata:Q571 ;
+    frbroo:R24i_was_created_through [ a frbroo:F27_Work_Conception ;
+            crmpc:P14_carried_out_by wikidata:Q13562998 ] .
+
+<file:///Users/tim/Documents/AdArchive/CONNEXIONS_AD_COPY_1> a crmpc:E33_Linguistic_Object ;
+    crmpc:P129_is_about <file:///Users/tim/Documents/AdArchive/CONNEXIONS_FALL_1987>,
+        "Women artists--Africa",
+        "Women artists--Asia",
+        "Women artists--Australia",
+        "Women artists--Europe ",
+        "Women artists--Latin America",
+        "artwork from women all over the world",
+        "international resource list for women artists" ;
+    crmpc:P190_has_symbolic_content "In May, 1987 Connexions sent out a call for entries to women artists in Africa, Asian, Australia, Latin America, and Europe. The response was very exciting! Connexions #24 features controversial and provocative artwork from women all over teh world plus an international resource list for women artists." ;
+    crmpc:P2_has_type "ad copy",
+        "features list" .
+
+<file:///Users/tim/Documents/AdArchive/CONNEXIONS_SUBSCRIPTION_FORM> a crmpc:E33_Linguistic_Object ;
+    crmpc:P129_is_about <file:///Users/tim/Documents/AdArchive/AD_PRICE_I23_AD2>,
+        <file:///Users/tim/Documents/AdArchive/CONNEXIONS_CREATORS_ADDRESS>,
+        <file:///Users/tim/Documents/AdArchive/CONNEXIONS_FALL_1987> ;
+    crmpc:P2_has_type "subscription form" .
+
+<file:///Users/tim/Documents/AdArchive/MANIFESTATION_HERESIES_I23_AD0> a frbroo:F3_Manifestation ;
+    rdfs:label "Heresies 23 off our backs advertisement",
+        "Heresies 23 off our backs advertisement - visual representation" ;
+    crmpc:P129_is_about <file:///Users/tim/Documents/AdArchive/AD_PRICE_I23_AD0_P1>,
+        <file:///Users/tim/Documents/AdArchive/AD_PRICE_I23_AD0_P2>,
+        <file:///Users/tim/Documents/AdArchive/OFF_OUR_BACKS_CREATORS_ADDRESS_2>,
+        wikidata:Q7078947,
+        "feminist news" ;
+    crmpc:P138i_has_representation <https://iiif.archivelab.org/iiif/heresies_23$97/912,158,596,1202/full/0/default.jpg> ;
+    crmpc:P148i_is_component_of worldcat:5612572673 ;
+    crmpc:P165_incorporates <file:///Users/tim/Documents/AdArchive/OFF_OUR_BACKS_AD_COPY_1>,
+        <file:///Users/tim/Documents/AdArchive/OFF_OUR_BACKS_AD_COPY_2>,
+        <file:///Users/tim/Documents/AdArchive/OFF_OUR_BACKS_AD_COPY_3>,
+        <file:///Users/tim/Documents/AdArchive/OFF_OUR_BACKS_AD_COPY_4>,
+        <file:///Users/tim/Documents/AdArchive/OFF_OUR_BACKS_AD_COPY_5>,
+        <file:///Users/tim/Documents/AdArchive/OFF_OUR_BACKS_ENDORSEMENT>,
+        <file:///Users/tim/Documents/AdArchive/OFF_OUR_BACKS_SUBSCRIPTION_FORM> ;
+    crmpc:P2_has_type wikidata:Q39911916 ;
+    frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ;
+            crmpc:P14_carried_out_by <file:///Users/tim/Documents/AdArchive/OFF_OUR_BACKS_CREATORS> ] .
+
+<file:///Users/tim/Documents/AdArchive/MANIFESTATION_HERESIES_I23_AD1> a frbroo:F3_Manifestation ;
+    rdfs:label "Heresies 23 Tulsa Studies in Women's Literature advertisement",
+        "Heresies 23 Tulsa Studies in Women's Literature advertisement - visual representation" ;
+    crmpc:P129_is_about <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_1>,
+        <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_2>,
+        <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_3>,
+        <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_4>,
+        <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_5>,
+        <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_6>,
+        <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_7>,
+        <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_CREATORS_ADDRESS>,
+        <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_SPRING_1988>,
+        wikidata:Q17345318,
+        wikidata:Q7852369 ;
+    crmpc:P138i_has_representation <https://iiif.archivelab.org/iiif/heresies_23$97/1216,1383,1137,1751/full/0/default.jpg> ;
+    crmpc:P148i_is_component_of worldcat:5612572673 ;
+    crmpc:P2_has_type wikidata:Q39911916 ;
+    frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ;
+            crmpc:P14_carried_out_by <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_CREATORS> ] .
+
+<file:///Users/tim/Documents/AdArchive/MANIFESTATION_HERESIES_I23_AD2> a frbroo:F3_Manifestation ;
+    rdfs:label "Heresies 23 Connexions advertisement - visual representation",
+        "Heresies Issue 23 Connexions advertisement" ;
+    crmpc:P129_is_about <file:///Users/tim/Documents/AdArchive/CONNEXIONS_CREATORS_ADDRESS>,
+        <file:///Users/tim/Documents/AdArchive/CONNEXIONS_FALL_1987>,
+        locworks:11275507,
+        "women in the visual arts" ;
+    crmpc:P138i_has_representation <https://iiif.archivelab.org/iiif/heresies_23$97/90,1359,1122,1706/full/0/default.jpg> ;
+    crmpc:P148i_is_component_of worldcat:5612572673 ;
+    crmpc:P165_incorporates <file:///Users/tim/Documents/AdArchive/CONNEXIONS_AD_COPY_1>,
+        <file:///Users/tim/Documents/AdArchive/CONNEXIONS_SUBSCRIPTION_FORM> ;
+    crmpc:P2_has_type wikidata:Q39911916 ;
+    frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ;
+            crmpc:P14_carried_out_by locnames:n78021186 ] .
+
+<file:///Users/tim/Documents/AdArchive/MANIFESTATION_HERESIES_I23_AD3> a frbroo:F3_Manifestation ;
+    rdfs:label "Heresies Issue 23 WomanSpirit advertisement",
+        "Heresies Issue 23 WomanSpirit advertisement - visual representation",
+        "Heresies Issue 23 Womyn's Braille Press advertisement",
+        "Heresies Issue 23 Womyn's Braille Press advertisement - visual representation" ;
+    crmpc:P129_is_about <file:///Users/tim/Documents/AdArchive/WOMANSPIRIT_ADDRESS>,
+        <file:///Users/tim/Documents/AdArchive/WOMYNS_BRAILLE_PRESS_ADDRESS>,
+        wikidata:Q1002697,
+        wikidata:Q106298387,
+        wikidata:Q48732990,
+        "Lesbians over 60",
+        "accessible publishing",
+        "anthologies",
+        "publications on tape" ;
+    crmpc:P138i_has_representation <https://iiif.archivelab.org/iiif/heresies_23$97/125,963,725,392/full/0/default.jpg>,
+        <https://iiif.archivelab.org/iiif/heresies_23$97/130,145,676,797/full/0/default.jpg> ;
+    crmpc:P148i_is_component_of worldcat:5612572673 ;
+    crmpc:P165_incorporates <file:///Users/tim/Documents/AdArchive/WOMANSPIRIT_AD_COPY_1>,
+        <file:///Users/tim/Documents/AdArchive/WOMANSPIRIT_AD_COPY_2>,
+        <file:///Users/tim/Documents/AdArchive/WOMYNS_BRAILLE_PRESS_AD_COPY> ;
+    crmpc:P2_has_type wikidata:Q39911916 ;
+    frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ;
+            crmpc:P14_carried_out_by wikidata:Q106298387 ],
+        [ a frbroo:F30_Manifestation_Creation ;
+            crmpc:P14_carried_out_by <file:///Users/tim/Documents/AdArchive/WOMANSPIRIT_CREATORS> ] .
+
+<file:///Users/tim/Documents/AdArchive/MANIFESTATION_HERESIES_I23_AD4> a frbroo:F3_Manifestation ;
+    rdfs:label "Heresies Issue 23 New York Feminist Art Institute advertisement",
+        "Heresies Issue 23 New York Feminist Art Institute advertisement - visual representation" ;
+    crmpc:P129_is_about <file:///Users/tim/Documents/AdArchive/NYFAI_ADDRESS>,
+        locnames:nr2001007238,
+        "Low cost studio and storage space",
+        "Summer classes" ;
+    crmpc:P138i_has_representation <https://iiif.archivelab.org/iiif/heresies_23$97/1576,162,771,1213/full/0/default.jpg> ;
+    crmpc:P148i_is_component_of worldcat:5612572673 ;
+    crmpc:P165_incorporates <file:///Users/tim/Documents/AdArchive/NYFAI_AD_COPY_1>,
+        <file:///Users/tim/Documents/AdArchive/NYFAI_AD_COPY_2> ;
+    crmpc:P2_has_type wikidata:Q39911916 ;
+    frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ;
+            crmpc:P14_carried_out_by locnames:nr2001007238 ] .
+
+<file:///Users/tim/Documents/AdArchive/NYFAI_AD_COPY_1> a crmpc:E33_Linguistic_Object ;
+    crmpc:P129_is_about locnames:nr2001007238,
+        "low cost studio & storage space",
+        "summer classes" ;
+    crmpc:P190_has_symbolic_content "NYFAI Women's Center for Learning Has Available Now: LOW COST STUDIO & STORAGE SPACE / SUMMER CLASSES BEGIN ON JUNE 9th" ;
+    crmpc:P2_has_type "ad copy" .
+
+<file:///Users/tim/Documents/AdArchive/NYFAI_AD_COPY_2> a crmpc:E33_Linguistic_Object ;
+    crmpc:P129_is_about locnames:nr2001007238 ;
+    crmpc:P190_has_symbolic_content "Please Call For More Information" ;
+    crmpc:P2_has_type "ad copy" .
+
+<file:///Users/tim/Documents/AdArchive/OFF_OUR_BACKS_AD_COPY_1> a crmpc:E33_Linguistic_Object ;
+    crmpc:P129_is_about wikidata:Q7078947,
+        "feminist journalism" ;
+    crmpc:P190_has_symbolic_content "the best in feminist journalism" ;
+    crmpc:P2_has_type "ad copy" .
+
+<file:///Users/tim/Documents/AdArchive/OFF_OUR_BACKS_AD_COPY_2> a crmpc:E33_Linguistic_Object ;
+    crmpc:P129_is_about wikidata:Q7078947,
+        "Black women's issues",
+        "Lesbian and gay rights",
+        "health",
+        "news from every continent",
+        "reproductive rights",
+        "working women's issues" ;
+    crmpc:P190_has_symbolic_content "news from every continent - working women's issues, health, reproductive rights, Black women's issues, lesbian and gay rights" ;
+    crmpc:P2_has_type "ad copy",
+        "features list",
+        "topic list" .
+
+<file:///Users/tim/Documents/AdArchive/OFF_OUR_BACKS_AD_COPY_3> a crmpc:E33_Linguistic_Object ;
+    crmpc:P129_is_about wikidata:Q7078947,
+        "reports of women's conferences",
+        "women's conferences" ;
+    crmpc:P190_has_symbolic_content "blow by blow reports of women's conferences" ;
+    crmpc:P2_has_type "ad copy" .
+
+<file:///Users/tim/Documents/AdArchive/OFF_OUR_BACKS_AD_COPY_4> a crmpc:E33_Linguistic_Object ;
+    crmpc:P129_is_about wikidata:Q7078947,
+        "book reviews",
+        "commentaries",
+        "feminism",
+        "letters",
+        "motherhood",
+        "reproductive technology",
+        "sexuality" ;
+    crmpc:P190_has_symbolic_content "book reviews, commentaries, letters - open to all feminist sides of the current debates on sexuality, reproductive technology, motherhood, and more ..." ;
+    crmpc:P2_has_type "ad copy" .
+
+<file:///Users/tim/Documents/AdArchive/OFF_OUR_BACKS_AD_COPY_5> a crmpc:E33_Linguistic_Object ;
+    crmpc:P129_is_about wikidata:Q7078947 ;
+    crmpc:P190_has_symbolic_content "Walk into oob's 18th year" ;
+    crmpc:P2_has_type "ad copy" .
+
+<file:///Users/tim/Documents/AdArchive/OFF_OUR_BACKS_ENDORSEMENT> a crmpc:E33_Linguistic_Object ;
+    crmpc:P129_is_about wikidata:Q7078947,
+        "abortion",
+        "custody",
+        "feminism",
+        "minority women",
+        "poor women",
+        "prison",
+        "working class women" ;
+    crmpc:P190_has_symbolic_content "oob is international in scope and focuses on diverse topics dealing with poor women, working class women, minority women, prison, custody, and abortion. It's never been simple-minded. It's what I think of as feminism." ;
+    crmpc:P2_has_type "endorsement" ;
+    crmpc:P94i_was_created_by [ a crmpc:E65_Creation ;
+            crmpc:P14_carried_out_by wikidata:Q13562998 ] .
+
+<file:///Users/tim/Documents/AdArchive/OFF_OUR_BACKS_SUBSCRIPTION_FORM> a crmpc:E33_Linguistic_Object ;
+    crmpc:P129_is_about <file:///Users/tim/Documents/AdArchive/AD_PRICE_I23_AD0_P1>,
+        <file:///Users/tim/Documents/AdArchive/AD_PRICE_I23_AD0_P2>,
+        <file:///Users/tim/Documents/AdArchive/OFF_OUR_BACKS_CREATORS_ADDRESS>,
+        wikidata:Q7078947 ;
+    crmpc:P2_has_type "subscription form" .
+
+<file:///Users/tim/Documents/AdArchive/WOMANSPIRIT_AD_COPY_1> a crmpc:E33_Linguistic_Object ;
+    crmpc:P129_is_about wikidata:Q48732990,
+        "lesbianism",
+        "lesbians over sixty" ;
+    crmpc:P190_has_symbolic_content "Lesbians Over Sixty: OTHER LESBIANS WANT TO KNOW" ;
+    crmpc:P2_has_type "ad copy" .
+
+<file:///Users/tim/Documents/AdArchive/WOMANSPIRIT_AD_COPY_2> a crmpc:E33_Linguistic_Object ;
+    crmpc:P129_is_about wikidata:Q48732990,
+        "diary entries",
+        "drawings",
+        "letters",
+        "love between women over sixty",
+        "photos",
+        "poems",
+        "short prose pieces",
+        "songs" ;
+    crmpc:P190_has_symbolic_content "For an anthology, we are collecting accounts of love between women over sixty, for their unique perspective on our loving lives. We are interested in reading your material. Send your poems, short prose pieces, letters, diary entries, songs, photos and drawings. Photocopies, please. Include S.A.S.E. Deadline extended to Crones Day—Halloween 1988. Send material to OLD LOVERS, c/o WomanSpirit, 2000 King Mountain Trail, Sunny Valley, OR 97497." ;
+    crmpc:P2_has_type "ad copy" .
+
+<file:///Users/tim/Documents/AdArchive/WOMANSPIRIT_CREATORS> a crmpc:E74_Group ;
+    crmpc:P74_has_current_or_former_residence [ a crmpc:E53_Place ;
+            crmpc:P168_place_is_defined_by "42.651120, -123.313400" ;
+            crmpc:P1_is_identified_by <file:///Users/tim/Documents/AdArchive/WOMANSPIRIT_CREATORS_ADDRESS> ] .
+
+<file:///Users/tim/Documents/AdArchive/WOMANSPIRIT_CREATORS_ADDRESS> a crmpc:E33_E41_Linguistic_Appellation ;
+    crmpc:P190_has_symbolic_content "WomanSpirit, 2000 King Mountain Trail, Sunny Valley, OR 97497" ;
+    crmpc:P2_has_type wikidata:Q319608 .
+
+<file:///Users/tim/Documents/AdArchive/WOMYNS_BRAILLE_PRESS_AD_COPY> a crmpc:E33_Linguistic_Object ;
+    crmpc:P129_is_about <file:///Users/tim/Documents/AdArchive/WOMYNS_BRAILLE_PRESS_ADDRESS>,
+        wikidata:Q1002697,
+        wikidata:Q106298387,
+        "accessible publishing",
+        "publications on tape" ;
+    crmpc:P190_has_symbolic_content "HERESIES is now available on tape from Womyn's Braille Press, Box 8745, Minneapolis MN 55408." ;
+    crmpc:P2_has_type "ad copy" .
+
+<file:///Users/tim/Documents/AdArchive/NYFAI_ADDRESS> a crmpc:E33_E41_Linguistic_Appellation ;
+    crmpc:P190_has_symbolic_content "91 Franklin Street, New York City, NY 10013" ;
+    crmpc:P2_has_type wikidata:Q319608 .
+
+<file:///Users/tim/Documents/AdArchive/OFF_OUR_BACKS_CREATORS> a crmpc:E74_Group ;
+    crmpc:P74_has_current_or_former_residence [ a crmpc:E53_Place ;
+            crmpc:P168_place_is_defined_by "38.913620, -77.045070" ;
+            crmpc:P1_is_identified_by <file:///Users/tim/Documents/AdArchive/OFF_OUR_BACKS_CREATORS_ADDRESS> ],
+        [ a crmpc:E53_Place ;
+            crmpc:P168_place_is_defined_by "38.921170, -77.041840" ;
+            crmpc:P1_is_identified_by <file:///Users/tim/Documents/AdArchive/OFF_OUR_BACKS_CREATORS_ADDRESS_2> ] .
+
+<file:///Users/tim/Documents/AdArchive/OFF_OUR_BACKS_CREATORS_ADDRESS_2> a crmpc:E33_E41_Linguistic_Appellation ;
+    crmpc:P190_has_symbolic_content "off our backs, 2423 18th Street NW, Washington DC 20009, U.S.A." ;
+    crmpc:P2_has_type wikidata:Q319608 .
+
+<file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_1> a frbroo:F2_Expression ;
+    rdfs:label "'Plaisir et proffict' in the Reading and Writing of Marguerite de Valois" ;
+    crmpc:P102_has_title [ a crmpc:E35_Title ;
+            crmpc:P190_has_symbolic_content "'Plaisir et proffict' in the Reading and Writing of Marguerite de Valois" ;
+            crmpc:P2_has_type bf:Title ] ;
+    crmpc:P129_is_about wikidata:Q220845 ;
+    crmpc:P2_has_type wikidata:Q191067 ;
+    frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+            crmpc:P14_carried_out_by "Cathleen M. Bauschatz" ] ;
+    frbroo:R67i_forms_part_of <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_SPRING_1988> .
+
+<file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_2> a frbroo:F2_Expression ;
+    rdfs:label "Gender and Poetic Tradition: The Shaping of Charlotte Bronte's Literary Career" ;
+    crmpc:P102_has_title [ a crmpc:E35_Title ;
+            crmpc:P190_has_symbolic_content "Gender and Poetic Tradition: The Shaping of Charlotte Bronte's Literary Career" ;
+            crmpc:P2_has_type bf:Title ] ;
+    crmpc:P129_is_about "Charlotte Bronte",
+        "Gender and poetic tradition" ;
+    crmpc:P2_has_type wikidata:Q191067 ;
+    frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+            crmpc:P14_carried_out_by locnames:n92033564 ] ;
+    frbroo:R67i_forms_part_of <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_SPRING_1988> .
+
+<file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_3> a frbroo:F2_Expression ;
+    rdfs:label "Elizabeth Barrett Browning and Her Prometheuses: Self-Will and a Woman Poet" ;
+    crmpc:P102_has_title [ a crmpc:E35_Title ;
+            crmpc:P190_has_symbolic_content "Elizabeth Barrett Browning and Her Prometheuses: Self-Will and a Woman Poet" ;
+            crmpc:P2_has_type bf:Title ] ;
+    crmpc:P129_is_about "Elizabeth Barrett Browning",
+        "Poetry--Woman authors",
+        "self-will" ;
+    crmpc:P2_has_type wikidata:Q191067 ;
+    frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+            crmpc:P14_carried_out_by locnames:no93002671 ] ;
+    frbroo:R67i_forms_part_of <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_SPRING_1988> .
+
+<file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_4> a frbroo:F2_Expression ;
+    rdfs:label "Sarah Gardner: 'Such Trumpery' or 'A Lustre to Her Sex'?" ;
+    crmpc:P102_has_title [ a crmpc:E35_Title ;
+            crmpc:P190_has_symbolic_content "Sarah Gardner: 'Such Trumpery' or 'A Lustre to Her Sex'?" ;
+            crmpc:P2_has_type bf:Title ] ;
+    crmpc:P129_is_about "Sarah Gardner" ;
+    crmpc:P2_has_type wikidata:Q191067 ;
+    frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+            crmpc:P14_carried_out_by wikidata:Q47119724 ] ;
+    frbroo:R67i_forms_part_of <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_SPRING_1988> .
+
+<file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_5> a frbroo:F2_Expression ;
+    rdfs:label "Feminist Fantasies: Zora Neale Hurston's Their Eyes Were Watching God" ;
+    crmpc:P102_has_title [ a crmpc:E35_Title ;
+            crmpc:P190_has_symbolic_content "Feminist Fantasies: Zora Neale Hurston's Their Eyes Were Watching God" ;
+            crmpc:P2_has_type bf:Title ] ;
+    crmpc:P129_is_about "Their Eyes Were Watching God",
+        "Zora Neale Hurston" ;
+    crmpc:P2_has_type wikidata:Q191067 ;
+    frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+            crmpc:P14_carried_out_by "Jennifer Jordan" ] ;
+    frbroo:R67i_forms_part_of <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_SPRING_1988> .
+
+<file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_6> a frbroo:F2_Expression ;
+    rdfs:label "Feminine Sensationalism, Eroticism, and Self-Assertion: M. E. Braddon and Ouida" ;
+    crmpc:P102_has_title [ a crmpc:E35_Title ;
+            crmpc:P190_has_symbolic_content "Feminine Sensationalism, Eroticism, and Self-Assertion: M. E. Braddon and Ouida" ;
+            crmpc:P2_has_type bf:Title ] ;
+    crmpc:P129_is_about "M. E. Braddon",
+        "Ouida",
+        "feminine eroticism",
+        "feminine self-assertion",
+        "feminine sensationalism" ;
+    crmpc:P2_has_type wikidata:Q191067 ;
+    frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+            crmpc:P14_carried_out_by wikidata:Q71030574 ] ;
+    frbroo:R67i_forms_part_of <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_SPRING_1988> .
+
+<file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_7> a frbroo:F2_Expression ;
+    rdfs:label "Reshuffling the Deck; Or, (Re)Reading Race and Gender in Black Women's Writing" ;
+    crmpc:P102_has_title [ a crmpc:E35_Title ;
+            crmpc:P190_has_symbolic_content "Reshuffling the Deck; Or, (Re)Reading Race and Gender in Black Women's Writing" ;
+            crmpc:P2_has_type bf:Title ] ;
+    crmpc:P129_is_about "Black women's writing",
+        "gender",
+        "race" ;
+    crmpc:P2_has_type wikidata:Q191067,
+        wikidata:Q265158 ;
+    frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+            crmpc:P14_carried_out_by wikidata:Q5129264 ] ;
+    frbroo:R67i_forms_part_of <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_SPRING_1988> .
+
+<file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_CREATORS_ADDRESS> a crmpc:E33_E41_Linguistic_Appellation ;
+    crmpc:P190_has_symbolic_content "Tulsa Studies in Women's Literature, The University of Tulsa, 600 South College Avenue, Tulsa, Oklahoma, 74104" ;
+    crmpc:P2_has_type wikidata:Q319608 .
+
+wikidata:Q7852369 a frbroo:F18_Serial_Work ;
+    rdfs:label "Tulsa Studies in Women's Literature"^^xsd:string ;
+    crmpc:P102_has_title [ a crmpc:E35_Title ;
+            crmpc:P190_has_symbolic_content "Tulsa Studies in Women's Literature" ;
+            crmpc:P2_has_type wikidata:Q216353 ] ;
+    crmpc:P129_is_about wikidata:Q17345318 ;
+    crmpc:P2_has_type wikidata:Q1002697 ;
+    frbroo:R10_has_member <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_SPRING_1988> ;
+    frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+            crmpc:P14_carried_out_by <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_CREATORS> ] .
+
+locworks:11275507 a frbroo:F18_Serial_Work ;
+    rdfs:label "Connexions"^^xsd:string ;
+    crmpc:P102_has_title [ a crmpc:E35_Title ;
+            crmpc:P190_has_symbolic_content "Connexions" ;
+            crmpc:P2_has_type wikidata:Q216353 ],
+        [ a crmpc:E35_Title ;
+            crmpc:P190_has_symbolic_content "An International Women's Quarterly" ;
+            crmpc:P2_has_type wikidata:Q1135389 ] ;
+    crmpc:P129_is_about "women's issues" ;
+    crmpc:P2_has_type wikidata:Q1002697 ;
+    frbroo:R10_has_member <file:///Users/tim/Documents/AdArchive/CONNEXIONS_FALL_1987> ;
+    frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+            crmpc:P14_carried_out_by locnames:n78021186 ] .
+
+<file:///Users/tim/Documents/AdArchive/AD_PRICE_I23_AD0_P1> a crmpc:E16_Measurement ;
+    crmpc:P2_has_type wikidata:Q43006303,
+        schema:ListPrice ;
+    crmpc:P39_measured wikidata:Q7078947 ;
+    crmpc:P40_observed_dimension <file:///Users/tim/Documents/AdArchive/15_00_USD>,
+        <file:///Users/tim/Documents/AdArchive/SUB_1> .
+
+<file:///Users/tim/Documents/AdArchive/AD_PRICE_I23_AD0_P2> a crmpc:E16_Measurement ;
+    crmpc:P2_has_type schema:ListPrice ;
+    crmpc:P40_observed_dimension <file:///Users/tim/Documents/AdArchive/4_00_USD> .
+
+<file:///Users/tim/Documents/AdArchive/CONNEXIONS_CREATORS_ADDRESS> a crmpc:E33_E41_Linguistic_Appellation ;
+    crmpc:P190_has_symbolic_content "Connexions, 4228 Telegraph Ave., Oakland CA 94609" ;
+    crmpc:P2_has_type wikidata:Q319608 .
+
+<file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_CREATORS> a crmpc:E74_Group ;
+    crmpc:P74_has_current_or_former_residence [ a crmpc:E53_Place ;
+            crmpc:P168_place_is_defined_by "36.154320, -95.946200" ;
+            crmpc:P1_is_identified_by <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_CREATORS_ADDRESS> ] .
+
+<file:///Users/tim/Documents/AdArchive/WOMYNS_BRAILLE_PRESS_ADDRESS> a crmpc:E33_E41_Linguistic_Appellation ;
+    crmpc:P190_has_symbolic_content "Womyn's Braille Press, Box 8745, Minneapolis MN 55408" ;
+    crmpc:P2_has_type wikidata:Q319608 .
+
+wikidata:Q106298387 a crmpc:E74_Group ;
+    rdfs:label "Womyn's Braille Press" ;
+    crmpc:P74_has_current_or_former_residence [ a crmpc:E53_Place ;
+            crmpc:P168_place_is_defined_by "46.737170, -96.035626" ;
+            crmpc:P1_is_identified_by <file:///Users/tim/Documents/AdArchive/WOMYNS_BRAILLE_PRESS_ADDRESS> ] .
+
+locnames:n78021186 a crmpc:E74_Group ;
+    rdfs:label "People's Translation Service" ;
+    crmpc:P74_has_current_or_former_residence [ a crmpc:E53_Place ;
+            crmpc:P168_place_is_defined_by "37.831260, -122.263820" ;
+            crmpc:P1_is_identified_by <file:///Users/tim/Documents/AdArchive/CONNEXIONS_CREATORS_ADDRESS> ] .
+
+<file:///Users/tim/Documents/AdArchive/CONNEXIONS_FALL_1987> a frbroo:F2_Expression ;
+    rdfs:label "Connexions: Women in the Visual Arts, Number 24, Fall 1987" ;
+    crmpc:P102_has_title [ a crmpc:E35_Title ;
+            crmpc:P190_has_symbolic_content "Women in the Visual Arts" ;
+            crmpc:P2_has_type wikidata:Q1135389 ] ;
+    crmpc:P129_is_about "women in the visual arts" ;
+    crmpc:P1_identified_by [ a crmpc:E33_E41_Linguistic_Appellation ;
+            crmpc:P190_has_symbolic_content "Connexions: Women in the Visual Arts, Number 24, Fall 1987" ] ;
+    crmpc:P2_has_type wikidata:Q28869365 ;
+    frbroo:R10i_is_member_of locworks:11275507 ;
+    frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+            crmpc:P14_carried_out_by locnames:n78021186 ;
+            crmpc:P4_has_time-span [ a crmpc:E52_Time-Span ;
+                    crmpc:P82_at_some_time_within "Fall 1987" ;
+                    crmpc:P82a_begin_of_the_begin "1987-01-01" ;
+                    crmpc:P82b_end_of_the_end "1987-12-31" ] ] .
+
+locnames:nr2001007238 a crmpc:E74_Group ;
+    rdfs:label "New York Feminist Art Institute/Women's Center for Learning" ;
+    crmpc:P1_is_identified_by [ a crmpc:E53_Place ;
+            crmpc:P168_place_is_defined_by "40.717850, -74.005050" ;
+            crmpc:P1_is_identified_by [ a crmpc:E41_Appellation ;
+                    crmpc:P190_has_symbolic_content "212-219-9590" ;
+                    crmpc:P2_has_type "Phone number" ],
+                <file:///Users/tim/Documents/AdArchive/NYFAI_ADDRESS> ] .
+
+worldcat:5612572673 a frbroo:F3_Manifestation ;
+    rdfs:label "Heresies: A Feminist Publication on Art and Politics - Issue 23: Coming of Age" ;
+    crmpc:P102_has_title [ a crmpc:E35_Title ;
+            crmpc:P190_has_symbolic_content "Coming of Age" ;
+            crmpc:P2_has_type bf:Title ] ;
+    crmpc:P148_has_component <file:///Users/tim/Documents/AdArchive/MANIFESTATION_HERESIES_I23_AD0>,
+        <file:///Users/tim/Documents/AdArchive/MANIFESTATION_HERESIES_I23_AD1>,
+        <file:///Users/tim/Documents/AdArchive/MANIFESTATION_HERESIES_I23_AD2>,
+        <file:///Users/tim/Documents/AdArchive/MANIFESTATION_HERESIES_I23_AD3>,
+        <file:///Users/tim/Documents/AdArchive/MANIFESTATION_HERESIES_I23_AD4> ;
+    crmpc:P2_has_type wikidata:Q28869365 ;
+    frbroo:R24i_was_created_through [ a frbroo:F30_Manifestation_Creation ;
+            crmpc:P14_carried_out_by wikidata:Q20857976 ] .
+
+<file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_SPRING_1988> a frbroo:F2_Expression ;
+    rdfs:label "Tulsa Studies in Women's Literature, Volume 7, Number 1, Spring 1988" ;
+    crmpc:P1_identified_by [ a crmpc:E33_E41_Linguistic_Appellation ;
+            crmpc:P190_has_symbolic_content "Tulsa Studies in Women's Literature, Volume 7, Number 1, Spring 1988" ] ;
+    crmpc:P2_has_type wikidata:Q28869365 ;
+    frbroo:R10i_is_member_of wikidata:Q7852369 ;
+    frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+            crmpc:P14_carried_out_by <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_CREATORS> ;
+            crmpc:P4_has_time-span [ a crmpc:E52_Time-Span ;
+                    crmpc:P82_at_some_time_within "Spring 1988" ;
+                    crmpc:P82a_begin_of_the_begin "1988-01-01" ;
+                    crmpc:P82b_end_of_the_end "1988-12-31" ] ] ;
+    frbroo:R67_has_part <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_1>,
+        <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_2>,
+        <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_3>,
+        <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_4>,
+        <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_5>,
+        <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_6>,
+        <file:///Users/tim/Documents/AdArchive/TULSA_STUDIES_7> .
+
+wikidata:Q7078947 a frbroo:F18_Serial_Work ;
+    rdfs:label "Off Our Backs"^^xsd:string ;
+    crmpc:P102_has_title [ a crmpc:E35_Title ;
+            crmpc:P190_has_symbolic_content "Off Our Backs" ;
+            crmpc:P2_has_type wikidata:Q216353 ],
+        [ a crmpc:E35_Title ;
+            crmpc:P190_has_symbolic_content "OOB" ;
+            crmpc:P2_has_type bibo:shortTitle ] ;
+    crmpc:P129_is_about wikidata:Q38926 ;
+    crmpc:P2_has_type wikidata:Q1002697 ;
+    crmpc:P39i_was_measured_by <file:///Users/tim/Documents/AdArchive/AD_PRICE_I23_AD0_P1>,
+        <file:///Users/tim/Documents/AdArchive/AD_PRICE_I23_AD0_P2> ;
+    frbroo:R19i_was_realised_through [ a frbroo:F28_Expression_Creation ;
+            crmpc:P14_carried_out_by <file:///Users/tim/Documents/AdArchive/OFF_OUR_BACKS_CREATORS> ] .
+

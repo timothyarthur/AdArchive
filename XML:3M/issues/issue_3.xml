@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<heresies_issue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="adarchive_schema.xsd">
+    <issue_title>
+        <title>Lesbian Art and Artists</title>
+        <number>3</number>
+        <date>1977-09</date>
+    </issue_title>
+  <ad clipping_uri="https://iiif.archivelab.org/iiif/heresies_03$117/138,2475,1111,648/full/0/default.jpg">
+
+        <ad_creators uri="JUMP_CUT_CREATORS"/>
+        <about>Contemporary Cinema</about>
+        <publication_advertised uri="wikidata:Q319608">
+            <title>Jump Cut</title>
+            <creator uri="JUMP_CUT_CREATORS">
+                <name>Jump Cut creators</name>
+                <role>wikidata:P170</role>
+            </creator>
+            <publication_type>periodical</publication_type>
+            <publication_type>scholarly journal</publication_type>
+            <about>social context of cinema</about>
+            <about>political context of cinema</about>
+            <about>contemporary cinema</about>
+            <about>radical film criticism</about>
+            <issuing_rule>
+                <no_issues>6</no_issues>
+                <time_span>yearly</time_span>
+            </issuing_rule>
+        </publication_advertised>
+        <copy>
+            <text>examining cinema in its social and political context</text>
+            <about>social context of cinema</about>
+            <about>political context of cinema</about>
+        </copy>
+        <copy>
+            <text>providing in-depth analyses of current films</text>
+            <about>film analysis</about><about>current films</about><about>contemporary cinema</about>
+        </copy><copy><text>developing a radical film criticism</text><about>radical film criticism</about></copy>
+        <price>
+            <subject>wikidata:Q319608</subject>
+            <value>3</value>
+            <currency>USD</currency>
+            <type>subscription</type>
+            <type>yearly</type>
+        </price>
+    </ad>
+    <ad clipping_uri="https://iiif.archivelab.org/iiif/heresies_03$117/248,1627,778,823/full/0/default.jpg">
+
+        <ad_creators uri="DYKE_CREATORS">
+            <name>DYKE creators</name>
+        </ad_creators>
+        <about>Lesbian Culture</about>
+        <publication_advertised>
+            <title>DYKE</title>
+            <title type="wikidata:Q1135389">A QUARTERLY</title>
+            <creator uri="DYKE_CREATORS">
+                <name>Dyke creators</name>
+                <role>wikidata:P170</role>
+            </creator>
+            <issue_advertised>
+                <issue_title>
+                    <title>Fall '76</title>
+                    <date>Fall 1976</date>
+                </issue_title>
+
+                <about>analysis</about>
+                <!--add remaining abouts-->
+                <article_advertised>
+                    <title>Making a Backpack</title>
+                    <about>Making a Backpack</about>
+                </article_advertised>
+                <article_advertised>
+                    <title>Mouth Care</title>
+                    <about>Oral Care</about>
+                </article_advertised>
+                <article_advertised>
+                    <title>Photos by Alice Austen</title>
+                    <creator uri="wikidata:Q538225">
+                        <name>Alice Austen</name>
+                    </creator>
+                    <about>Photography</about>
+                </article_advertised>
+                <article_advertised>
+                    <title>Name Change</title>
+                    <about>Name Change</about>
+                </article_advertised>
+                <article_advertised>
+                    <title>Coming Out On Celluloid</title>
+                    <about>Film</about>
+                    <about>Coming Out</about>
+                </article_advertised>
+                <article_advertised>
+                    <title>Giving Up Kidz</title>
+                    <about>Giving Up Kidz</about>
+                </article_advertised>
+            </issue_advertised>
+            <issue_advertised>
+                <issue_title>
+                    <title>Winter '76-'77</title>
+                </issue_title>
+            </issue_advertised>
+
+            <issue_advertised>
+                <issue_title>
+                    <title>Spring '77 Ethnic Dykes</title>
+                    <date>Spring 1977</date><!--Rewrote from "Spring '77"-->
+                </issue_title>
+                <about>Ethnic Dykes</about><copy_deadline>1977-02-01</copy_deadline><!--Added copy deadline-->
+            </issue_advertised>
+            <issue_advertised>
+                <issue_title>
+                    <title>Spring '77 Animals</title>
+                    <date>Spring '77</date>
+                </issue_title>
+                <about>Animals</about><copy_deadline>1977-05-01</copy_deadline><!--Added copy deadline-->
+            </issue_advertised>
+        </publication_advertised>
+        <copy>
+            <text>SUBSCRIBE!</text>
+            <about>Subscription</about>
+        </copy>
+        <copy>
+            <text>We are looking for graphic and written contributions. We pay for all work that we print. Write for details.</text>
+            <about>Contributions</about>
+            <author uri="DYKE_CREATORS"/>
+        </copy>
+        <price>
+            <subject>DYKE</subject>
+            <value>8</value>
+            <currency>USD</currency>
+            <type>yearly</type>
+        </price>
+        <price>
+            <subject>DYKE</subject>
+            <value>2.75</value>
+            <currency>USD</currency>
+            <type>Sample copy</type>
+        </price>
+        <illustration clipping_uri="https://iiif.archivelab.org/iiif/heresies_03$117/248,1627,778,823/full/0/default.jpg">
+            <type>logo</type>
+            <type>illustration</type>
+            <about>DYKE</about>
+        </illustration>
+    </ad>
+    <ad clipping_uri="https://iiif.archivelab.org/iiif/heresies_03$117/155,138,971,1458/full/0/default.jpg">
+
+        <ad_creators uri="SINISTER_WISDOM_CREATORS">
+            <name>Siniser Wisdom creators</name>
+        </ad_creators>
+        <about>Lesbian Culture</about>
+        <publication_advertised uri="wikidata:Q7524444">
+            <title>Sinister Wisdom</title>
+            <creator uri="SINISTER_WISDOM_CREATORS">
+                <name>Sinister Wisdom</name>
+                <role>wikidata:P170</role>
+            </creator>
+            <about>Lesbian culture</about>
+        </publication_advertised>
+        <copy>
+            <text>A journal of words and pictures for the lesbian imagination in all women</text>
+            <about>Lesbian culture</about>
+            <about>Lesbian imagination</about>
+        </copy>
+        <copy>
+            <text>"...a substantial, serious effort to explore all aspects of the lesbian's world. There are special issues such as "Lesbian Writing and Publishing," which give in-depth coverage of the subject... The politics, psychology, aesthetics, etc. of the movement is examined... by good to excellent writers. … A major contribution, and recommended."</text>
+            <about uri="wikidata:Q7524444"/><!--moved URI to @uri attribute and added "wikidata:" prefix-->
+            <author>Library Journal</author>
+            <copy_type>review</copy_type>
+        </copy>
+        <copy>
+            <text>"… a heady brew of writing, conversing, questioning, and sharing between writers who have a special commitment to the emotional and physical truths of lesbianism. Intelligence and passion abound... the whole is open-ended and very alive. </text>
+            <about uri="wikidata: Q7524444"/><!--moved URI to @uri attribute and added "wikidata:" prefix-->
+            <author>The Spokeswoman</author>
+            <copy_type>review</copy_type>
+        </copy>
+        <copy>
+            <text>"… the hippest DYKE document(s) we've seen in so long..."</text>
+            <about uri="wikidata:Q7524444"/><!--moved URI to @uri attribute and added "wikidata:" prefix-->
+            <author>C.L.I.J.</author>
+            <!--uncertain on initials-->
+            <copy_type>review</copy_type>
+        </copy>
+        <copy>
+            <text>SUBSCRIBE</text>
+            <about>subscription</about>
+            <copy_type>subscription</copy_type>
+        </copy>
+        <copy>
+            <text>(All copies mailed in plain brown wrapper.)</text>
+            <about>mailing copy</about><about>concealment</about>
+        </copy>
+        <price>
+            <subject uri="wikidata:Q7524444">Sinister Wisdom</subject><!--changed schema to accept URI as attribute for subject and added subject name-->
+            <value>4.50</value>
+            <currency>USD</currency>
+            <type>yearly</type>
+        </price>
+        <price>
+            <subject uri="wikidata:Q7524444">Sinister Wisdom</subject>
+            <value>9.00</value>
+            <currency>USD</currency>
+            <type>biyearly</type>
+        </price>
+        <illustration clipping_uri="https://iiif.archivelab.org/iiif/heresies_03$117/210,1134,392,402/full/0/default.jpg">
+            <type>illustration</type>
+            <type>logo</type>
+            <about>Sinister Wisdom</about>
+            <represents>https://sparql.cwrc.ca/ontologies/cwrc.html#woman</represents>
+            <represents>seated figure</represents>
+            <represents>bird</represents>
+        </illustration>
+    </ad>
+    <ad clipping_uri="https://iiif.archivelab.org/iiif/heresies_03$118/1117,866,1104,1200/full/0/default.jpg">
+
+        <ad_creators uri="THE_FEMINIST_ART_JOURNAL">
+            <name>The Feminist Art Journal creators</name>
+        </ad_creators>
+        <about>Feminist art</about>
+        <publication_advertised uri="wikidata:Q18207079">
+            <title>The Feminist Art Journal</title>
+            <creator uri="THE_FEMINIST_ART_JOURNAL_CREATORS">
+                <name>The Feminist Art Journal creators</name>
+                <role>wikidata:P170</role>
+            </creator>
+            <about>Feminist Art</about>
+        </publication_advertised>
+        <topics_list>
+            <text>Painters Musicians Sculptors Filmmakers Crafts People Photographers Dancers Actresses Playwrights Authors and every other creative field</text>
+            <subject uri="wikidata:Q18207079">Feminist Art Journal</subject><!--Made it so you can enter text for a label in the subject element if you wish-->
+            <topic>Women painters</topic>
+            <topic>painters</topic>
+            <topic>Women musicians</topic>
+            <topic>musicians</topic>
+            <topic>Women sculptors</topic>
+            <topic>sculptors</topic>
+            <topic>Women filmmakers</topic>
+            <topic>filmmakers</topic>
+            <topic>crafts people</topic>
+            <topic>craftswomen</topic>
+            <topic>women photographers</topic>
+            <topic>photographers</topic>
+            <topic>women dancers</topic>
+            <topic>dancers</topic>
+            <topic>actresses</topic>
+            <topic>playwrights</topic>
+            <topic>authors</topic>
+            <topic>women authors</topic>
+            <topic>women in creative fields </topic>
+        </topics_list>
+        <copy>
+            <text>SUBSCRIBE TODAY!</text>
+            <about>Subscription</about>
+            <copy_type>subscription</copy_type>
+        </copy>
+        <copy>
+            <text>Individual Rates</text>
+            <about>Individual Rates</about>
+            <copy_type>subscription</copy_type>
+        </copy>
+        <copy>
+            <text>Institutional Rates: Universities, Libraries, Musuems, foreign.</text>
+            <about>Institutional Rates</about>
+            <copy_type>subscription</copy_type>
+        </copy>
+        <price>
+            <subject uri="wikidata:Q18207079"/>
+            <value>14.00</value>
+            <currency>USD</currency>
+            <type>yearly</type>
+            <type>institutional</type>
+            <type>subscription</type>
+        </price>
+        <price>
+            <subject uri="wikidata:Q18207079"/>
+            <value>26.00</value>
+            <currency>USD</currency>
+            <type>biyearly</type>
+            <type>institutional</type>
+            <type>subscription</type>
+        </price>
+        <price>
+            <subject uri="wikidata:Q18207079"/>
+            <value>7.00</value>
+            <currency>USD</currency>
+            <type>yearly</type>
+            <type>individual</type>
+            <type>subscription</type>
+        </price>
+        <price>
+            <subject uri="wikidata:Q18207079"/>
+            <value>13.00</value>
+            <currency>USD</currency>
+            <type>biyearly</type>
+            <type>individual</type>
+            <type>subscription</type>
+        </price>
+        <subscription_form>
+            <text>Name</text>
+            <text>Address</text>
+            <text>City</text>
+            <text>State</text>
+            <text>Zip</text>
+            <text>Make check payable to: The Feminist Art Journal 41 Montgomery Place, Brooklyn, N.Y. 11215</text>
+            <text>Payable in U.S. currency only</text>
+        </subscription_form>
+        <illustration clipping_uri="https://iiif.archivelab.org/iiif/heresies_03$118/1554,1091,309,414/full/0/default.jpg">
+
+            <type>illustration</type>
+            <about>The Feminist Art Journal</about>
+            <represents>magazine cover</represents>
+        </illustration>
+    </ad>
+    <ad clipping_uri="https://iiif.archivelab.org/iiif/heresies_03$118/920,103,1493,689/full/0/default.jpg">
+        <ad_creators uri="WOMANBOOKS_CREATORS">
+            <name>Womanbooks</name>
+        </ad_creators>
+        <about uri="wikidata:Q105561421"/>
+        <about>Bookstore for women</about>
+        <features_list>
+            <text>books, periodicals, records, etc. by &amp; about women. featuring publications from women's presses also non-sexist books &amp; playroom for children </text>
+            <subject uri="wikidata:Q105561421"/>
+            <feature uri="wikidata:Q571"/>
+            <feature uri="wikidata:Q1002697"/>
+            <feature uri="wikidata:Q16629185"/>
+        </features_list>
+    </ad>
+    <ad clipping_uri="https://iiif.archivelab.org/iiif/heresies_03$118/1117,2169,1064,954/full/0/default.jpg">
+        <ad_creators uri="SIGNS_CREATORS">
+            <name>Signs creators</name>
+        </ad_creators>
+        <about>women in culture and society</about>
+        <publication_advertised uri="wikidata:Q2285224">
+            <title>Signs</title>
+            <title type="wikidata:Q1135389">Journal of Women in Culture and Society</title>
+            <creator uri="SIGNS_CREATORS">
+                <name>Signs Creators</name>
+                <role>wikidata:P170</role>
+            </creator>
+            <about>women in culture and society</about>
+ <!--Advertises a volume, not an issue. Will have to consider how to model. Maybe a contents list would suffice? Or should we have a separate type of element for volumes?-->           <issue_advertised>
+                <issue_title>
+                    <title>Volume 1</title>
+                </issue_title>
+                
+                <article_advertised>
+                    <title>The Female World of Love and Ritual: Relations between Women in Nineteenth-Century America</title>
+                    <creator>
+                        <name>Carroll Smith-Rosenberg</name>
+                        <role>wikidata:Q482980</role>
+                    </creator>
+                    <about>women in nineteenth-century America</about><about>ritual</about><about>Relations between women in nineteenth century america</about>
+                </article_advertised>
+                <article_advertised>
+                    <title>Reflections on Simone Weil</title>
+                    <creator>
+                        <name>Elizabeth Hardwick</name>
+                        <role>wikidata:Q482980</role>
+                    </creator>
+                    <about>Simone Weil</about>
+                </article_advertised>
+                <article_advertised>
+                    <title>On Masochism: A Contribution to the History of a Phantasy and Its
+                        Theory</title>
+                    <creator>
+                        <name>Gertrud Lenzer</name>
+                        <role>wikidata:Q482980</role>
+                    </creator>
+                    <about>masochism</about>
+                    <about>phantasy</about>
+                    <about>phantasy history</about>
+                    <about>phantasy theory</about>
+                </article_advertised>
+                <article_advertised>
+                    <title>Contraceptives for Males</title>
+                    <creator>
+                        <name>William J. Bremner</name>
+                        <role>wikidata:Q482980</role>
+                    </creator>
+                    <creator>
+                        <name>David M. de Kretser</name>
+                        <role>wikidata:Q482980</role>
+                    </creator>
+                    <about>male contraceptives</about>
+                </article_advertised>
+                <article_advertised>
+                    <title>Women in Evolution. Part I: Innovation and Selection in Human
+                        Origins</title>
+                    <creator>
+                        <name>Nancy Tanner</name>
+                        <role>wikidata:Q482980</role>
+                    </creator>
+                    <creator>
+                        <name>Adrienne Zihlman</name>
+                        <role>wikidata:Q482980</role>
+                    </creator>
+                    <about>women in evolution</about>
+                    <about>innovation in human origins</about>
+                    <about>selection in human origins</about>
+                </article_advertised>
+                <article_advertised>
+                    <title>Sex Preferences, Sex Control, and the Status of Women</title>
+                    <creator>
+                        <name>Nancy E. Williamson</name>
+                        <role>wikidata:Q482980</role>
+                    </creator>
+                    <about>sex preferences</about>
+                    <about>sex control</about>
+                    <about>status of women</about>
+                </article_advertised>
+            </issue_advertised><date_founded><date>Autumn 1975</date></date_founded>
+        </publication_advertised>
+<!--Could this be modeled as copy instead? And include all articles above in a contents list?-->        <contents_list>
+            <text>Signs also published a special supplement in volume 1, Women and the Workplace: The Implications of Occupational Segregation (now available in cloth and paperback) and began volume 2 with a special issue devoted to The Women of China</text>
+            <subject uri="wikidata:Q2285224"/>
+            <article_advertised>
+                <title>Women and the Workplace: The Implications of Occupational Segregation</title>
+            </article_advertised>
+        </contents_list>
+<!--Added copy: "Established in Autumn.…" and "Representative articles..."--><copy><text>Established in Autumn 1975 to provide a forum for the new scholarship about women, Signs publishes articles and criticism in a broad range of academic disciplines.</text><about>Signs</about><about>New scholarship about women</about><about>Articles</about><about>Criticism</about><about>Academic disciplines</about></copy><copy><text>Representative articles from volume 1</text><about>Signs Volume 1</about><about>journal articles</about></copy><copy>
+            <text>Published quarterly by The University of Chicago Press</text>
+            <about>publication frequency</about>
+            <about>publisher</about>
+            <about uri="wikidata:Q2285224"/>
+        </copy>
+        <copy>
+            <text>Catharine R. Stimpson, editor</text>
+            <about uri="wikidata:Q17433671"/>
+            <about uri="wikidata:Q2285224"/>
+        </copy>
+        <copy>
+            <text>For subscription information, please write to The University of Chicago Press, 11030 Langley Avenue, Chicago, Illinois 60628</text>
+            <about>subscription</about>
+        </copy>
+        <price>
+            <subject>wikidata:Q2285224</subject>
+            <value>20</value>
+            <currency>USD</currency>
+            <type>subscription</type>
+            <type>instituional</type>
+            <type>yearly</type>
+        </price>
+        <price>
+            <subject>wikidata:Q2285224</subject>
+            <value>15</value>
+            <currency>USD</currency>
+            <type>subscription</type>
+            <type>individual</type>
+            <type>yearly</type>
+        </price>
+    </ad>
+    <ad clipping_uri="https://iiif.archivelab.org/iiif/heresies_03$116/1499,1939,821,1171/full/0/default.jpg">
+
+        <ad_creators uri="wikidata:Q543111">
+            <name>Naiad Press creators</name>
+        </ad_creators>
+        <about>wikidata:Q543111</about>
+        <about>Lesbian literature</about>
+        <copy>
+            <text>Send total amount of your order plus 10 per cent postage &amp; handling to: THE NAIAD PRESS, INC. 20 Rue Jacob Acres BATES CITY, MISSOURI 64011</text>
+            <about>order information</about>
+            <!--numbered postal code is unclear-->
+        </copy>
+        <embedded_ad clipping_uri="https://iiif.archivelab.org/iiif/heresies_03$116/1499,1939,821,1171/full/0/default.jpg">
+            <about>Love Image</about>
+            <publication_advertised>
+                <title>Love Image</title>
+                <creator>
+                    <name>Valerie Taylor</name>
+                    <role>wikidata:Q482980</role>
+                </creator>
+                <no_pages>180</no_pages>
+            </publication_advertised>
+            <copy>
+                <text>New Lesbian novel from the best-selling author of Whisper Their Love, Stranger On Lesbos &amp; The Girls in 3-B.</text>
+                <about>Love Image</about>
+            </copy>
+            <price>
+                <subject>Love Image</subject>
+                <value>4.50</value>
+                <currency>USD</currency>
+                <type>price</type>
+            </price>
+        </embedded_ad>
+        <embedded_ad clipping_uri="https://iiif.archivelab.org/iiif/heresies_03$116/1499,1939,821,1171/full/0/default.jpg">
+            <about>The Muse of the Violets</about>
+            <publication_advertised>
+                <title>The Muse of the Violets</title>
+                <creator>
+                    <name>Renee Vivien</name>
+                    <role>wikidata:Q482980</role>
+                </creator>
+                <no_pages>84</no_pages>
+            </publication_advertised>
+            <copy>
+                <text>The lyric Lesbian poetry of Renee Vivien available in English for the first time. </text>
+                <about>The Muse of the Violets</about>
+            </copy>
+            <price>
+                <subject>The Muse of the Violets</subject>
+                <value>4</value>
+                <currency>USD</currency>
+                <type>price</type>
+            </price>
+        </embedded_ad>
+        <embedded_ad clipping_uri="https://iiif.archivelab.org/iiif/heresies_03$116/1499,1939,821,1171/full/0/default.jpg">
+            <about>Lesbiana</about>
+            <publication_advertised>
+                <title>Lesbiana</title>
+                <creator>
+                    <name>Barbara Grier</name><name>Gene Damon</name>
+                    <!--(Gene Damon) is an alias-->
+                    <role>wikidata:Q482980</role>
+                </creator>
+                <no_pages>310</no_pages>
+            </publication_advertised>
+            <copy>
+                <text>Her famous columns from the Ladder</text>
+                <about>Lesbiana</about>
+
+            </copy>
+            <price>
+                <subject>Lesbiana</subject>
+                <value>5</value>
+                <currency>USD</currency>
+                <type>price</type>
+            </price>
+        </embedded_ad>
+        <embedded_ad clipping_uri="https://iiif.archivelab.org/iiif/heresies_03$116/1499,1939,821,1171/full/0/default.jpg">
+            <about>A Woman Appeared To Me</about>
+            <publication_advertised>
+                <title>A Woman Appeared To Me</title>
+                <creator>
+                    <name>Renee Vivien</name>
+                    <role>wikidata:Q482980</role>
+                </creator>
+                <no_pages>135</no_pages>
+            </publication_advertised>
+            <copy>
+                <text>Autobiographical novel about her affair with Natalie Clifford Barney</text>
+                <about>A Woman Appeared To Me</about>
+                <about>Renee Vivien</about>
+                <about>Autographical novel</about>
+
+            </copy>
+            <price>
+                <subject>A Woman Appeared To Me</subject>
+                <value>4</value>
+                <currency>USD</currency>
+                <type>price</type>
+            </price>
+        </embedded_ad>
+        <embedded_ad clipping_uri="https://iiif.archivelab.org/iiif/heresies_03$116/1499,1939,821,1171/full/0/default.jpg">
+            <about>Speak Out, My Heart</about>
+            <publication_advertised>
+                <title>Speak Out, My Heart</title>
+                <creator>
+                    <name>Robin Jordan</name>
+                    <role>wikidata:Q482980</role>
+                </creator>
+                <no_pages>148</no_pages>
+            </publication_advertised>
+            <copy>
+                <text>Novel about coming out to your family</text>
+                <about>Speak Out, My Heart</about>
+
+            </copy>
+            <price>
+                <subject>Speak Out, My Heart</subject>
+                <value>4</value>
+                <currency>USD</currency>
+                <type>price</type>
+            </price>
+        </embedded_ad>
+        <embedded_ad clipping_uri="https://iiif.archivelab.org/iiif/heresies_03$116/1499,1939,821,1171/full/0/default.jpg">
+
+            <about>Cytherea's Breath</about>
+            <publication_advertised>
+                <title>Cytherea's Breath</title>
+                <creator>
+                    <name>Sarah Aldridge</name>
+                    <role>wikidata:Q482980</role>
+                </creator>
+                <no_pages>240</no_pages>
+            </publication_advertised>
+            <copy>
+                <text>Lesbian novel set in the early sufferage movement </text>
+                <about>Cytherea's Breath</about>
+
+            </copy>
+            <price>
+                <subject>Cytherea's Breath</subject>
+                <value>5</value>
+                <currency>USD</currency>
+                <type>price</type>
+            </price>
+        </embedded_ad>
+        <embedded_ad clipping_uri="https://iiif.archivelab.org/iiif/heresies_03$116/1499,1939,821,1171/full/0/default.jpg">
+            <about>Tottie</about>
+            <publication_advertised>
+                <title>Tottie</title>
+                <creator>
+                    <name>Sarah Aldridge</name>
+                    <role>wikidata:Q482980</role>
+                </creator>
+                <no_pages>181</no_pages>
+            </publication_advertised>
+            <copy>
+                <text>A Lesbian Romance</text>
+                <about>Tottie</about>
+
+            </copy>
+            <price>
+                <subject>Tottie</subject>
+                <value>4.50</value>
+                <currency>USD</currency>
+                <type>price</type>
+            </price>
+        </embedded_ad>
+        <embedded_ad clipping_uri="https://iiif.archivelab.org/iiif/heresies_03$116/1499,1939,821,1171/full/0/default.jpg">
+            <about>The Latecomer</about>
+            <publication_advertised>
+                <title>The Latecomer</title>
+                <creator>
+                    <name>Sarah Aldridge</name>
+                    <role>wikidata:Q482980</role>
+                </creator>
+                <no_pages>107</no_pages>
+            </publication_advertised>
+            <copy>
+                <text>Sarah Aldridge's first Lesbian novel.</text>
+                <about>The Latecomer</about>
+            </copy>
+            <price>
+                <subject>The Latecomer</subject>
+                <value>3</value>
+                <currency>USD</currency>
+                <type>price</type>
+            </price>
+        </embedded_ad>
+    </ad>
+    <ad clipping_uri="https://iiif.archivelab.org/iiif/heresies_03$117/1528,124,667,2882/full/0/default.jpg">
+    <!--add clipping URI-->    <ad_creators uri="DAUGHTERS_INC_CREATORS">
+            <name>Daughters, Inc. creators</name>
+            <location>
+                <address>22 Charles Street New York, N.Y. 10014</address>
+                <coordinates>40.735010, -74.001230</coordinates>
+            </location>
+        </ad_creators>
+        <about>wikidata:Q105833476</about>
+        <about>feminist books</about>
+        <copy>
+            <text>Backlist Lesbian Novels</text>
+            <about>Lesbian novels</about>
+            <about>backlist titles</about>
+        </copy><embedded_ad><about/><publication_advertised><title>Sister Gin</title><creator><name/></creator></publication_advertised></embedded_ad>
+ <!--Could alternatively treat the "Blacklist Lesbian Novels" as a single embedded ad-->       <embedded_ad>
+            <about>Sister Gin</about>
+            <publication_advertised>
+               <title>Sister Gin</title>
+                <creator uri="wikidata:Q21078073">
+                    <name>June Arnold</name>
+                </creator>
+                <publication_type>novel</publication_type>
+                <about>Sister Gin</about>
+            </publication_advertised>
+            <price>
+                <subject>Sister Gin</subject>
+                <value>4</value>
+                <currency>USD</currency>
+                <type>book</type>
+                <type>single copy</type>
+            </price>
+        </embedded_ad>
+        <embedded_ad>
+            <about>Rubyfruit Jungle</about>
+            <publication_advertised>
+                <title>Rubyfruit Jungle</title>
+                <creator uri="wikidata:Q242956">
+                    <name>Rita Mae Brown</name>
+                </creator>
+                <publication_type>novel</publication_type>
+                <about>Rubyfruit Jungle</about>
+            </publication_advertised>
+            <price>
+                <subject>Rubyfruit Jungle</subject>
+                <value>4</value>
+                <currency>USD</currency>
+                <type>single copy</type>
+                <type>book</type>
+            </price>
+        </embedded_ad>
+        <embedded_ad>
+            <about>Riverfinger Women</about>
+            <publication_advertised>
+                <title>Riverfinger Women</title>
+                <creator uri="wikidata:Q1324878">
+                    <name>Elana Nachman</name>
+                    <role>wikidata:Q482980</role>
+                    <!--Nachman later changes last name to Dykewomon-->
+                </creator>
+                <publication_type>novel</publication_type>
+                <about>Riverfinger Women</about>
+            </publication_advertised>
+            <price>
+                <subject>Riverfinger Women</subject>
+                <value>4</value>
+                <currency>USD</currency>
+                <type>book</type>
+                <type>single copy</type>
+            </price>
+        </embedded_ad>
+        <embedded_ad>
+            <about>The Cook and the Carpenter</about>
+            <publication_advertised>
+                <title>The Cook and the Carpenter</title>
+                <creator>
+                    <name>The Carpenter</name>
+                    <role>wikidata:Q482980</role>
+                </creator>
+                <publication_type>novel</publication_type>
+            </publication_advertised>
+            <price>
+                <subject>The Cook and the Carpenter</subject>
+                <value>3.5</value>
+                <currency>USD</currency>
+                <type>book</type>
+                <type>single copy</type>
+            </price>
+        </embedded_ad>
+        <embedded_ad>
+            <about>In Her Day</about>
+            <publication_advertised>
+                <title>In Her Day</title>
+                <creator uri="wikidata:Q242956">
+                    <name>Rita Mae Brown</name>
+                    <role>wikidata:Q482980</role>
+                </creator>
+                <publication_type>novel</publication_type>
+                <about>In Her Day</about>
+            </publication_advertised>
+            <copy>
+                <text>"Good and mean and sassy. That's Rita Mae."</text>
+                <about>In Her Day</about>
+                <about>wikidata:Q242956</about>
+                <author><!--Kate Millett--></author>
+                <copy_type>review</copy_type>
+            </copy>
+            <price>
+                <subject>In Her Day</subject>
+                <value>4.50</value>
+                <currency>USD</currency>
+                <type>book</type>
+                <type>single sopy</type>
+            </price>
+        </embedded_ad>
+        <embedded_ad>
+            <about>Lover</about>
+            <publication_advertised>
+                <title>Lover</title>
+                <creator>
+                    <name>Bertha Harris</name>
+                    <role>wikidata:Q482980</role>
+                </creator>
+                <publication_type>novel</publication_type>
+                <about>Lover</about>
+            </publication_advertised>
+            <copy>
+                <text>"A spell-binder, verbal sleight of hand as satisfying as it is serpentine."</text>
+                <about>Lover</about>
+                <author uri="wikidata:Q166032"><!--The Washington Post--></author>
+            </copy>
+            <price>
+                <subject>Lover</subject>
+                <value>4.50</value>
+                <currency>USD</currency>
+                <type>book</type>
+                <type>single copy</type>
+            </price>
+        </embedded_ad>
+        <embedded_ad>
+            <about>wikidata:Q3204567</about>
+            <publication_advertised>
+                <title>The Opoponax</title>
+                <creator uri="wikidata:Q263201">
+                    <name>Monique Wittig</name>
+                    <role>wikidata:Q482980</role>
+                </creator>
+                <publication_type>novel</publication_type>
+                <about>The Opoponax</about>
+            </publication_advertised>
+            <copy>
+                <text>"It is a remarkable and very important book... A masterpiece.</text>
+                <about>wikidata:Q3204567</about>
+                <author uri="wikidata:Q153248"><!--Marguerite Duras--></author>
+            </copy>
+            <price>
+                <subject>wikidata:Q3204567</subject>
+                <value>4.50</value>
+                <currency>USD</currency>
+                <type>book</type>
+                <type>single copy</type>
+            </price>
+        </embedded_ad>
+    </ad>
+  <!--Added clipping URI--><ad clipping_uri="https://iiif.archivelab.org/iiif/heresies_03$118/217,128,680,1207/full/0/default.jpg">
+        <ad_creators uri="CHRYSALIS_CREATORS">
+            <name>Chrysalis creators</name>
+            <location>
+                <address>1727 N. Spring St., Los Angeles, CA 90012</address>
+                <coordinates>34.070080, -118.226590</coordinates>
+            </location>
+        </ad_creators>
+        <about>women's culture</about>
+        <publication_advertised uri="wikidata:Q16958172">
+            <title>Chrysalis</title>
+            <creator>
+                <name>Chrysalis creators</name>
+                <role>wikidata:P170</role>
+            </creator>
+        </publication_advertised>
+        <features_list>
+            <text>Each issue provides 150 pages of feature articles investigative reporting reviews criticism historical analysis theory creative writing visual art representing the broadest spectrum of feminist thought plus access to practical resources following the model of Chrysalis's predecessors The New Woman's Survival Catalog and The New Woman's Survical Sourcebook</text>
+            <subject uri="wikidata:Q16958172"/>
+            <feature uri="wikidata:Q191067"/>
+            <feature uri="wikidata:Q1127717"><!--investigative journalism?--></feature>
+            <feature uri="wikidata:Q265158"/>
+            <feature uri="wikidata:Q17955"/>
+            <feature>historical analysis</feature>
+            <feature uri="wikidata:Q17737"/>
+            <feature uri="wikidata:Q586060"/>
+            <feature uri="wikidata:Q36649"/>
+            <feature uri="wikidata:Q1246516"/>
+        </features_list>
+        <copy>
+            <text>c/o The Woman's Building 1727 N. Spring St., Los Angeles, CA 90012</text>
+            <about>mailing information</about>
+            <copy_type>address</copy_type>
+        </copy>
+        <copy>
+            <text>The new magazine of women's culture</text>
+            <about>wikidata:Q16958172</about>
+            <copy_type>subtitle</copy_type>
+        </copy>
+        <price>
+            <subject>wikidata:Q16958172</subject>
+            <value>10</value>
+            <currency>USD</currency>
+            <type>subscription</type>
+        </price>
+    </ad>
+    <ad clipping_uri="https://iiif.archivelab.org/iiif/heresies_03$118/207,1438,676,1514/full/0/default.jpg">
+        <ad_creators uri="PERSEPHONE_PRESS_CREATORS"/>
+        <about>feminist books</about>
+        <about>wikidata:Q93547235</about>
+        <copy>
+            <text>Shipping: 50¢ 1st book, 15¢ ea. additional book.</text>
+            <about>shipping</about>
+        </copy>
+        <copy>
+            <text>A Branch of Pomegranate Productions</text>
+            <about>wikidata:Q93547235</about>
+            <copy_type>subtitle</copy_type>
+        </copy>
+        <price>
+            <subject>wikidata:Q93547235</subject>
+            <value>0.5</value>
+            <currency>USD</currency>
+            <type>shipping</type>
+        </price>
+        <price>
+            <subject>wikidata:Q93547235</subject>
+            <value>0.15</value>
+            <currency>USD</currency>
+            <type>shipping</type>
+            <type>additional book</type>
+        </price>
+        <embedded_ad>
+            <about>The Fourteenth Witch</about>
+            <publication_advertised>
+                <title>The Fourteenth Witch</title>
+                <creator>
+                    <name>Shelley Blue</name>
+                    <role>wikidata:P170</role>
+                </creator>
+                <creator>
+                    <name>Deborah Snow</name>
+                    <role>wikidata:P170</role>
+                </creator>
+                <about>The Fourteenth Witch</about>
+            </publication_advertised>
+            <copy>
+                <text>An artistically exciting collection of lesbian poetry</text>
+                <about>The Fourteenth Witch</about>
+            </copy>
+            <!--Marks a transition in Woman from unawareness to the affirmation of her many hidden aspects: erotic, sensual, mystical. K. Gardner-->
+            <price>
+                <subject>The Fourteenth Witch</subject>
+                <value>5.50</value>
+                <currency>USD</currency>
+                <type>single copy</type>
+            </price>
+        </embedded_ad>
+        <embedded_ad>
+            <about>They Will Know Me By My Teeth</about>
+            <publication_advertised>
+                <title>They Will Know Me By My Teeth</title>
+                <creator uri="wikidata:Q1324878">
+                    <name>Elana Dykewoman</name>
+                    <role>wikidata:Q482980</role>
+                </creator>
+            </publication_advertised>
+            <copy>
+                <text>Stories and poems of Lesbian struggle, celebration, and survival. Available to women only.</text>
+                <about>They Will Know Me By My Teeth</about>
+            </copy>
+            <!--I was thrilled and startled with the purity and power with which she shared important moments and experiences in her life...Melanie Lesbian Connection-->
+            <price>
+                <subject>They Will Know Me By My Teeth</subject>
+                <value>3.5</value>
+                <currency>USD</currency>
+                <type>single copy</type>
+            </price>
+        </embedded_ad>
+        <embedded_ad>
+            <about>A Feminist Tarot</about>
+            <publication_advertised>
+                <title>A Feminist Tarot: A Guide to Intrapersonal Communication</title>
+                <creator uri="wikidata:Q533778">
+                    <name>Sally Gearheart</name>
+                    <role>wikidata:Q482980</role>
+                </creator>
+                <creator>
+                    <name>Susan Rennie</name>
+                    <role>wikidata:Q482980</role>
+                </creator>
+                <about>feminist tarot</about>
+            </publication_advertised>
+            <copy>
+                <text>...enlightened with political/spiritual wisdom and wit...A Feminist Tarot is an Ace of Cups! — Juanita Weaver </text>
+                <about>A Feminist Tarot</about>
+            </copy>
+            <price>
+                <subject>A Feminist Tarot</subject>
+                <value>4</value>
+                <currency>USD</currency>
+                <type>single copy</type>
+            </price>
+        </embedded_ad>
+        <embedded_ad>
+            <about>Pricella Pumps</about>
+            <publication_advertised>
+                <title>Pricella Pumps — Starbuckwheat Comic Book</title>
+                <creator>
+                    <name>Barba Kutzner</name>
+                    <role>wikidata:Q482980</role>
+                </creator>
+            </publication_advertised>
+            <copy>
+                <text>The book is impressive...a strong fantasy story giving feminists a real heroine totally unlike the plasticity of the Wonder Woman... —  Theresa Schook, Big Mama Rag</text>
+                <about>Pricella Pumps</about>
+            </copy>
+            <price>
+                <subject>Pricella Pumps</subject>
+                <value>1</value>
+                <currency>USD</currency>
+                <type>single copy</type>
+            </price>
+        </embedded_ad>
+    </ad>
+
+</heresies_issue>
