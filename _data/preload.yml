@@ -1,0 +1,10 @@
+images:
+- https://repository.duke.edu/fcgi-bin/iipsrv.fcgi?IIIF=/nas/repo_deriv/hydra/multires_image/40/58/a6/28/4058a628-c593-463e-9736-8a821e178fee/info.json
+- https://upload.wikimedia.org/wikipedia/commons/7/7e/PowersBibleQuilt_1886.jpg
+manifests:
+- https://d.lib.ncsu.edu/collections/catalog/segIns_020/manifest.json
+- https://media.nga.gov/public/manifests/nga_highlights.json
+settings:
+  tempuser: notenabled
+  viewer: default
+  widgets: comment-with-purpose, tag, geotagging
